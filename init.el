@@ -24,11 +24,19 @@
  (helm-mode 1))
 
 (use-package
- helm
- :config
- (bind-keys ("M-x" . helm-M-x)
-            ("M-y" . helm-show-kill-ring)
-            ("C-x b" . helm-mini))
+  helm
+  :bind (("M-x" . helm-M-x)
+         ("M-y" . helm-show-kill-ring)
+         ("C-x b" . helm-mini)
+         ("C-x C-f" . helm-find-files))
+  )
+
+(use-package
+ helm-ag
+ :bind (("C-c h x" . helm-do-ag-project-root)
+        ("C-c h g" . helm-do-ag)
+        )
+ :after helm
  )
 
 (use-package
@@ -40,3 +48,7 @@
  smartparens
  :config
  (smartparens-global-mode))
+
+(use-package haskell-mode)
+
+(use-package yasnippet)
