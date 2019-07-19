@@ -2,6 +2,7 @@
 
 (setq user-init-file (or load-file-name (buffer-file-name)))
 (setq user-emacs-directory (file-name-directory user-init-file))
+(setq custom-file (concat user-emacs-directory "custom.el"))
 
 (require 'package)
 (package-initialize 'noactivate)
