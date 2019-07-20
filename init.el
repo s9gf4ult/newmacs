@@ -7,10 +7,14 @@
 (setq custom-file (concat user-emacs-directory "custom.el"))
 (load custom-file)
 
+(add-to-list 'load-path (concat user-emacs-directory "lisp"))
+
 (require 'package)
 (package-initialize 'noactivate)
 (eval-when-compile
   (require 'use-package))
+
+(load "s9g-defuns")
 
 (use-package
  neotree
@@ -84,7 +88,7 @@
 (use-package haskell-compile
   :custom
   (haskell-compile-ignore-cabal t)
-  :after haskell-mode 
+  :after haskell-mode
   )
 
 (use-package yasnippet)
@@ -116,7 +120,9 @@
   :mode "\\.json\\'"
   )
 
-(use-package gitignore-mode)
+(use-package gitignore-mode
+  :mode "\\.gitignore\\'"
+  )
 
 (use-package pg-init
   :mode (("\\.v\\'" . coq-mode))
