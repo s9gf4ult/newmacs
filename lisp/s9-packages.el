@@ -62,14 +62,21 @@
 
 (use-package
  magit
- :bind (("C-x g" . magit)
-	))
+ :bind (("C-x g" . magit))
+ :custom
+ (magit-commit-show-diff nil)
+ (magit-diff-arguments
+   (quote
+    ("--stat" "--no-ext-diff" "--diff-algorithm=histogram")))
+ (magit-log-margin (quote (t "%Y-%m-%d %H:%M " magit-log-margin-width t 18)))
+ )
 
 
 (use-package
   helm-config
   :config
   (helm-mode 1)
+  :after helm
   )
 
 (use-package
@@ -85,25 +92,16 @@
   :bind (:map helm-command-map
 	      ("g" . helm-do-ag)))
 
-(use-package
- helm-rg
- :bind (:map helm-command-map
-             ("r" . helm-rg)))
+(use-package helm-rg
+  :bind (:map helm-command-map
+              ("r" . helm-rg)))
 
-(use-package
- helm-rg
- :bind (:map helm-command-map
-             ("r" . helm-rg)))
-
-
-(use-package
-  helm-projectile
+(use-package  helm-projectile
   :bind (("<f8>" . helm-projectile)))
 
-(use-package
- which-key
- :config
- (which-key-mode 1))
+(use-package which-key
+  :config
+  (which-key-mode 1))
 
 (use-package shakespeare-mode
   :mode "\\.hamlet\\'"
@@ -114,8 +112,7 @@
   (global-diff-hl-mode)
   )
 
-(use-package
-  smartparens
+(use-package smartparens
   :demand t
   :bind (("<C-right>" . sp-forward-slurp-sexp)
 	 ("<C-left>" . sp-forward-barf-sexp)
