@@ -105,6 +105,19 @@
   :config
   (which-key-mode 1))
 
+(use-package projectile)
+
+(use-package move-text)
+
+(use-package crux
+  :demand t 
+  :bind
+  (("C-c I" . crux-find-user-init-file)
+   ("C-c C" . crux-find-user-custom-file)
+   ))
+
+(use-package yasnippet)
+
 ;;;;;;;;;;;
 ;; helm  ;;
 ;;;;;;;;;;;
@@ -139,33 +152,17 @@
 ;; haskell ;;
 ;;;;;;;;;;;;;
 
+(load "s9-haskell")
 
-(use-package shakespeare-mode
-  :mode "\\.hamlet\\'")
-
-(use-package haskell-mode
-  :mode (("\\.cabal\\'" . cabal-mode)
-	 ("\\.hs\\'" . haskell-mode)))
-
-(use-package haskell-compile
-  :custom
-  (haskell-compile-ignore-cabal t)
-  :after haskell-mode
-  :custom
-   (haskell-compile-stack-build-alt-command
-     "nice -n5 stack build --bench --test --no-run-tests --no-run-benchmarks --fast --pedantic --ghc-options='-ferror-spans -j +RTS -A128m -n2m -qb0 -RTS'")
-   (haskell-compile-stack-build-command
-     "nice -n5 stack build --bench --test --no-run-tests --no-run-benchmarks --fast --ghc-options='-ferror-spans -instances -j +RTS -A128m -n2m -qb0 -RTS'")
-  )
-
-(use-package yasnippet)
+;;;;;;;;;;;;;;;;;
+;; other modes ;;
+;;;;;;;;;;;;;;;;;
 
 (use-package yaml-mode
   :mode ("\\.yaml\\'" "\\.yml\\'"))
 
 (use-package web-mode
   :mode ("\\.html\\'" "\\.php\\'"))
-
 
 (use-package systemd
   :mode "\\.service\\'")
@@ -176,10 +173,6 @@
   :mode "\\.proto\\'"
   )
 
-(use-package projectile)
-
-(use-package move-text)
-
 (use-package json-mode
   :mode "\\.json\\'"
   )
@@ -188,18 +181,13 @@
   :mode "\\.gitignore\\'"
   )
 
-(use-package pg-init
+(use-package pg-init ; proof-general
   :mode (("\\.v\\'" . coq-mode))
   )
 
 (use-package nix-mode
   :mode "\\.nix\\'"
   )
-
-(use-package crux
-  :demand t 
-  :bind
-  (("C-c I" . crux-find-user-init-file)))
 
 (use-package org
  :bind

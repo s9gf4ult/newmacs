@@ -4,7 +4,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(blink-cursor-mode nil)
- '(global-hl-line-mode t)
+ '(global-hl-line-mode nil)
  '(initial-buffer-choice t)
  '(recentf-max-saved-items 1000)
  '(scroll-bar-mode nil)
