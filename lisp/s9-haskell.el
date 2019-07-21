@@ -24,9 +24,7 @@
 
 ;;; Code:
 
-(require 'haskell-mode)
-(require 'haskell-compile)
-(require 'haskell-navigate-imports)
+(require 'haskell)
 (require 'neotree)
 (require 'yasnippet)
 (require 'haskell-snippets)
