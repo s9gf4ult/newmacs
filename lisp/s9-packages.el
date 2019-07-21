@@ -1,9 +1,9 @@
 ;;; s9-packages.el --- load all my packages          -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2019  
+;; Copyright (C) 2019
 
 ;; Author:  <razor@gazoline>
-;; Keywords: 
+;; Keywords:
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -20,7 +20,7 @@
 
 ;;; Commentary:
 
-;; 
+;;
 
 ;;; Code:
 
@@ -30,26 +30,40 @@
  )
 
 (use-package
+  windmove
+  :bind (("<S-up>" . windmove-up)
+	 ("<S-down>" . windmove-down)
+	 )
+  )
+
+(use-package
   ace-window
+  :demand t ; defering does not work
   :bind (("<S-left>" . aw-switch-prev-window)
 	 ("<S-right>" . aw-switch-next-window)
 	 )
   :config
-  (defun aw-swich-to-nth-window (n)
-    "Switch to nth window. Count from 1"
-    (interactive)
-    (let* ((wlist (aw-window-list))
-           (w (or
-               (nth (- idx 1) wlist)
-               (car (last wlist)))))
-      (unless (null w)
-        (aw-switch-to-window w)))))
+  (require 'cl)
+  (dotimes (i 9)
+    (lexical-let* ((idx i) ; to bind it lexically
+		   (keyn (+ 1 idx))
+                   (key (format "C-%d" keyn)))
+    (bind-key
+     key
+     (lambda ()
+       (interactive)
+       (lexical-let*
+	   ((wlist (aw-window-list))
+            (w (or
+                (nth idx wlist)
+                (car (last wlist)))))
+         (unless (null w)
+           (aw-switch-to-window w))))))))
 
 (use-package
  magit
-
  :bind (("C-x g" . magit)
-	)
+	))
 
 
 (use-package
@@ -101,9 +115,16 @@
   )
 
 (use-package
- smartparens
- :config
- (smartparens-global-mode))
+  smartparens
+  :demand t
+  :bind (("<C-right>" . sp-forward-slurp-sexp)
+	 ("<C-left>" . sp-forward-barf-sexp)
+	 ("<M-down>" . sp-splice-sexp-killing-forward)
+	 ("<M-up>" . sp-splice-sexp-killing-backward)
+	 )
+  :config
+  (smartparens-global-mode)
+  (show-smartparens-global-mode))
 
 (use-package haskell-mode
   :mode (("\\.cabal\\'" . cabal-mode)

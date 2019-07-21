@@ -5,19 +5,18 @@
 (setq user-init-file (or load-file-name (buffer-file-name)))
 (setq user-emacs-directory (file-name-directory user-init-file))
 (setq custom-file (concat user-emacs-directory "custom.el"))
-(load custom-file)
-
-(add-to-list 'load-path (concat user-emacs-directory "lisp"))
 
 (require 'package)
 (package-initialize 'noactivate)
 (eval-when-compile
   (require 'use-package))
 
+(add-to-list 'load-path (concat user-emacs-directory "lisp"))
+
 (load "s9-packages")
-
 (load "s9g-defuns")
-
 
 (dolist (f (directory-files-recursively "~/pers/projects" "\.org$"))
 	(find-file-noselect f))
+
+(load custom-file)
