@@ -158,10 +158,10 @@
   :mode "\\.hamlet\\'")
 
 (use-package s9-haskell
-  :mode (("\\.cabal\\'" . cabal-mode)
+  :mode (("\\.cabal\\'" . haskell-cabal-mode)
 	 ("\\.hs\\'" . haskell-mode))
   :hook ((haskell-mode . s9g-haskell-mode-hook)
-	 (cabal-mode . s9g-cabal-mode-hook)
+	 (haskell-cabal-mode . s9g-cabal-mode-hook)
 	 )
   :custom
   (haskell-compile-stack-build-alt-command

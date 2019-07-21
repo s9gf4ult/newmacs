@@ -26,6 +26,7 @@
 
 (require 'haskell-mode)
 (require 'haskell-compile)
+(require 'haskell-navigate-imports)
 (require 'neotree)
 (require 'yasnippet)
 (require 'haskell-snippets)
