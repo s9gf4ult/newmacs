@@ -7,6 +7,7 @@
  '(blink-cursor-mode nil)
  '(global-hl-line-mode nil)
  '(initial-buffer-choice t)
+ '(mouse-yank-at-point t)
  '(recentf-max-saved-items 1000)
  '(scroll-bar-mode nil)
  '(tool-bar-mode nil))
