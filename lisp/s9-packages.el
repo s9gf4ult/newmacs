@@ -151,6 +151,11 @@
   :custom
   (haskell-compile-ignore-cabal t)
   :after haskell-mode
+  :custom
+   (haskell-compile-stack-build-alt-command
+     "nice -n5 stack build --bench --test --no-run-tests --no-run-benchmarks --fast --pedantic --ghc-options='-ferror-spans -j +RTS -A128m -n2m -qb0 -RTS'")
+   (haskell-compile-stack-build-command
+     "nice -n5 stack build --bench --test --no-run-tests --no-run-benchmarks --fast --ghc-options='-ferror-spans -instances -j +RTS -A128m -n2m -qb0 -RTS'")
   )
 
 (use-package yasnippet)
