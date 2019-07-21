@@ -24,6 +24,12 @@
 
 ;;; Code:
 
+
+
+;;;;;;;;;;;;;;;;;;
+;; convenience  ;;
+;;;;;;;;;;;;;;;;;;
+
 (use-package
  neotree
  :bind (("<f12>" . neotree-toggle))
@@ -71,47 +77,6 @@
  (magit-log-margin (quote (t "%Y-%m-%d %H:%M " magit-log-margin-width t 18)))
  )
 
-
-(use-package
-  helm-config
-  :config
-  (helm-mode 1)
-  :after helm
-  )
-
-(use-package
-  helm
-  :bind (("M-x" . helm-M-x)
-         ("M-y" . helm-show-kill-ring)
-         ("C-x C-f" . helm-find-files)
-	 ("<f7>" . helm-mini)
-	 )
-  )
-
-(use-package helm-ag
-  :bind (:map helm-command-map
-	      ("g" . helm-do-ag)))
-
-(use-package helm-rg
-  :bind (:map helm-command-map
-              ("r" . helm-rg)))
-
-(use-package  helm-projectile
-  :bind (("<f8>" . helm-projectile)))
-
-(use-package which-key
-  :config
-  (which-key-mode 1))
-
-(use-package shakespeare-mode
-  :mode "\\.hamlet\\'"
-  )
-
-(use-package diff-hl
-  :config
-  (global-diff-hl-mode)
-  )
-
 (use-package smartparens
   :demand t
   :bind (("<C-right>" . sp-forward-slurp-sexp)
@@ -122,6 +87,52 @@
   :config
   (smartparens-global-mode)
   (show-smartparens-global-mode))
+
+(use-package diff-hl
+  :config
+  (global-diff-hl-mode)
+  :custom-face
+  (diff-hl-change ((t (:background "deep sky blue" :foreground "blue3"))))
+  (diff-hl-delete ((t (:inherit diff-removed :background "firebrick" :foreground "red3"))))
+  (diff-hl-insert ((t (:inherit diff-added :background "sea green" :foreground "green4")))))
+
+(use-package which-key
+  :config
+  (which-key-mode 1))
+
+;;;;;;;;;;;
+;; helm  ;;
+;;;;;;;;;;;
+
+(use-package helm
+  :bind (("M-x" . helm-M-x)
+         ("M-y" . helm-show-kill-ring)
+         ("C-x C-f" . helm-find-files)
+	 ("<f7>" . helm-mini)
+	 ))
+
+(use-package helm-config
+  :config
+  (helm-mode 1)
+  :after helm)
+
+(use-package helm-ag
+  :bind (:map helm-command-map
+	      ("g" . helm-do-ag))
+  :after helm)
+
+(use-package helm-rg
+  :bind (:map helm-command-map
+              ("r" . helm-rg))
+  :after helm)
+
+(use-package helm-projectile
+  :bind (("<f8>" . helm-projectile)))
+
+
+(use-package shakespeare-mode
+  :mode "\\.hamlet\\'"
+  )
 
 (use-package haskell-mode
   :mode (("\\.cabal\\'" . cabal-mode)
