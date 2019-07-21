@@ -75,6 +75,8 @@
    (quote
     ("--stat" "--no-ext-diff" "--diff-algorithm=histogram")))
  (magit-log-margin (quote (t "%Y-%m-%d %H:%M " magit-log-margin-width t 18)))
+ :config
+ (magit-auto-revert-mode 1)
  )
 
 (use-package smartparens
