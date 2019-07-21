@@ -258,4 +258,4 @@ as in `fit-window-to-buffer'."
    (lambda (idx)
      (+ idx 1))))
 
-(provide 's9g-defuns)
+(provide 's9-defuns)

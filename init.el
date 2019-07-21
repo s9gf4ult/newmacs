@@ -14,7 +14,7 @@
 (add-to-list 'load-path (concat user-emacs-directory "lisp"))
 
 (load "s9-packages")
-(load "s9g-defuns")
+(load "s9-globals")
 
 (dolist (f (directory-files-recursively "~/pers/projects" "\.org$"))
 	(find-file-noselect f))

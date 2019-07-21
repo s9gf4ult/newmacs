@@ -30,25 +30,21 @@
 ;; convenience  ;;
 ;;;;;;;;;;;;;;;;;;
 
-(use-package
- undo-tree
+(use-package undo-tree
  :config
  (global-undo-tree-mode))
 
-(use-package
- neotree
+(use-package neotree
  :bind (("<f12>" . neotree-toggle))
  )
 
-(use-package
-  windmove
+(use-package windmove
   :bind (("<S-up>" . windmove-up)
 	 ("<S-down>" . windmove-down)
 	 )
   )
 
-(use-package
-  ace-window
+(use-package ace-window
   :demand t ; defering does not work
   :bind (("<S-left>" . aw-switch-prev-window)
 	 ("<S-right>" . aw-switch-next-window)
@@ -71,8 +67,7 @@
          (unless (null w)
            (aw-switch-to-window w))))))))
 
-(use-package
- magit
+(use-package magit
  :bind (("C-x g" . magit))
  :custom
  (magit-commit-show-diff nil)
@@ -110,7 +105,7 @@
 (use-package move-text)
 
 (use-package crux
-  :demand t 
+  :demand t
   :bind
   (("C-c I" . crux-find-user-init-file)
    ("C-c C" . crux-find-user-custom-file)
@@ -123,6 +118,7 @@
 ;;;;;;;;;;;
 
 (use-package helm
+  :demand t
   :bind (("M-x" . helm-M-x)
          ("M-y" . helm-show-kill-ring)
          ("C-x C-f" . helm-find-files)
@@ -152,7 +148,28 @@
 ;; haskell ;;
 ;;;;;;;;;;;;;
 
-(load "s9-haskell")
+
+(use-package haskell-snippets
+  :after haskell-mode)
+
+(use-package shakespeare-mode
+  :mode "\\.hamlet\\'")
+
+(use-package s9-haskell
+  :mode (("\\.cabal\\'" . cabal-mode)
+	 ("\\.hs\\'" . haskell-mode))
+  :hook ((haskell-mode . s9g-haskell-mode-hook)
+	 (cabal-mode . s9g-cabal-mode-hook)
+	 )
+  :custom
+  (haskell-compile-stack-build-alt-command
+   "nice -n5 stack build --bench --test --no-run-tests --no-run-benchmarks --fast --pedantic --ghc-options='-ferror-spans -j +RTS -A128m -n2m -qb0 -RTS'")
+  (haskell-compile-stack-build-command
+    "nice -n5 stack build --bench --test --no-run-tests --no-run-benchmarks --fast --ghc-options='-ferror-spans -instances -j +RTS -A128m -n2m -qb0 -RTS'")
+  (haskell-process-args-stack-ghci (quote ("--ghci-options" "-ferror-spans")))
+  (haskell-compile-ignore-cabal t)
+  (haskell-stylish-on-save t)
+  )
 
 ;;;;;;;;;;;;;;;;;
 ;; other modes ;;
@@ -191,7 +208,14 @@
 
 (use-package org
  :bind
- (("C-c b" . org-switchb)))
+ (("C-c b" . org-switchb)
+  ("C-c c" . org-capture)
+  ))
+
+;;;;;;;;;;;;;;;;;;;;
+;; global hotkeys ;;
+;;;;;;;;;;;;;;;;;;;;
+
 
 (provide 's9-packages)
 ;;; s9-packages.el ends here
