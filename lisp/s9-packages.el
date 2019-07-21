@@ -31,6 +31,11 @@
 ;;;;;;;;;;;;;;;;;;
 
 (use-package
+ undo-tree
+ :config
+ (global-undo-tree-mode))
+
+(use-package
  neotree
  :bind (("<f12>" . neotree-toggle))
  )
@@ -130,15 +135,17 @@
   :bind (("<f8>" . helm-projectile)))
 
 
+;;;;;;;;;;;;;
+;; haskell ;;
+;;;;;;;;;;;;;
+
+
 (use-package shakespeare-mode
-  :mode "\\.hamlet\\'"
-  )
+  :mode "\\.hamlet\\'")
 
 (use-package haskell-mode
   :mode (("\\.cabal\\'" . cabal-mode)
-	 ("\\.hs\\'" . haskell-mode)
-	 )
-  )
+	 ("\\.hs\\'" . haskell-mode)))
 
 (use-package haskell-compile
   :custom
@@ -148,18 +155,15 @@
 
 (use-package yasnippet)
 
-(use-package yaml-mode)
+(use-package yaml-mode
+  :mode ("\\.yaml\\'" "\\.yml\\'"))
 
-(use-package shakespeare-mode)
+(use-package web-mode
+  :mode ("\\.html\\'" "\\.php\\'"))
 
-(use-package web-mode)
 
-(use-package
- undo-tree
- :config
- (global-undo-tree-mode))
-
-(use-package systemd)
+(use-package systemd
+  :mode "\\.service\\'")
 
 (use-package string-inflection)
 
@@ -188,16 +192,13 @@
   )
 
 (use-package crux
+  :demand t 
   :bind
-  (("C-c I" . crux-find-user-init-file))
-  )
+  (("C-c I" . crux-find-user-init-file)))
 
-(use-package
- org
+(use-package org
  :bind
- (("C-c b" . org-switchb))
- )
-
+ (("C-c b" . org-switchb)))
 
 (provide 's9-packages)
 ;;; s9-packages.el ends here
