@@ -213,7 +213,7 @@
   :mode "\\.nix\\'"
   )
 
-(use-package org
+(use-package s9-org
   :bind (("C-c b" . org-switchb)
 	 ("C-c c" . org-capture))
   :custom ((org-capture-templates
@@ -269,8 +269,10 @@
 	      ("~/pers/pool.org" :level . 1)
 	      ("~/pers/projects/haskell/haskell.org" :level . 1)
 	      ("~/pers/projects/credit/credit.org" :level . 1))))
-	   (org-reverse-note-order t)
-	   ))
+	   (org-reverse-note-order t))
+  :hook (org-mode-hook . s9g-org-hook)
+  :mode ("\\.org\\'" . org-mode)
+  )
 
 (provide 's9-packages)
 ;;; s9-packages.el ends here
