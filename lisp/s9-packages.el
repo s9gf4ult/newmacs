@@ -272,10 +272,5 @@
 	   (org-reverse-note-order t)
 	   ))
 
-;;;;;;;;;;;;;;;;;;;;
-;; global hotkeys ;;
-;;;;;;;;;;;;;;;;;;;;
-
-
 (provide 's9-packages)
 ;;; s9-packages.el ends here

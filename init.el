@@ -15,6 +15,7 @@
 
 (load "s9-packages")
 (load "s9-globals")
+(load "s9-tune")
 
 (dolist (f (directory-files-recursively "~/pers/projects" "\.org$"))
 	(find-file-noselect f))
