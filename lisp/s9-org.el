@@ -28,10 +28,6 @@
 
 (defun s9g-org-hook ()
   (auto-fill-mode 1)
-  (local-unset-key (kbd "<S-left>"))
-  (local-unset-key (kbd "<S-right>"))
-  (local-unset-key (kbd "<S-up>"))
-  (local-unset-key (kbd "<S-down>"))
   (local-set-key (kbd "<M-S-return>") 'org-insert-todo-heading-respect-content)
   (local-set-key (kbd "<C-left>") 'org-metaleft)
   (local-set-key (kbd "<C-right>") 'org-metaright)

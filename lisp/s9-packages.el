@@ -215,7 +215,12 @@
 
 (use-package s9-org
   :bind (("C-c b" . org-switchb)
-	 ("C-c c" . org-capture))
+	 ("C-c c" . org-capture)
+	 :map org-mode-map
+	 ("<S-left>" . nil)
+	 ("<S-right>" . nil)
+	 ("<S-up>" . nil)
+	 ("<S-down>" . nil))
   :custom ((org-capture-templates
 	    (quote
 	     (("t" "Todo prefix")
