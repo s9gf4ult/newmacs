@@ -105,7 +105,9 @@
   :config
   (which-key-mode 1))
 
-(use-package projectile)
+(use-package projectile
+  :config
+  (projectile-global-mode))
 
 (use-package move-text)
 
@@ -212,10 +214,63 @@
   )
 
 (use-package org
- :bind
- (("C-c b" . org-switchb)
-  ("C-c c" . org-capture)
-  ))
+  :bind (("C-c b" . org-switchb)
+	 ("C-c c" . org-capture))
+  :custom ((org-capture-templates
+	    (quote
+	     (("t" "Todo prefix")
+	      ("tt" "Todo sometime" entry
+	       (file+headline "~/pers/capture.org" "Tasks")
+	       (file "~/.emacs.d/org-templates/todo")
+	       :prepend t)
+	      ("tr" "Travel check list" entry
+	       (file+headline "~/pers/capture.org " "Tasks ")
+	       (file "~/.emacs.d/org-templates/travel")
+	       :prepend t)
+	      ("ts" "Scheduled todo item" entry
+	       (file+headline "~/pers/capture.org" "Tasks")
+	       (file "~/.emacs.d/org-templates/scheduled")
+	       :prepend t)
+	      ("tc" "Code linked todo" entry
+	       (file+headline "~/pers/capture.org" "Tasks")
+	       (file "~/.emacs.d/org-templates/code")
+	       :prepend t)
+	      ("tu" "Url assigned todo" entry
+	       (file+headline "~/pers/capture.org" "Tasks")
+	       (file "~/.emacs.d/org-templates/urltodo")
+	       :prepend t)
+	      ("n" "Note" entry
+	       (file+headline "~/pers/projects/life/info/notes.org" "Notes")
+	       (file "~/.emacs.d/org-templates/note")
+	       :prepend t)
+	      ("l" "Log entry")
+	      ("ll" "Simple log entry" entry
+	       (file+olp+datetree "~/pers/projects/life/log/log.org")
+	       "* %?")
+	      ("lh" "Health log" entry
+	       (file+olp+datetree "~/pers/projects/life/log/health.org")
+	       "* %?")
+	      ("lm" "Mother log" entry
+	       (file+olp+datetree "~/pers/projects/life/log/mother.org")
+	       "* %? ")
+	      ("u" "Url" entry
+	       (file+headline "~/pers/urls.org" "Urls")
+	       (file "~/.emacs.d/org-templates/url")
+	       :prepend t))))
+	   (org-default-notes-file "~/pers/refile.org")
+	   (org-extend-today-until 5)
+	   (org-log-done (quote time))
+	   (org-refile-targets
+	    (quote
+	     (("~/pers/projects/life/todo/life.org" :level . 1)
+	      ("~/pers/projects/instruments/instruments.org" :level . 1)
+	      ("~/pers/projects/typeableio/typeableio.org" :level . 1)
+	      ("~/pers/projects/life/todo/read.org" :level . 1)
+	      ("~/pers/pool.org" :level . 1)
+	      ("~/pers/projects/haskell/haskell.org" :level . 1)
+	      ("~/pers/projects/credit/credit.org" :level . 1))))
+	   (org-reverse-note-order t)
+	   ))
 
 ;;;;;;;;;;;;;;;;;;;;
 ;; global hotkeys ;;
