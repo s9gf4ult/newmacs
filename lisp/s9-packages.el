@@ -276,7 +276,7 @@
 	      ("~/pers/projects/credit/credit.org" :level . 1))))
 	   (org-reverse-note-order t))
   :hook (org-mode-hook . s9g-org-hook)
-  :mode ("\\.org\\'" . org-mode)
+  :demand t
   )
 
 (provide 's9-packages)
