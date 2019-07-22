@@ -35,7 +35,10 @@
  (global-undo-tree-mode))
 
 (use-package neotree
- :bind (("<f12>" . neotree-toggle))
+  :bind (("<f12>" . neotree-toggle))
+  :custom
+  (neo-create-file-auto-open t)
+  (neo-smart-open t)
  )
 
 (use-package windmove
