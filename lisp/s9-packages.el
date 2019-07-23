@@ -138,7 +138,7 @@
 	      ("g" . helm-do-ag)))
 
 (use-package helm-rg
-  :custom
+  :custom-face
   (helm-rg-file-match-face ((t (:foreground "dark blue" :underline t))))
   )
 
