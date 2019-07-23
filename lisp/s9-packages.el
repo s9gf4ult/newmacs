@@ -130,7 +130,7 @@
          ("M-y" . helm-show-kill-ring)
          ("C-x C-f" . helm-find-files)
 	 ("<f7>" . helm-mini)
-	 ))
+	 ("M-." . helm-etags-select)))
 
 (use-package helm-config
   :config
