@@ -105,10 +105,6 @@
   :config
   (which-key-mode 1))
 
-(use-package projectile
-  :config
-  (projectile-global-mode))
-
 (use-package move-text)
 
 (use-package crux
@@ -134,22 +130,26 @@
 
 (use-package helm-config
   :config
-  (helm-mode 1)
-  :after helm)
+  (helm-mode 1))
 
 (use-package helm-ag
+  :demand t
   :bind (:map helm-command-map
-	      ("g" . helm-do-ag))
-  :after helm)
+	      ("g" . helm-do-ag)))
 
 (use-package helm-rg
-  :bind (:map helm-command-map
-              ("r" . helm-rg))
-  :after helm)
+  :custom-face
+  (helm-rg-file-match-face ((t (:foreground "dark blue" :underline t))))
+  )
+
+(use-package projectile
+  :config
+  (projectile-global-mode))
 
 (use-package helm-projectile
-  :bind (("<f8>" . helm-projectile)))
-
+  :bind (("<f8>" . helm-projectile)
+	 :map helm-command-map
+         ("r" . helm-projectile-rg)))
 
 ;;;;;;;;;;;;;
 ;; haskell ;;
