@@ -207,6 +207,7 @@
 
 (use-package pg-init ; proof-general
   :mode (("\\.v\\'" . coq-mode))
+  :config ((proof-three-window-mode-policy (quote vertical)))
   )
 
 (use-package nix-mode
@@ -278,6 +279,9 @@
   :hook (org-mode-hook . s9g-org-hook)
   :demand t
   )
+
+(use-package tramp
+  :config ((proof-three-window-mode-policy (quote vertical))))
 
 (provide 's9-packages)
 ;;; s9-packages.el ends here
