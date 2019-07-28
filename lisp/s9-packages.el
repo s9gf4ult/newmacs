@@ -126,6 +126,7 @@
          ("M-y" . helm-show-kill-ring)
          ("C-x C-f" . helm-find-files)
 	 ("<f7>" . helm-mini)
+	 ("M-." . helm-etags-select)
 	 ))
 
 (use-package helm-config
@@ -281,7 +282,10 @@
   )
 
 (use-package tramp
-  :config ((proof-three-window-mode-policy (quote vertical))))
+  :custom ((tramp-default-method "ssh" nil (tramp))
+	   (tramp-encoding-shell "/run/current-system/sw/bin/zsh" nil (tramp)))
+  :config
+  (add-to-list 'tramp-remote-path 'tramp-own-remote-path))
 
 (provide 's9-packages)
 ;;; s9-packages.el ends here

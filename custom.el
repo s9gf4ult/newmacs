@@ -5,6 +5,7 @@
  ;; If there is more than one, they won't work right.
  '(before-save-hook (quote (delete-trailing-whitespace)))
  '(blink-cursor-mode nil)
+ '(column-number-mode t)
  '(global-hl-line-mode nil)
  '(initial-buffer-choice t)
  '(mouse-yank-at-point t)
