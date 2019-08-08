@@ -216,6 +216,14 @@
   :mode "\\.nix\\'"
   )
 
+(use-package es-mode
+  :mode "\\.es\\'"
+  )
+
+(use-package dockerfile-mode
+  :mode "Dockerfile"
+  )
+
 (use-package s9-org
   :bind (("C-c b" . org-switchb)
 	 ("C-c c" . org-capture)
@@ -287,6 +295,8 @@
 	   (tramp-encoding-shell "/run/current-system/sw/bin/zsh" nil (tramp)))
   :config
   (add-to-list 'tramp-remote-path 'tramp-own-remote-path))
+
+(use-package company :ensure t)
 
 (provide 's9-packages)
 ;;; s9-packages.el ends here
