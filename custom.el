@@ -6,6 +6,17 @@
  '(before-save-hook (quote (delete-trailing-whitespace)))
  '(blink-cursor-mode nil)
  '(column-number-mode t)
+ '(display-buffer-alist
+   (quote
+    (("\\*haskell-compilation\\*" display-buffer-reuse-window
+      (reusable-frames . t))
+     ("magit.*" display-buffer-pop-up-window
+      (reusable-frames . t))
+     ("\\*NeoTree\\*" ignore
+      (nil))
+     (".*" display-buffer-same-window
+      (reusable-frames . t)))))
+ '(display-buffer-reuse-frames t)
  '(global-hl-line-mode nil)
  '(initial-buffer-choice t)
  '(mouse-yank-at-point t)
