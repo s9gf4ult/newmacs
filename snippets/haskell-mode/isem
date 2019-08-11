@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: isem
+# key: isem
+# --
+import Data.Semigroup

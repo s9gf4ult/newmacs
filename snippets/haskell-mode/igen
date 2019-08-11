@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: igen
+# key: igen
+# --
+import GHC.Generics (Generic)

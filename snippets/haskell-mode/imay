@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: imay
+# key: imay
+# --
+import Data.Maybe

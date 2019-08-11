@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ipgs
+# key: ipgs
+# --
+import Database.PostgreSQL.Simple$0

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ifold
+# key: ifold
+# --
+import Data.Foldable

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: idfix
+# key: idfix
+# --
+import Debug.Fixme$0

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: itext
+# key: itext
+# --
+import Data.Text as T

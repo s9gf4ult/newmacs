@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ityp
+# key: ityp
+# --
+import Data.Typeable

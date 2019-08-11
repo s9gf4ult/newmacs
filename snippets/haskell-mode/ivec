@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ivec
+# key: ivec
+# --
+import Data.Vector as V

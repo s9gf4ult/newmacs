@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: idep
+# key: idep
+# --
+import Control.DeepSeq

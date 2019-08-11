@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: prison
+# key: prison
+# --
+makePrisms ''$1
+deriveJSON jsonOptions ''$1

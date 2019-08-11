@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ibin
+# key: ibin
+# --
+import Data.Binary

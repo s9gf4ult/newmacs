@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: iprox
+# key: iprox
+# --
+import Data.Proxy

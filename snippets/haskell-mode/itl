@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: itl
+# key: itl
+# --
+import Data.Text.Lazy as TL

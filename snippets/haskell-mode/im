@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: im
+# key: im
+# --
+import Control.Monad

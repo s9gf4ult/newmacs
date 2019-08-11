@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: irand
+# key: irand
+# --
+import System.Random

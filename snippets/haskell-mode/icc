@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: icc
+# key: icc
+# --
+import Control.Concurrent

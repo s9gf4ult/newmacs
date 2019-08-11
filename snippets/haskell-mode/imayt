@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: imayt
+# key: imayt
+# --
+import Control.Monad.Trans.Maybe

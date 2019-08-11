@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: itexte
+# key: itexte
+# --
+import Data.Text.Encoding as T

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: imap
+# key: imap
+# --
+import Data.Map.Strict as M

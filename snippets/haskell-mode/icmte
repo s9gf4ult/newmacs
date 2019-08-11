@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: icmte
+# key: icmte
+# --
+import Control.Monad.Trans.Except

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: iapie
+# key: iapie
+# --
+import API.Platform.Error$0

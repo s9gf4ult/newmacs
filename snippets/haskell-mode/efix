@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: efix
+# key: efix
+# --
+(error "FIXME: not implemented")

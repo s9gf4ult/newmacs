@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: imon
+# key: imon
+# --
+import Data.Monoid

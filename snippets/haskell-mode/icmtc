@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: icmtc
+# key: icmtc
+# --
+import Control.Monad.Trans.Control

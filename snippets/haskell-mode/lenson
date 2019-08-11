@@ -1,0 +1,6 @@
+# key: lenson
+# name: lenson
+# expand-env: ((yas-indent-line 'fixed))
+# --
+makeLenses ''$1
+deriveJSON jsonOptions ''$1

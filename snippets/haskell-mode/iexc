@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: iexc
+# key: iexc
+# --
+import Control.Exception

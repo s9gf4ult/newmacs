@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: json
+# key: json
+# --
+deriveJSON
+  defaultOptions
+  { fieldLabelModifier = defaultFieldLabelModifier }
+  ''$0

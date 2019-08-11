@@ -1,0 +1,4 @@
+# key: concon
+# name: concon
+# --
+(ConApp t [con|$1|] args) -> (ConApp (mapTypeIndex t) [con|$1|] (rmap mapTerm args))

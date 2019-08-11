@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: creindex
+# key: creindex
+# --
+
+CREATE INDEX $0ON ${1:b2b}.${2:table}(${3:field});

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ilog
+# key: ilog
+# --
+import Control.Monad.Logger

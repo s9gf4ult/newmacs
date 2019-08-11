@@ -1,0 +1,9 @@
+# key: newt
+# name: newt
+# condition: (= (length "newt") (current-column))
+# expand-env: ((yas-indent-line 'fixed))
+# --
+
+newtype ${1:Type} = $1
+  { un$1 :: ${2:Int}
+  } deriving (Eq$0)

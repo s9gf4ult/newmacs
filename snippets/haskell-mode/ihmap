@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ihmap
+# key: ihmap
+# --
+import Data.HashMap.Strict as H

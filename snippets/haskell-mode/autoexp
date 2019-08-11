@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: autoexp
+# key: autoexp
+# --
+{-# OPTIONS_GHC -F -pgmF autoexporter #-}$0

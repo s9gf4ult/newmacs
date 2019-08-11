@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ilist
+# key: ilist
+# --
+import Data.List as L

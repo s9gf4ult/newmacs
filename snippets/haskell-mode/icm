@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: icm
+# key: icm
+# --
+import Control.Monad

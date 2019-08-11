@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: itrav
+# key: itrav
+# --
+import Data.Traversable

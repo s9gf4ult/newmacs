@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: istring
+# key: istring
+# --
+import Data.String

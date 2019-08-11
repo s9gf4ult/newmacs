@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: arb
+# key: arb
+# --
+instance Arbitrary $0 where
+  arbitrary = genericArbitrary
+  shrink = genericShrink

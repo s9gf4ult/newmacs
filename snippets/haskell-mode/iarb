@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: iarb
+# key: iarb
+# --
+import Test.QuickCheck.Arbitrary$0

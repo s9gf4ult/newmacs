@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: iio
+# key: iio
+# --
+import Control.Monad.IO.Class

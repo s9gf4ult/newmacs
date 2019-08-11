@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: istate
+# key: istate
+# --
+import Control.Monad.State.Strict

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ivinyl
+# key: ivinyl
+# --
+import Data.Vinyl$0

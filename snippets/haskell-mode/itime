@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: itime
+# key: itime
+# --
+import Data.Time

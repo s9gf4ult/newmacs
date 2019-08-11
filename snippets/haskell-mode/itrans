@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: itrans
+# key: itrans
+# --
+import Control.Monad.Trans.Class

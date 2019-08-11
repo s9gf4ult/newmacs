@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: icme
+# key: icme
+# --
+import Control.Monad.Except

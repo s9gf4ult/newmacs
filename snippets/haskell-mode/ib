@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ib
+# key: ib
+# --
+import Data.ByteString as B

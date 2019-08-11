@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: enumtype
+# key: enumtype
+# --
+CREATE TYPE ${1:b2b}.${2:enum_name} AS ENUM
+  ( '$0', ) ;

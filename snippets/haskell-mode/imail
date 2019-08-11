@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: imail
+# key: imail
+# --
+import Text.Email.Validate

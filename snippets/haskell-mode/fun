@@ -1,0 +1,5 @@
+# key: fun
+# name: fun
+# --
+${1:fname} :: $0
+$1 = fixme "$1 not implemented"

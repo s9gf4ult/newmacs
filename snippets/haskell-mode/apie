@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: apie
+# key: apie
+# --
+instance APIException $0 where
+  toAPIError = applictionError

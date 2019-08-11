@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ine
+# key: ine
+# --
+import Data.List.NonEmpty as NE

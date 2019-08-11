@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ishake
+# key: ishake
+# --
+import Text.Shakespeare.Text

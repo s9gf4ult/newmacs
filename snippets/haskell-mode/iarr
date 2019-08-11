@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: iarr
+# key: iarr
+# --
+import Control.Arrow

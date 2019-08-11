@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ireader
+# key: ireader
+# --
+import Control.Monad.Trans.Reader

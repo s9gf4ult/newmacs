@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ice
+# key: ice
+# --
+import Control.Exception

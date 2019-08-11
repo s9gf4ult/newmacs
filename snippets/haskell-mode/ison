@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ison
+# key: ison
+# --
+import Data.Aeson

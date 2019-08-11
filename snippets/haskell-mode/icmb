@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: icmb
+# key: icmb
+# --
+import Control.Monad.Base

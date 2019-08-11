@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: idef
+# key: idef
+# --
+import Data.Default

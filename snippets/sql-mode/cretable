@@ -1,0 +1,12 @@
+# key: cretable
+# name: cretable
+# --
+CREATE TABLE ${1:b2b}.${2:table_name} (
+  id                 uuid PRIMARY KEY DEFAULT uuid_generate_v4(),
+  created_at         timestamp with time zone DEFAULT NOW() NOT NULL,
+  updated_at         timestamp with time zone,
+);
+
+CREATE TRIGGER $2_updated_at BEFORE INSERT OR UPDATE
+  ON $1.$2 FOR EACH ROW
+  EXECUTE PROCEDURE $1.set_updated_at();

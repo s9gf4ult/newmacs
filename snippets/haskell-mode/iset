@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: iset
+# key: iset
+# --
+import Data.Set as S

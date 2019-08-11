@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: efun
+# key: efun
+# --
+${1:functionName} :: ${2:type}
+$1 = error "FIXME: $1 not implemented" $0

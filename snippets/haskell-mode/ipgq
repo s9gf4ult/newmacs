@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ipgq
+# key: ipgq
+# --
+import Database.PostgreSQL.Query

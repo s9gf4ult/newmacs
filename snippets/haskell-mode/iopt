@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: iopt
+# key: iopt
+# --
+import Options.Applicative$0

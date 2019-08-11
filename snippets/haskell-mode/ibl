@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ibl
+# key: ibl
+# --
+import Data.ByteString.Lazy as BL

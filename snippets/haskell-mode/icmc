@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: icmc
+# key: icmc
+# --
+import Control.Monad.Catch
