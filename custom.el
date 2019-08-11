@@ -19,6 +19,7 @@
  '(display-buffer-reuse-frames t)
  '(global-hl-line-mode nil)
  '(initial-buffer-choice t)
+ '(kill-ring-max 600)
  '(mouse-yank-at-point t)
  '(recentf-max-saved-items 1000)
  '(scroll-bar-mode nil)
