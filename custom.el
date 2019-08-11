@@ -14,7 +14,7 @@
       (reusable-frames . t))
      ("\\*NeoTree\\*" ignore
       (nil))
-     (".*" display-buffer-same-window
+     (".*" display-buffer-reuse-window
       (reusable-frames . t)))))
  '(display-buffer-reuse-frames t)
  '(global-hl-line-mode nil)
