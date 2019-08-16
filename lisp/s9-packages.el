@@ -224,6 +224,10 @@
   :mode "Dockerfile"
   )
 
+(use-package markdown-mode
+  :mode "\\.md\\'"
+  )
+
 (use-package s9-org
   :bind (("C-c b" . org-switchb)
 	 ("C-c c" . org-capture)
