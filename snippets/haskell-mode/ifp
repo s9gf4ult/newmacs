@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ifp
+# key: ifp
+# --
+import Filesystem.Path
