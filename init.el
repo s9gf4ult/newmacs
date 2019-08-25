@@ -21,3 +21,4 @@
 	(find-file-noselect f))
 
 (load custom-file)
+(defalias 'yes-or-no-p 'y-or-n-p)

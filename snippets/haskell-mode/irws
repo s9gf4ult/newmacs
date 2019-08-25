@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: irws
+# key: irws
+# --
+import Control.Monad.Trans.RWS.Strict
