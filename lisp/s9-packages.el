@@ -80,6 +80,8 @@
  (magit-log-margin (quote (t "%Y-%m-%d %H:%M " magit-log-margin-width t 18)))
  :config
  (magit-auto-revert-mode 1)
+ (require 'magit-gitflow)
+ (add-hook 'magit-mode-hook 'turn-on-magit-gitflow)
  )
 
 (use-package smartparens
