@@ -17,8 +17,10 @@
      (".*" display-buffer-reuse-window
       (reusable-frames . t)))))
  '(display-buffer-reuse-frames t)
+ '(flyspell-auto-correct-binding [ignore])
  '(global-hl-line-mode nil)
  '(initial-buffer-choice t)
+ '(ispell-program-name "hunspell")
  '(kill-ring-max 600)
  '(make-backup-files nil)
  '(mouse-yank-at-point t)

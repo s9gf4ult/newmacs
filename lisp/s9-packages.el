@@ -101,7 +101,10 @@
   :custom-face
   (diff-hl-change ((t (:background "deep sky blue" :foreground "blue3"))))
   (diff-hl-delete ((t (:inherit diff-removed :background "firebrick" :foreground "red3"))))
-  (diff-hl-insert ((t (:inherit diff-added :background "sea green" :foreground "green4")))))
+  (diff-hl-insert ((t (:inherit diff-added :background "sea green" :foreground "green4"))))
+  :config
+  (require 'flycheck))
+
 
 (use-package which-key
   :config
@@ -129,7 +132,9 @@
          ("C-x C-f" . helm-find-files)
 	 ("<f7>" . helm-mini)
 	 ("M-." . helm-etags-select)
-	 ))
+	 )
+  :custom ((helm-etags-execute-action-at-once-if-one nil)))
+
 
 (use-package helm-config
   :config

@@ -144,6 +144,7 @@
   (smartparens-mode 1)
   (sp-pair "'" nil :actions :rem)
   (add-to-list 'write-file-functions 'delete-trailing-whitespace)
+  (flyspell-prog-mode)
   )
 
 (provide 's9-haskell)
