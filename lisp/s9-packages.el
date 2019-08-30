@@ -103,7 +103,8 @@
   (diff-hl-delete ((t (:inherit diff-removed :background "firebrick" :foreground "red3"))))
   (diff-hl-insert ((t (:inherit diff-added :background "sea green" :foreground "green4"))))
   :config
-  (require 'flycheck))
+  (require 'flycheck)
+  :hook (magit-post-refresh-hook . diff-hl-magit-post-refresh))
 
 
 (use-package which-key

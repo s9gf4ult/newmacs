@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: istack
+# key: istack
+# --
+import GHC.Stack$0
