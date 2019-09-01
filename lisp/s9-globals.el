@@ -38,7 +38,7 @@
 (global-set-key (kbd "C-c j") 'avy-goto-word-1)
 (global-set-key (kbd "C-c l") 'locate-key-binding)
 (global-set-key (kbd "M-*") 'pop-tag-mark)
-
+(global-set-key (kbd "C-x \\") 'align-regexp)
 
 (global-set-key (kbd "C-x x") 'first-error)
 

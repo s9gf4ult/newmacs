@@ -97,13 +97,12 @@
 
 (use-package diff-hl
   :config
+  (require 'flycheck)
   (global-diff-hl-mode)
   :custom-face
   (diff-hl-change ((t (:background "deep sky blue" :foreground "blue3"))))
   (diff-hl-delete ((t (:inherit diff-removed :background "firebrick" :foreground "red3"))))
   (diff-hl-insert ((t (:inherit diff-added :background "sea green" :foreground "green4"))))
-  :config
-  (require 'flycheck)
   :hook (magit-post-refresh-hook . diff-hl-magit-post-refresh))
 
 
@@ -120,7 +119,8 @@
    ("C-c C" . crux-find-user-custom-file)
    ))
 
-(use-package yasnippet)
+(use-package yasnippet
+  :custom ((yas-global-mode t)))
 
 ;;;;;;;;;;;
 ;; helm  ;;
