@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: inat
+# key: inat
+# --
+import GHC.Natural

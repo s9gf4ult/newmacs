@@ -78,10 +78,10 @@
    (quote
     ("--stat" "--no-ext-diff" "--diff-algorithm=histogram")))
  (magit-log-margin (quote (t "%Y-%m-%d %H:%M " magit-log-margin-width t 18)))
+ :hook (magit-mode . turn-on-magit-gitflow)
  :config
  (magit-auto-revert-mode 1)
  (require 'magit-gitflow)
- (add-hook 'magit-mode-hook 'turn-on-magit-gitflow)
  )
 
 (use-package smartparens
@@ -103,8 +103,9 @@
   (diff-hl-change ((t (:background "deep sky blue" :foreground "blue3"))))
   (diff-hl-delete ((t (:inherit diff-removed :background "firebrick" :foreground "red3"))))
   (diff-hl-insert ((t (:inherit diff-added :background "sea green" :foreground "green4"))))
-  :hook (magit-post-refresh-hook . diff-hl-magit-post-refresh))
-
+  :hook (magit-post-refresh . diff-hl-magit-post-refresh)
+  :demand t
+  )
 
 (use-package which-key
   :config
@@ -298,7 +299,7 @@
 	      ("~/pers/projects/haskell/haskell.org" :level . 1)
 	      ("~/pers/projects/credit/credit.org" :level . 1))))
 	   (org-reverse-note-order t))
-  :hook (org-mode-hook . s9g-org-hook)
+  :hook ((org-mode . s9g-org-hook))
   :demand t
   )
 
@@ -308,7 +309,7 @@
   :config
   (add-to-list 'tramp-remote-path 'tramp-own-remote-path))
 
-(use-package company :ensure t)
+(use-package company :demand t)
 
 (provide 's9-packages)
 ;;; s9-packages.el ends here

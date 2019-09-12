@@ -17,8 +17,8 @@
 (load "s9-globals")
 (load "s9-tune")
 
-(dolist (f (directory-files-recursively "~/pers/projects" "\.org$"))
-	(find-file-noselect f))
-
 (load custom-file)
 (defalias 'yes-or-no-p 'y-or-n-p)
+
+(dolist (f (directory-files-recursively "~/pers/projects" "\.org$"))
+	(find-file-noselect f))
