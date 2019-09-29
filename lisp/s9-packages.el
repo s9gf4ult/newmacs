@@ -196,7 +196,10 @@
   :mode ("\\.yaml\\'" "\\.yml\\'"))
 
 (use-package web-mode
-  :mode ("\\.html\\'" "\\.php\\'"))
+  :mode ("\\.html\\'" "\\.php\\'")
+  :custom-face
+  (web-mode-html-tag-face ((t (:foreground "blue"))))
+  )
 
 (use-package systemd
   :mode "\\.service\\'")
@@ -235,7 +238,22 @@
 
 (use-package markdown-mode
   :mode "\\.md\\'"
-  )
+  :custom
+  ((markdown-code-lang-modes
+    (("ocaml" . tuareg-mode)
+     ("elisp" . emacs-lisp-mode)
+     ("ditaa" . artist-mode)
+     ("asymptote" . asy-mode)
+     ("dot" . fundamental-mode)
+     ("sqlite" . sql-mode)
+     ("calc" . fundamental-mode)
+     ("C" . c-mode)
+     ("cpp" . c++-mode)
+     ("C++" . c++-mode)
+     ("screen" . shell-script-mode)
+     ("shell" . sh-mode)
+     ("bash" . sh-mode)
+     ("xml" . web-mode)))))
 
 (use-package s9-org
   :bind (("C-c b" . org-switchb)

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: icoco
+# key: icoco
+# --
+import Control.Comonad
