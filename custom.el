@@ -6,6 +6,7 @@
  '(before-save-hook (quote (delete-trailing-whitespace)))
  '(blink-cursor-mode nil)
  '(column-number-mode t)
+ '(confirm-kill-emacs (quote yes-or-no-p))
  '(display-buffer-alist
    (quote
     (("\\*haskell-compilation\\*" display-buffer-reuse-window

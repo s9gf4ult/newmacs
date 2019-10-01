@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: nfdi
+# key: nfdi
+# --
+instance NFData $0
