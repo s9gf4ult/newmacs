@@ -24,6 +24,7 @@
  '(kill-ring-max 600)
  '(make-backup-files nil)
  '(mouse-yank-at-point t)
+ '(nix-indent-function (quote nix-indent-line))
  '(recentf-max-saved-items 1000)
  '(scroll-bar-mode nil)
  '(tool-bar-mode nil))
