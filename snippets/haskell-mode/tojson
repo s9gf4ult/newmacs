@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: tojson
+# key: tojson
+# --
+instance ToJSON $1 where
+  toJSON = $0

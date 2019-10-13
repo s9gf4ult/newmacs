@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: logitem
+# key: logitem
+# --
+instance LogItem $1 where
+  payloadKeys _verbosity _ = AllKeys
