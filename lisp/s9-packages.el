@@ -167,10 +167,13 @@
 
 
 (use-package haskell-snippets
-  :after haskell-mode)
+  :after haskell-mode
+  :config
+  (yas-reload-all)
+  )
 
 (use-package shakespeare-mode
-  :mode "\\.hamlet\\'")
+  :mode (("\\.hamlet\\'" . shakespeare-hamlet-mode)))
 
 (use-package s9-haskell
   :mode (("\\.cabal\\'" . haskell-cabal-mode)
