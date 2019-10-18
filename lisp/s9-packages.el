@@ -202,6 +202,9 @@
   :mode ("\\.html\\'" "\\.php\\'")
   :custom-face
   (web-mode-html-tag-face ((t (:foreground "blue"))))
+  :custom
+  (web-mode-markup-indent-offset 2)
+  (web-mode-code-indent-offset 2)
   )
 
 (use-package systemd

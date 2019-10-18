@@ -1,0 +1,35 @@
+# -*- mode: snippet -*-
+# name: ext
+# key: ext
+# expand-env: ((yas-indent-line 'fixed))
+# --
+default-extensions:  ConstraintKinds
+		   , DataKinds
+		   , DeriveFoldable
+		   , DeriveFunctor
+		   , DeriveGeneric
+		   , DeriveTraversable
+		   , DuplicateRecordFields
+		   , FlexibleContexts
+		   , FlexibleInstances
+		   , FunctionalDependencies
+		   , GADTs
+		   , GeneralizedNewtypeDeriving
+		   , LambdaCase
+		   , MultiParamTypeClasses
+		   , MultiWayIf
+		   , NumDecimals
+		   , OverloadedStrings
+		   , PolyKinds
+		   , QuasiQuotes
+		   , RankNTypes
+		   , RecordWildCards
+		   , ScopedTypeVariables
+		   , StandaloneDeriving
+		   , TemplateHaskell
+		   , TupleSections
+		   , TypeApplications
+		   , TypeFamilies
+		   , TypeOperators
+		   , UndecidableInstances
+		   , ViewPatterns

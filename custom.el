@@ -20,6 +20,7 @@
  '(display-buffer-reuse-frames t)
  '(flyspell-auto-correct-binding [ignore])
  '(global-hl-line-mode nil)
+ '(indent-tabs-mode nil)
  '(initial-buffer-choice t)
  '(ispell-program-name "hunspell")
  '(kill-ring-max 600)
@@ -28,6 +29,7 @@
  '(nix-indent-function (quote nix-indent-line))
  '(recentf-max-saved-items 1000)
  '(scroll-bar-mode nil)
+ '(standard-indent 2)
  '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
