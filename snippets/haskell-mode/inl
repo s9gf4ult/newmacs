@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: inl
+# key: inl
+# --
+{-# INLINE $1 #-}$0
