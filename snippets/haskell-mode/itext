@@ -2,4 +2,4 @@
 # name: itext
 # key: itext
 # --
-import Data.Text as T
+import ${1:qualified }Data.Text as T$0

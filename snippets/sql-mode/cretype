@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: cretype
+# key: cretype
+# expand-env: ((yas-indent-line 'fixed))
+# --
+CREATE TYPE ${1:b2b.}${2:type_name}
+  AS ENUM (
+    '${3:first_value}',
+    '${4:second_value}',
+    $0
+  );

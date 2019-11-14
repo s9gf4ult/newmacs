@@ -29,6 +29,7 @@
  '(nix-indent-function (quote nix-indent-line))
  '(recentf-max-saved-items 1000)
  '(scroll-bar-mode nil)
+ '(sh-basic-offset 2)
  '(standard-indent 2)
  '(tool-bar-mode nil))
 (custom-set-faces

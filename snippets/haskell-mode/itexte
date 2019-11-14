@@ -2,4 +2,4 @@
 # name: itexte
 # key: itexte
 # --
-import Data.Text.Encoding as T
+import ${1:qualified }Data.Text.Encoding as T$0

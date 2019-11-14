@@ -1,5 +1,6 @@
 # key: cretable
 # name: cretable
+# expand-env: ((yas-indent-line 'fixed))
 # --
 CREATE TABLE ${1:b2b}.${2:table_name} (
   id                 uuid PRIMARY KEY DEFAULT uuid_generate_v4(),

@@ -2,4 +2,4 @@
 # name: igen
 # key: igen
 # --
-import GHC.Generics (Generic)
+import GHC.Generics (Generic)$0

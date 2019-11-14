@@ -1,0 +1,4 @@
+# key: iuuid
+# name: iuuid
+# --
+import ${1:qualified }Data.UUID$0

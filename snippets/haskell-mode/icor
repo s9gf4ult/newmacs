@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: icor
+# key: icor
+# --
+import Data.Coerce$0

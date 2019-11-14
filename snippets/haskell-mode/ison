@@ -2,4 +2,4 @@
 # name: ison
 # key: ison
 # --
-import Data.Aeson
+import ${1:qualified }Data.Aeson$0
