@@ -1,0 +1,8 @@
+# key: rec
+# name: rec
+# expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
+# --
+data ${1:RecName} = $1
+  { ${4:field} :: ${5: Type}
+  , ${6:field} :: ${7: Type}$0
+  }${2: deriving (${3:Eq, Ord, Show, Generic})}

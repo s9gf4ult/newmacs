@@ -2,5 +2,5 @@
 # name: row
 # key: row
 # --
-("${1:col}", mkValue $ ${2:var} ^. field @"$1"),
+("${1:col}", mkValue $ ${2:var} ^. field @"$1")
 $0

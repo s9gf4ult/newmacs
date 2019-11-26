@@ -335,5 +335,10 @@
 
 (use-package company :demand t)
 
+(use-package smooth-scroll
+  :demand 1
+  :config
+  (smooth-scroll-mode 1))
+
 (provide 's9-packages)
 ;;; s9-packages.el ends here
