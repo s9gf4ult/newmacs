@@ -1,0 +1,5 @@
+# key: vv
+# name: vv
+# expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
+# --
+${1:field} <- view $ field @"$1"$0

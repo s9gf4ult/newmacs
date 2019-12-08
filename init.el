@@ -18,7 +18,6 @@
 (load "s9-tune")
 
 (load custom-file)
-(defalias 'yes-or-no-p 'y-or-n-p)
 
 (dolist (f (directory-files-recursively "~/pers/projects" "\.org$"))
 	(find-file-noselect f))
