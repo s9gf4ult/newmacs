@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: drvgen
+# key: drvgen
+# --
+deriving instance Generic ${1:Type}

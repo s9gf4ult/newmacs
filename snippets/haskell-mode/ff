@@ -2,4 +2,4 @@
 # name: ff
 # key: ff
 # --
-field @"$0"
+field @"${1}"$0

@@ -33,7 +33,7 @@
  (eval `(define-key key-translation-map (kbd ,(concat "C-M-" (string from))) (kbd ,(concat "C-M-" (string to))))))
 
 (custom-set-faces
- '(default ((t (:inherit nil :stipple nil :background "#d4d4d4" :foreground "#2c2c2c" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :foundry "SRC" :family "Hack")))))
+ '(default ((t (:inherit t  :height 110 :width normal :family "Hack")))))
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
