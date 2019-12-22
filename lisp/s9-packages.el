@@ -92,7 +92,6 @@
 	 ("<M-up>" . sp-splice-sexp-killing-backward)
 	 )
   :config
-  (smartparens-global-mode)
   (show-smartparens-global-mode))
 
 (use-package diff-hl
