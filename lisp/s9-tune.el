@@ -34,7 +34,7 @@
 
 (custom-set-faces
  '(default ((t (:inherit t  :height 110 :width normal :family "Hack"))))
- '(region ((t (:background "gray63")))))
+ '(region ((t (:background "gray93")))))
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
