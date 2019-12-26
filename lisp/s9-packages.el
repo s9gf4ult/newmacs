@@ -247,7 +247,16 @@
 
 (use-package nix-mode
   :mode "\\.nix\\'"
-  )
+  :hook
+  (nix-mode . (lambda () (interactive)
+                (when (< (buffer-size) 500000) ; sm is slow on huge nix buffers
+                  (smartparens-mode 1)))))
+
+(use-package elisp-mode
+  :hook
+  (emacs-lisp-mode
+   . (lambda () (interactive)
+       (smartparens-mode 1))))
 
 (use-package es-mode
   :mode "\\.es\\'"
