@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: varcheck
+# key: varcheck
+# --
+if [ -z "$${1:VARNAME}" ]; then
+  die 'supply $1 variable!'
+fi$0

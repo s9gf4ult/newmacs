@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: a
+# key: a
+# --
+<a href="${1:href}" class="${2:class}">
+  ${3:name}
+</a>
