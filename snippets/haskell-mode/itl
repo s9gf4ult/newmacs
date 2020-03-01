@@ -2,4 +2,4 @@
 # name: itl
 # key: itl
 # --
-import Data.Text.Lazy as TL
+import ${1:qualified }Data.Text.Lazy as TL

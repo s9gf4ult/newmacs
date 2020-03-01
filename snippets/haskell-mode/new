@@ -6,4 +6,4 @@
 
 newtype ${1:Type} = $1
   { un$1 :: ${2:Int}
-  } deriving (Eq$0)
+  } deriving (Eq, Ord, Show$0)
