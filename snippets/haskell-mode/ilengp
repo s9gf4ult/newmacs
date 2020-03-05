@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ilengp
+# key: ilengp
+# --
+import Data.Generics.Product
