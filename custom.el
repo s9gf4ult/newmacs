@@ -5,6 +5,7 @@
  ;; If there is more than one, they won't work right.
  '(before-save-hook (quote (delete-trailing-whitespace)))
  '(blink-cursor-mode nil)
+ '(case-fold-search nil)
  '(column-number-mode t)
  '(confirm-kill-emacs (quote yes-or-no-p))
  '(create-lockfiles nil)
