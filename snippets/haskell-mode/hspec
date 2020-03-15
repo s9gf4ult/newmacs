@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: hspec
+# key: hspec
+# --
+{-# OPTIONS_GHC -F -pgmF hspec-discover #-}

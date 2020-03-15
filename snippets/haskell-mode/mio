@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: mio
+# key: mio
+# --
+import Control.Monad.IO.Class$0
