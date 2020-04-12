@@ -1,0 +1,6 @@
+# key: tableName
+# name: tableName
+# expand-env: ((yas-indent-line 'fixed))
+# --
+${1:tableName} :: FN
+$1 = tableName $ Proxy @${2:TableData}$0

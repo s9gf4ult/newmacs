@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: iapp
+# key: iapp
+# --
+import Control.Applicative

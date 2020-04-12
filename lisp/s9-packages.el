@@ -240,9 +240,10 @@
   :mode "\\.gitignore\\'"
   )
 
-(use-package pg-init ; proof-general
+(use-package proof-site ; proof-general
   :mode (("\\.v\\'" . coq-mode))
   :config ((proof-three-window-mode-policy (quote vertical)))
+  :demand t
   )
 
 (use-package nix-mode

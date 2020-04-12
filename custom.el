@@ -3,6 +3,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(backup-directory-alist (quote ((".*" concat user-emacs-directory "backups"))))
  '(before-save-hook (quote (delete-trailing-whitespace)))
  '(blink-cursor-mode nil)
  '(case-fold-search nil)
@@ -34,7 +35,7 @@
  '(mouse-yank-at-point t)
  '(nix-indent-function (quote nix-indent-line))
  '(recentf-max-menu-items 100)
- '(recentf-max-saved-items 1000)
+ '(recentf-max-saved-items 10000)
  '(scroll-bar-mode nil)
  '(scroll-conservatively 1000)
  '(scroll-margin 0)

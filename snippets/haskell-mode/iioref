@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: iioref
+# key: iioref
+# --
+import Data.IORef

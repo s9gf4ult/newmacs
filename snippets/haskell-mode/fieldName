@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: fieldName
+# key: fieldName
+# expand-env: ((yas-indent-line 'fixed))
+# --
+${1:tableColumns} :: NonEmpty FN
+$1 = NE.fromList $ fieldNames (Proxy @${2:TableData})$0
