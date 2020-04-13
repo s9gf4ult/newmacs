@@ -242,7 +242,6 @@
 
 (use-package proof-site ; proof-general
   :mode (("\\.v\\'" . coq-mode))
-  :config ((proof-three-window-mode-policy (quote vertical)))
   :demand t
   )
 
