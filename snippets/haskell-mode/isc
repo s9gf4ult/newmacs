@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: isc
+# key: isc
+# expand-env: ((yas-indent-line 'fixed))
+# --
+import Data.Scientific
