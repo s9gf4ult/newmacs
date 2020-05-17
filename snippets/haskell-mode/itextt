@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: itextt
+# key: itextt
+# expand-env: ((yas-indent-line 'fixed))
+# --
+import Data.Text (Text)

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: instj
+# key: instj
+# expand-env: ((yas-indent-line 'fixed))
+# --
+instance ToJSON ${1:Type}
+
+instance FromJSON $1

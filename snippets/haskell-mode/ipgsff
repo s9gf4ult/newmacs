@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: ipgsff
+# key: ipgsff
+# expand-env: ((yas-indent-line 'fixed))
+# --
+import Database.PostgreSQL.Simple.FromField
+import Database.PostgreSQL.Simple.ToField

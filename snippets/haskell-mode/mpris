@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: mpris
+# key: mpris
+# expand-env: ((yas-indent-line 'fixed))
+# --
+makePrisms ''$0
