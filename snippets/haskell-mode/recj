@@ -1,0 +1,10 @@
+# key: recj
+# name: recj
+# expand-env: ((yas-indent-line 'fixed))
+# --
+data ${1:RecName} = $1
+  { ${2:field} :: ${3:Type}$0
+  } deriving (Eq, Ord, Show, Generic)
+
+instance ToJSON $1
+instance FromJSON $1

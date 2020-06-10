@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: sumj
+# key: sumj
+# expand-env: ((yas-indent-line 'fixed))
+# --
+data ${1: Type}
+  = ${2:Con1}
+  | $0
+  deriving (Eq, Ord, Show, Generic)
+
+instance ToJSON $1
+instance FromJSON $1
