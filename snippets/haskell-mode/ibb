@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: ibb
+# key: ibb
+# expand-env: ((yas-indent-line 'fixed))
+# --
+import Data.ByteString (ByteString$0)

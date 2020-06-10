@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: efunf
+# key: efunf
+# expand-env: ((yas-indent-line 'fixed))
+# --
+${1:functionName} :: ${2:type}
+$1 = $0fixme "$1 not implemented"
