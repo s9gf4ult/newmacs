@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: jsong
+# key: jsong
+# expand-env: ((yas-indent-line 'fixed))
+# --
+instance ToJSON ${1:Type} where
+  toJSON = genericToJSON $ defaultOptions
+    { ${2:fieldLabelModifier = defaultFieldLabelModifier} }
+
+instance FromJSON $1 where
+  parseJSON = genericParseJSON $ defaultOptions
+    { $2 }

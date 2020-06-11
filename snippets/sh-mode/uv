@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: uv
+# key: uv
+# expand-env: ((yas-indent-line 'fixed))
+# --
+--${1:var} "\${${1:$(upcase (s-snake-case yas-text))}$0}" \

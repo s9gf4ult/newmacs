@@ -1,0 +1,5 @@
+# key: dv
+# name: dv
+# expand-env: ((yas-indent-line (quote fixed)))
+# --
+${1:VAR}="\${$1:-${2:Default}}"$0

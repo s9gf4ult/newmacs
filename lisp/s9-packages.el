@@ -41,6 +41,9 @@
   (neo-smart-open t)
  )
 
+;; For snippets and stuff
+(use-package s)
+
 (use-package windmove
   :bind (("<S-up>" . windmove-up)
 	 ("<S-down>" . windmove-down)

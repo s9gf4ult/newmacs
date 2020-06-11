@@ -8,5 +8,10 @@ data ${1: Type}
   | $0
   deriving (Eq, Ord, Show, Generic)
 
-instance ToJSON $1
-instance FromJSON $1
+instance ToJSON $1 where
+  toJSON = genericToJSON $ defaultOptions
+    { constructorTagModifier = ${3:toUnderscore} }
+
+instance FromJSON $1 where
+  parseJSON = genericParseJSON $ defaultOptions
+    { constructorTagModifier = $3 }

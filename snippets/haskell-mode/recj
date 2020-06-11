@@ -6,5 +6,10 @@ data ${1:RecName} = $1
   { ${2:field} :: ${3:Type}$0
   } deriving (Eq, Ord, Show, Generic)
 
-instance ToJSON $1
-instance FromJSON $1
+instance ToJSON $1 where
+  toJSON = genericToJSON $ defaultOptions
+    { fieldLabelModifier = ${4:defaultFieldLabelModifier} }
+
+instance FromJSON $1 where
+  parseJSON = genericParseJSON $ defaultOptions
+    { fieldLabelModifier = $4 }

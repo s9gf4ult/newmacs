@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: isont
+# key: isont
+# --
+import Data.Aeson.TH$0
