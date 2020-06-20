@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: nojs
+# key: nojs
+# expand-env: ((yas-indent-line 'fixed))
+# --
+if !impl(ghcjs)
+  $0

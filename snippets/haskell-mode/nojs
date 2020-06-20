@@ -1,0 +1,7 @@
+# key: nojs
+# name: nojs
+# expand-env: ((yas-indent-line 'fixed))
+# --
+#ifndef ghcjs_HOST_OS
+$0
+#endif

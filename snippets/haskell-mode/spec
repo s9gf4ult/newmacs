@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: spec
+# key: spec
+# expand-env: ((yas-indent-line 'fixed))
+# --
+spec :: Spec
+spec = do
+  $0

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: isonf
+# key: isonf
+# expand-env: ((yas-indent-line 'fixed))
+# --
+import Data.Aeson.Inflections
