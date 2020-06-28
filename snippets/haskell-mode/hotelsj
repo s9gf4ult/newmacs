@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: hotelsj
+# key: hotelsj
+# --
+instance ToJSON ${1:Type} where
+  toJSON = genericToJSON hotelsAesonOpts$0
+instance FromJSON $1 where
+  parseJSON = genericParseJSON hotelsAesonOpts
