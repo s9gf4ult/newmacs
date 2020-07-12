@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: tname
+# key: tname
+# --
+type instance Name ${1:Type} = "${2:name}"

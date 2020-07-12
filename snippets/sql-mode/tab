@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: tab
+# key: tab
+# expand-env: ((yas-indent-line 'fixed))
+# --
+CREATE TABLE ${1:table} (
+  id                 uuid PRIMARY KEY DEFAULT uuid_generate_v4(),$0
+  created_at         timestamp with time zone DEFAULT NOW() NOT NULL,
+);

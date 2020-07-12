@@ -1,0 +1,7 @@
+# key: newrepr
+# name: newrepr
+# expand-env: ((yas-indent-line (quote fixed)))
+# --
+newtype ${1:Repr} = $1
+  { un$1 :: ${2:Val}
+  } deriving (Eq, Ord, Show, Generic, Arbitrary, Binary)

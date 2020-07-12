@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: instcon
+# key: instcon
+# expand-env: ((yas-indent-line 'fixed))
+# --
+instance Constructor ${1:Con} where
+  type Result $1 = ${2:Res}
+  type Args $1 = '[ ${3:Args} ]
+  type EvalEnv $1 = '[ ${4:Env} ]
+  evalConstructor _ = fixme "evalConstructor"
+  prettyConstructor _ = fixme "prettyConstructor"

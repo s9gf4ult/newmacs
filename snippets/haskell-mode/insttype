@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: insttype
+# key: insttype
+# expand-env: ((yas-indent-line 'fixed))
+# --
+instance Type ${1:Type} where
+  type Repr $1 = ${2:Repr}
+  type DescEnv $1 = '[ [$2] ]
+  literalDesc _ = textListEnumDesc . coerce
+  prettyRepr _ = coerce
+  toAPIRepr _ = APIReprString  . coerce
+  fromAPIRepr _ = preview $ _APIReprString . coerced

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: ifail
+# key: ifail
+# expand-env: ((yas-indent-line 'fixed))
+# --
+import Control.Monad.Fail
