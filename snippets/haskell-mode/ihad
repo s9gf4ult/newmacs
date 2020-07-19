@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: ihad
+# key: ihad
+# expand-env: ((yas-indent-line 'fixed))
+# --
+import Web.HttpApiData

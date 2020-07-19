@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: ip
+# key: ip
+# expand-env: ((yas-indent-line 'fixed))
+# --
+import ${1:qualified} Prelude as P
