@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: showsval
+# key: showsval
+# expand-env: ((yas-indent-line 'fixed))
+# --
+instance Show (StructureValue ${1:Kind}) where
+  show (${2:Con} s) = "($2 " ++ show s ++ ")"

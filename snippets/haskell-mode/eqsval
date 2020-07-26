@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: eqsval
+# key: eqsval
+# expand-env: ((yas-indent-line 'fixed))
+# --
+instance Eq (StructureValue ${1:Kind}) where
+  (${2:Const} a) == ($2 b) = $0a == b

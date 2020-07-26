@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: tolfromjson
+# key: tolfromjson
+# --
+instance FromJSON (StructureValue ${1:Kind}) where
+  parseJSON v = $0${2:Constr} <$> parseJSON v

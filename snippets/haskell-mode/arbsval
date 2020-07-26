@@ -1,0 +1,6 @@
+# key: arbsval
+# name: arbsval
+# expand-env: ((yas-indent-line (quote fixed)))
+# --
+instance Arbitrary (StructureValue ${1:Type}) where
+  arbitrary = ${2:Val} <\$> arbitrary

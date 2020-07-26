@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: tolstruct
+# key: tolstruct
+# expand-env: ((yas-indent-line 'fixed))
+# --
+instance Structural ${1:Type} where
+  type StructKind $1 = ${2:Kind}
+  toStructValue s = $0
+  fromStructValue =

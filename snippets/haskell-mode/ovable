@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: ovable
+# key: ovable
+# expand-env: ((yas-indent-line 'fixed))
+# --
+{-# OVERLAPPABLE #-}

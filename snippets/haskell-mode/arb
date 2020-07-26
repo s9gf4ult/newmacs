@@ -1,6 +1,7 @@
 # -*- mode: snippet -*-
 # name: arb
 # key: arb
+# expand-env: ((yas-indent-line 'fixed))
 # --
 instance Arbitrary $0 where
   arbitrary = genericArbitrary
