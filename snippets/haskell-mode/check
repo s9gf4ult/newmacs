@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: check
+# key: check
+# expand-env: ((yas-indent-line 'fixed))
+# --
+check (MoneyUSD ${1:Price}) $ Clause
+  { _cPredicate = $0
+  , _cFormula =
+  }
