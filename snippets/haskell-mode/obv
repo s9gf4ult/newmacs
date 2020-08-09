@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: obv
+# key: obv
+# expand-env: ((yas-indent-line 'fixed))
+# --
+instance (Obvious s1 s2) => Obvious ${1:T1} ${2:T2} where
+  obvious $0

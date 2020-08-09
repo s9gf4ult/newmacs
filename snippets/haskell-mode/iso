@@ -1,0 +1,6 @@
+# key: iso
+# name: iso
+# expand-env: ((yas-indent-line 'fixed))
+# --
+${1:isoName} :: Iso' ${2:Type1} ${3:Type2}
+$1 = iso coerce coerce

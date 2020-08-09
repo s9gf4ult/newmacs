@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ifixed
+# key: ifixed
+# --
+import Data.Fixed

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ichar
+# key: ichar
+# --
+import Data.Char
