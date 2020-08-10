@@ -123,16 +123,25 @@
       (funcall f (line-beginning-position) (line-end-position)))
     ))
 
+(defun s9g-haskell-cabal-open-file ()
+  (interactive)
+  (let*
+      ((cabal-file (haskell-cabal-find-file))
+       (cabal-dir (haskell-cabal-find-dir))
+       (package-file1 (concat cabal-dir "package.yaml"))
+       (package-file2 (concat cabal-dir "package.yml")))
+    (cond
+     ((file-exists-p package-file1) (find-file-other-window package-file1))
+     ((file-exists-p package-file2) (find-file-other-window package-file2))
+     ((file-exists-p cabal-file) (find-file-other-window cabal-file))
+ )))
+
 (defun s9g-haskell-mode-hook ()
   (yas-minor-mode 1)
   (local-set-key (kbd "<f5>") 's9g-haskell-compile)
   (local-set-key (kbd "<f6>") 's9g-haskell-compile-all)
   (local-set-key (kbd "<f12>") 'haskell-neotree-toggle-proj)
-  (local-set-key
-   (kbd "<f9>")
-   #'(lambda ()
-       (interactive)
-       (haskell-cabal-visit-file t)))
+  (local-set-key (kbd "<f9>") 's9g-haskell-cabal-open-file)
   (local-set-key (kbd "C-c s") 'haskell-sort-imports)
   (local-set-key (kbd "M-p") 'haskell-navigate-imports)
   (local-set-key (kbd "<S-return>") 'haskell-end-of-line-and-indent)
