@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: recc
+# key: recc
+# expand-env: ((yas-indent-line 'fixed))
+# --
+data ${1:RecName} = $1
+  { ${4:field} :: ${5:Type}
+  }${2: deriving (${3:Eq, Show, Generic})}

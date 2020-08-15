@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: gf
+# key: gf
+# expand-env: ((yas-indent-line 'fixed))
+# --
+getField @"${1:name}"$0
