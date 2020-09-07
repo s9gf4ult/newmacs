@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: inen
+# key: inen
+# expand-env: ((yas-indent-line 'fixed))
+# --
+import Data.List.NonEmpty (NonEmpty)

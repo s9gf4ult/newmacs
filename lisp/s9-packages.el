@@ -213,6 +213,9 @@
 ;; other modes ;;
 ;;;;;;;;;;;;;;;;;
 
+(use-package mustache-mode
+  :mode ("\\.mustache\\'"))
+
 (use-package yaml-mode
   :mode ("\\.yaml\\'" "\\.yml\\'"))
 
