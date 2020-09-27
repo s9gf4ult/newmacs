@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: dbf
+# key: dbf
+# expand-env: ((yas-indent-line 'fixed))
+# --
+, ("${1:$(s-snake-case yas-text)}", mkValue $ r ^. field @"${1:name}")

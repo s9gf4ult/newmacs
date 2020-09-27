@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: inil
+# key: inil
+# expand-env: ((yas-indent-line 'fixed))
+# --
+import Text.XML.Nillable
