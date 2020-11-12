@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: imapp
+# key: imapp
+# expand-env: ((yas-indent-line 'fixed))
+# --
+import Data.Map.Strict (Map)

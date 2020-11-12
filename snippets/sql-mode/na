@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: na
+# key: na
+# expand-env: ((yas-indent-line 'fixed))
+# --
+'${1:name}', ${2:g}.$1,
+$0

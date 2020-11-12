@@ -1,0 +1,6 @@
+# key: nn
+# name: nn
+# expand-env: ((yas-indent-line (quote fixed)))
+# --
+'${1:name}', $1,
+$0

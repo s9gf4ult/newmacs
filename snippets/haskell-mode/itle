@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: itle
+# key: itle
+# --
+import ${1:qualified }Data.Text.Lazy.Encoding as TL
