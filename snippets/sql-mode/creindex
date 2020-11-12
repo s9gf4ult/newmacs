@@ -1,6 +1,7 @@
 # -*- mode: snippet -*-
-# name: creindex
-# key: creindex
+# name: ind
+# key: ind
+# expand-env: ((yas-indent-line 'fixed))
 # --
-
-CREATE INDEX $0ON ${1:b2b}.${2:table}(${3:field});
+CREATE INDEX ${1:name} ON ${2:table}(${3:field}) ;
+$0
