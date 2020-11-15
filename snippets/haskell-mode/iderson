@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: iderson
+# key: iderson
+# expand-env: ((yas-indent-line 'fixed))
+# --
+import Deriving.Aeson.Stock

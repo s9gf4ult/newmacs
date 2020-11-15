@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: iuuidt
+# key: iuuidt
+# expand-env: ((yas-indent-line 'fixed))
+# --
+import Data.UUID.Types (UUID)

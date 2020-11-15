@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: derjson
+# key: derjson
+# expand-env: ((yas-indent-line 'fixed))
+# --
+deriving instance FromJSON ${1:Type}
+
+deriving instance ToJSON $1

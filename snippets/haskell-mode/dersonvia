@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: dersonvia
+# key: dersonvia
+# expand-env: ((yas-indent-line 'fixed))
+# --
+deriving (FromJSON, ToJSON) via ${1:Via} ${2:Wut}
