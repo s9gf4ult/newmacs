@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: hignore
+# key: hignore
+# expand-env: ((yas-indent-line 'fixed))
+# --
+{- HLINT ignore "${1:name}" -}$0

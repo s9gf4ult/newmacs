@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: cc
+# key: cc
+# --
+_Ctor @"${1:field}"$0

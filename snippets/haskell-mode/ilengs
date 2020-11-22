@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: ilengs
+# key: ilengs
+# expand-env: ((yas-indent-line 'fixed))
+# --
+import Data.Generics.Sum
