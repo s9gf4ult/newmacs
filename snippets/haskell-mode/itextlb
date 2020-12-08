@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: itextlb
+# key: itextlb
+# expand-env: ((yas-indent-line 'fixed))
+# --
+import Data.Text.Lazy.Builder

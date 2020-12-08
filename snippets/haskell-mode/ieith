@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: ieith
+# key: ieith
+# expand-env: ((yas-indent-line 'fixed))
+# --
+import Data.Either

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: lib
+# key: lib
+# expand-env: ((yas-indent-line 'fixed))
+# --
+library
+  build-depends:   base >=4.10 && <4.13
+  ghc-options:    -Wall
+  hs-source-dirs:  src
