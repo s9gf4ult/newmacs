@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: imic
+# key: imic
+# expand-env: ((yas-indent-line 'fixed))
+# --
+import Microlude

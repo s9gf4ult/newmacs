@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: ihas
+# key: ihas
+# expand-env: ((yas-indent-line 'fixed))
+# --
+import Control.Has

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: iclog
+# key: iclog
+# expand-env: ((yas-indent-line 'fixed))
+# --
+import Control.Logger
