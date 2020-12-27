@@ -191,6 +191,8 @@
   (haskell-process-args-stack-ghci (quote ("--ghci-options" "-ferror-spans")))
   (haskell-compile-ignore-cabal t)
   (haskell-stylish-on-save t)
+  (haskell-compiler-type 'stack)
+  (haskell-process-type 'stack-ghci)
   )
 
 ;;;;;;;;;;;
