@@ -219,7 +219,14 @@
   :mode ("\\.mustache\\'"))
 
 (use-package yaml-mode
-  :mode ("\\.yaml\\'" "\\.yml\\'"))
+  :mode ("\\.yaml\\'" "\\.yml\\'")
+  :hook
+  ((yaml-mode
+    . (lambda ()
+        (outline-minor-mode)
+        (define-key yaml-mode-map (kbd "TAB") 'outline-toggle-children)
+        (setq outline-regexp "^ *\\([A-Za-z0-9_-]*: *[>|]?$\\|-\\b\\)"))))
+  )
 
 (use-package web-mode
   :mode ("\\.html\\'" "\\.php\\'")
