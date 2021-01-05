@@ -42,6 +42,7 @@
  '(sh-basic-offset 2)
  '(standard-indent 2)
  '(tool-bar-mode nil)
+ '(woman-fill-frame t)
  '(yas-global-mode t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
