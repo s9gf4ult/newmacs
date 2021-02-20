@@ -23,6 +23,7 @@
       (reusable-frames . t))))
  '(display-buffer-reuse-frames t)
  '(enable-local-variables :all)
+ '(fill-column 80)
  '(flyspell-auto-correct-binding [ignore])
  '(global-hl-line-mode nil)
  '(helm-ff-file-name-history-use-recentf t)
