@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: fixmonoid
+# key: fixmonoid
+# expand-env: ((yas-indent-line 'fixed))
+# --
+instance Semigroup ${1:Type} where
+  (<>) = error "Not implemented"
+instance Monoid $1 where
+  mappend = (<>)
+  mempty = error "Not implemented"
