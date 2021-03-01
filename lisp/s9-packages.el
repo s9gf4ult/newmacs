@@ -381,3 +381,5 @@
 
 (provide 's9-packages)
 ;;; s9-packages.el ends here
+
+(require 'zoom-frm)
