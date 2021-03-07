@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: derinst
+# key: derinst
+# expand-env: ((yas-indent-line 'fixed))
+# --
+deriving instance ($0) => ${1:Clas} ${2:Type}

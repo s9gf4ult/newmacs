@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: monoidgen
+# key: monoidgen
+# expand-env: ((yas-indent-line 'fixed))
+# --
+instance Semigroup ${1:Type} where
+  (<>) = genericMappend
+instance Monoid $1 where
+  mappend = (<>)
+  mempty = genericMempty$0
