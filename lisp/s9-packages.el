@@ -300,6 +300,11 @@
       ("bash" . sh-mode)
       ("xml" . web-mode)))))
 
+(use-package org-roam
+  :custom ((org-roam-directory "~/pers/org-roam"))
+  :hook ((after-init org-roam-mode))
+  )
+
 (use-package s9-org
   :bind (("C-c b" . org-switchb)
 	 ("C-c c" . org-capture)
