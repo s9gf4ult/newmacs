@@ -300,10 +300,17 @@
       ("bash" . sh-mode)
       ("xml" . web-mode)))))
 
-(use-package org-roam
-  :custom ((org-roam-directory "~/pers/org-roam"))
-  :hook ((after-init org-roam-mode))
-  )
+(use-package neuron-mode
+  :custom
+  ((neuron-default-zettelkasten-directory "~/pers/neuron"))
+  :bind
+  (("C-c C-z" . neuron-new-zettel)
+   :map neuron-mode-map
+   ("C-c C-v" . neuron-create-and-insert-zettel-link)
+   ("<f5>" . (lambda () (interactive)
+               (save-some-buffers t)
+               (neuron-refresh)))
+   ))
 
 (use-package s9-org
   :bind (("C-c b" . org-switchb)
