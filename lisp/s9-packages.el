@@ -282,7 +282,6 @@
   )
 
 (use-package markdown-mode
-  :mode "\\.md\\'"
   :custom
   ((markdown-code-lang-modes
     '(("ocaml" . tuareg-mode)
@@ -301,6 +300,8 @@
       ("xml" . web-mode)))))
 
 (use-package neuron-mode
+  :requires markdown-mode
+  :ensure t
   :custom
   ((neuron-default-zettelkasten-directory "~/pers/neuron"))
   :bind

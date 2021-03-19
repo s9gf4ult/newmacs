@@ -30,7 +30,6 @@
 (global-set-key (kbd "C-j") 'join-line)
 (global-set-key (kbd "C-S-j") 'crux-top-join-line)
 (global-set-key (kbd "C-;") 'comment-dwim-line)
-(global-set-key (kbd "C-S-k") 'kill-line-or-region)
 (global-set-key (kbd "M-d") 'smart-delete-forward)
 
 (global-set-key (kbd "<C-tab>") #'s9g-indent-up)
@@ -39,6 +38,9 @@
 (global-set-key (kbd "C-c l") 'locate-key-binding)
 (global-set-key (kbd "M-*") 'pop-tag-mark)
 (global-set-key (kbd "C-x \\") 'align-regexp)
+
+(global-set-key (kbd "<M-S-up>") 'move-text-up)
+(global-set-key (kbd "<M-S-down>") 'move-text-down)
 
 (global-set-key (kbd "C-x x") 'first-error)
 
