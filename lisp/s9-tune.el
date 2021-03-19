@@ -33,7 +33,7 @@
  (eval `(define-key key-translation-map (kbd ,(concat "C-M-" (string from))) (kbd ,(concat "C-M-" (string to))))))
 
 (custom-set-faces
- '(default ((t (:inherit t  :height 125 :width normal :family "Hack"))))
+ '(default ((t (:inherit t  :height 150 :width normal :family "Hack"))))
  '(region ((t (:background "gray93")))))
 
 (defalias 'yes-or-no-p 'y-or-n-p)
