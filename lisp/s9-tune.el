@@ -32,9 +32,11 @@
  (eval `(define-key key-translation-map (kbd ,(concat "M-" (string from))) (kbd ,(concat "M-" (string to)))))
  (eval `(define-key key-translation-map (kbd ,(concat "C-M-" (string from))) (kbd ,(concat "C-M-" (string to))))))
 
+(load-theme 'solarized-dark t)
+
 (custom-set-faces
- '(default ((t (:inherit t  :height 150 :width normal :family "Hack"))))
- '(region ((t (:background "gray93")))))
+ '(default ((t (:inherit t  :height 140 :width normal :family "Hack"))))
+ )
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 

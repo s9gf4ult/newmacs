@@ -101,10 +101,6 @@
   :config
   (require 'flycheck)
   (global-diff-hl-mode)
-  :custom-face
-  (diff-hl-change ((t (:background "deep sky blue" :foreground "blue3"))))
-  (diff-hl-delete ((t (:inherit diff-removed :background "firebrick" :foreground "red3"))))
-  (diff-hl-insert ((t (:inherit diff-added :background "sea green" :foreground "green4"))))
   :hook (magit-post-refresh . diff-hl-magit-post-refresh)
   :demand t
   )
@@ -149,10 +145,7 @@
   :bind (:map helm-command-map
 	      ("g" . helm-do-ag)))
 
-(use-package helm-rg
-  :custom-face
-  (helm-rg-file-match-face ((t (:foreground "dark blue" :underline t))))
-  )
+(use-package helm-rg)
 
 (use-package projectile
   :config
@@ -230,8 +223,8 @@
 
 (use-package web-mode
   :mode ("\\.html\\'" "\\.php\\'")
-  :custom-face
-  (web-mode-html-tag-face ((t (:foreground "blue"))))
+  ;; :custom-face
+  ;; (web-mode-html-tag-face ((t (:foreground "blue"))))
   :custom
   (web-mode-markup-indent-offset 2)
   (web-mode-code-indent-offset 2)
@@ -257,6 +250,10 @@
 
 (use-package proof-site ; proof-general
   :mode (("\\.v\\'" . coq-mode))
+  :custom-face
+  (proof-locked-face
+   ((t
+     (:background "midnight blue" :extend t))))
   :demand t
   )
 
@@ -312,6 +309,8 @@
    ("<f5>" . (lambda () (interactive)
                (save-some-buffers t)
                (neuron-refresh)))
+   ("<C-return>" . neuron-follow-thing-at-point)
+   ("<return>" . markdown-enter-key)
    ))
 
 (use-package s9-org
