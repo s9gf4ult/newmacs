@@ -101,6 +101,10 @@
   :config
   (require 'flycheck)
   (global-diff-hl-mode)
+  :custom-face
+  (diff-hl-change ((t (:background "deep sky blue" :foreground "blue3"))))
+  (diff-hl-delete ((t (:inherit diff-removed :background "firebrick" :foreground "red3"))))
+  (diff-hl-insert ((t (:inherit diff-added :background "sea green" :foreground "green4"))))
   :hook (magit-post-refresh . diff-hl-magit-post-refresh)
   :demand t
   )
