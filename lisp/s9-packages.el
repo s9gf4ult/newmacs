@@ -234,6 +234,14 @@
   (web-mode-code-indent-offset 2)
   )
 
+(use-package rust-mode
+  :bind
+  (:map rust-mode-map
+        ("<f5>" . (lambda () (interactive)
+                    (save-some-buffers t)
+                    (rust-compile))))
+  )
+
 (use-package systemd
   :mode "\\.service\\'")
 

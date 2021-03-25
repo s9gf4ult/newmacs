@@ -35,7 +35,7 @@
 (load-theme 'solarized-dark t)
 
 (custom-set-faces
- '(default ((t (:inherit t  :height 140 :width normal :family "Hack"))))
+ '(default ((t (:inherit t  :height 140 :width normal :family "Liberation Mono"))))
  )
 
 (defalias 'yes-or-no-p 'y-or-n-p)
