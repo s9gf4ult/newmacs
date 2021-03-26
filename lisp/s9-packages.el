@@ -309,7 +309,7 @@
       ("xml" . web-mode))))
   :bind
   (:map markdown-mode-map
-        ("№" . "#")
+        ("№" . "#") ;; For russian layout
         ("<C-right>" . markdown-demote)
         ("<C-left>" . markdown-promote)
         )
