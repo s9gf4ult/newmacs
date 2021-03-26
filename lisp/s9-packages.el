@@ -306,7 +306,14 @@
       ("screen" . shell-script-mode)
       ("shell" . sh-mode)
       ("bash" . sh-mode)
-      ("xml" . web-mode)))))
+      ("xml" . web-mode))))
+  :bind
+  (:map markdown-mode-map
+        ("№" . "#")
+        ("<C-right>" . markdown-demote)
+        ("<C-left>" . markdown-promote)
+        )
+  )
 
 (use-package neuron-mode
   :requires markdown-mode
