@@ -240,6 +240,8 @@
         ("<f5>" . (lambda () (interactive)
                     (save-some-buffers t)
                     (rust-compile))))
+  :hook
+  (rust-mode . smartparens-mode)
   )
 
 (use-package systemd
@@ -306,17 +308,20 @@
       ("screen" . shell-script-mode)
       ("shell" . sh-mode)
       ("bash" . sh-mode)
-      ("xml" . web-mode))))
+      ("xml" . web-mode)))
+   (markdown-asymmetric-header t)
+   )
   :bind
   (:map markdown-mode-map
-        ("№" . "#") ;; For russian layout
+        ("№" . "#")
         ("<C-right>" . markdown-demote)
         ("<C-left>" . markdown-promote)
+        ("<S-return>" . markdown-insert-header-dwim)
+        ("C-c q" . markdown-insert-gfm-code-block)
         )
   )
 
 (use-package neuron-mode
-  :requires markdown-mode
   :ensure t
   :custom
   ((neuron-default-zettelkasten-directory "~/pers/neuron"))

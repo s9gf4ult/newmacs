@@ -30,7 +30,9 @@
  do
  (eval `(define-key key-translation-map (kbd ,(concat "C-" (string from))) (kbd ,(concat "C-" (string to)))))
  (eval `(define-key key-translation-map (kbd ,(concat "M-" (string from))) (kbd ,(concat "M-" (string to)))))
- (eval `(define-key key-translation-map (kbd ,(concat "C-M-" (string from))) (kbd ,(concat "C-M-" (string to))))))
+ (eval `(define-key key-translation-map (kbd ,(concat "C-M-" (string from))) (kbd ,(concat "C-M-" (string to)))))
+ ;; (eval `(define-key key-translation-map (kbd ,(concat "C-S-" (string from))) (kbd ,(concat "C-S-" (string to)))))
+ )
 
 (load-theme 'solarized-dark t)
 

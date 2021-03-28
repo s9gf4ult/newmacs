@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: ss
+# key: ss
+# expand-env: ((yas-indent-line 'fixed))
+# --
+"${1:str}".to_string()$0
