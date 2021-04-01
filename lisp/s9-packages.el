@@ -269,7 +269,11 @@
    ((t
      (:background "midnight blue" :extend t))))
   :demand t
-  )
+  :hook
+  (coq-mode
+   .
+   (lambda (interactive)
+     (smartparens-mode 1))))
 
 (use-package nix-mode
   :mode "\\.nix\\'"
