@@ -42,6 +42,7 @@
  '(scroll-step 1)
  '(sh-basic-offset 2)
  '(standard-indent 2)
+ '(tags-revert-without-query t)
  '(tool-bar-mode nil)
  '(woman-fill-frame t)
  '(yas-global-mode t))
