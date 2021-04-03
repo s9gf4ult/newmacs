@@ -403,6 +403,8 @@
 	      ("~/pers/projects/haskell/haskell.org" :level . 1)
 	      ("~/pers/projects/credit/credit.org" :level . 1))))
 	   (org-reverse-note-order t))
+  :custom-face
+  (org-todo ((t (:weight bold :foreground "#CF4646"))))
   :hook ((org-mode . s9g-org-hook))
   :demand t
   )
