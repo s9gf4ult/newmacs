@@ -330,7 +330,7 @@
   :custom
   ((neuron-default-zettelkasten-directory "~/pers/neuron"))
   :bind
-  (("C-c C-z" . neuron-new-zettel)
+  (("C-c z z" . neuron-new-zettel)
    ("C-c z e" . neuron-edit-zettel)
    :map neuron-mode-map
    ("C-c C-v" . neuron-create-and-insert-zettel-link)
