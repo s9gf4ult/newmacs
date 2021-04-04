@@ -19,6 +19,10 @@ current buffer's, reload dir-locals."
         (when (equal default-directory dir))
         (my-reload-dir-locals-for-current-buffer)))))
 
+(defun org-set-custom-id (value)
+  (interactive (list (thing-at-point 'word 'no-properties)))
+  (org-set-property "CUSTOM_ID" value))
+
 (defun uniq-lines (beg end)
   "Unique lines in region.
 Called from a program, there are two arguments:

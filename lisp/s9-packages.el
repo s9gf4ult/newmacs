@@ -348,7 +348,10 @@
 	 ("<S-left>" . nil)
 	 ("<S-right>" . nil)
 	 ("<S-up>" . nil)
-	 ("<S-down>" . nil))
+	 ("<S-down>" . nil)
+         ("C-c C-x i" . org-set-custom-id)
+         ("C-c o" . org-open-at-point)
+         )
   :custom ((org-capture-templates
 	    (quote
 	     (("t" "Todo prefix")
