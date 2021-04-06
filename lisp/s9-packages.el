@@ -350,6 +350,7 @@
 	 ("<S-up>" . nil)
 	 ("<S-down>" . nil)
          ("C-c C-x i" . org-set-custom-id)
+         ("C-c C-x l" . org-word-to-custom-link)
          ("C-c o" . org-open-at-point)
          )
   :custom ((org-capture-templates

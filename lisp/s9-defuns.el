@@ -23,6 +23,16 @@ current buffer's, reload dir-locals."
   (interactive (list (thing-at-point 'word 'no-properties)))
   (org-set-property "CUSTOM_ID" value))
 
+(defun org-word-to-custom-link ()
+  (interactive)
+  (let* ((bounds (if (use-region-p)
+                     (cons (region-beginning) (region-end))
+                   (bounds-of-thing-at-point 'word)))
+         (text   (buffer-substring-no-properties (car bounds) (cdr bounds))))
+    (when bounds
+      (delete-region (car bounds) (cdr bounds))
+      (insert (concat "[[#" text "]]")))))
+
 (defun uniq-lines (beg end)
   "Unique lines in region.
 Called from a program, there are two arguments:
