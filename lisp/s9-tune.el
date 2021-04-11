@@ -34,10 +34,11 @@
  ;; (eval `(define-key key-translation-map (kbd ,(concat "C-S-" (string from))) (kbd ,(concat "C-S-" (string to)))))
  )
 
-(load-theme 'solarized-dark t)
+;; (load-theme 'solarized-dark t)
 
 (custom-set-faces
- '(default ((t (:inherit t  :height 140 :width normal :family "Liberation Mono"))))
+ '(default ((t (:background "gray78" :inherit t  :height 140 :width normal :family "Liberation Mono"))))
+ '(region ((t (:background "gray90"))))
  )
 
 (defalias 'yes-or-no-p 'y-or-n-p)

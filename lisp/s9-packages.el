@@ -137,7 +137,10 @@
 	 ("<f7>" . helm-mini)
 	 ("M-." . helm-etags-select)
 	 )
-  :custom ((helm-etags-execute-action-at-once-if-one nil)))
+  :custom
+  ((helm-etags-execute-action-at-once-if-one nil)
+   (helm-buffer-details-flag nil)
+   ))
 
 
 (use-package helm-config
@@ -149,7 +152,10 @@
   :bind (:map helm-command-map
 	      ("g" . helm-do-ag)))
 
-(use-package helm-rg)
+(use-package helm-rg
+  :custom-face
+  (helm-rg-file-match-face ((t (:foreground "dark blue" :underline t))))
+  )
 
 (use-package projectile
   :config
@@ -227,8 +233,8 @@
 
 (use-package web-mode
   :mode ("\\.html\\'" "\\.php\\'")
-  ;; :custom-face
-  ;; (web-mode-html-tag-face ((t (:foreground "blue"))))
+  :custom-face
+  (web-mode-html-tag-face ((t (:foreground "blue"))))
   :custom
   (web-mode-markup-indent-offset 2)
   (web-mode-code-indent-offset 2)
@@ -324,6 +330,13 @@
         ("C-c q" . markdown-insert-gfm-code-block)
         )
   )
+
+(use-package lua-mode
+  :hook
+  (lua-mode
+   . (lambda () (interactive)
+       (smartparens-mode t)
+       )))
 
 (use-package neuron-mode
   :ensure t
@@ -425,6 +438,7 @@
   :demand 1
   :config
   (smooth-scroll-mode 1))
+
 
 (provide 's9-packages)
 ;;; s9-packages.el ends here

@@ -43,6 +43,7 @@
 (global-set-key (kbd "<M-S-down>") 'move-text-down)
 
 (global-set-key (kbd "C-x x") 'first-error)
+(global-set-key (kbd "C-x 7") 'fit-window-to-buffer-width)
 
 (global-set-key
  (kbd "C-c T")
