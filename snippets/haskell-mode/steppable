@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: steppable
+# key: steppable
+# expand-env: ((yas-indent-line 'fixed))
+# --
+instance Steppable ${1:Typ} ${2:Typ2} where
+  data Step $1 $2 = $0
+    deriving (Eq, Ord, Show)

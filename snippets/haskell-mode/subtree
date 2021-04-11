@@ -1,0 +1,9 @@
+# key: subtree
+# name: subtree
+# expand-env: ((yas-indent-line 'fixed))
+# --
+instance Subtree ${1:Type} where
+  type CheckEnv $1 = '[ ]
+  data CheckIssue $1 $0
+    deriving (Eq, Ord, Show)
+  checkCompatibility _ _ = error "Not implemented"
