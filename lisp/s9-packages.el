@@ -73,6 +73,11 @@
          (unless (null w)
            (aw-switch-to-window w))))))))
 
+(use-package narrow-indirect
+  :bind
+  ("C-x 4 n n" . ni-narrow-to-region-indirect-other-window)
+  )
+
 (use-package magit
  :bind (("C-x g" . magit))
  :custom

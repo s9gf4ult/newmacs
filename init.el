@@ -13,6 +13,7 @@
 
 (add-to-list 'load-path (concat user-emacs-directory "lisp"))
 
+(load "narrow-indirect")
 (load "s9-packages")
 (load "s9-globals")
 (load "s9-tune")
@@ -21,3 +22,4 @@
 
 (dolist (f (directory-files-recursively "~/pers/projects" "\.org$"))
 	(find-file-noselect f))
+(put 'narrow-to-region 'disabled nil)
