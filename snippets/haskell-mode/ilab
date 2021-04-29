@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: ilab
+# key: ilab
+# expand-env: ((yas-indent-line 'fixed))
+# --
+import Data.Generics.Labels ()$0

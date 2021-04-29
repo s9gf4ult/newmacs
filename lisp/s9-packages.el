@@ -278,7 +278,7 @@
   :custom-face
   (proof-locked-face
    ((t
-     (:background "midnight blue" :extend t))))
+     (:background "gray85" :extend t))))
   :demand t
   :hook
   (coq-mode
