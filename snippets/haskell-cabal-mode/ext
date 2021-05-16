@@ -20,6 +20,7 @@ default-extensions: ConstraintKinds
                   , MultiWayIf
                   , NamedFieldPuns
                   , NumDecimals
+                  , OverloadedLabels
                   , OverloadedStrings
                   , PolyKinds
                   , QuasiQuotes

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: bench
+# key: bench
+# expand-env: ((yas-indent-line 'fixed))
+# --
+benchmark ${1:name}
+  type:             exitcode-stdio-1.0
+  hs-source-dirs:   ${2:bench}
+  main-is:          ${3:Bench.hs}
