@@ -2,6 +2,8 @@
 
 (setq gc-cons-threshold 1000000)
 
+(run-with-idle-timer 10 t 'garbage-collect)
+
 (setq user-init-file (or load-file-name (buffer-file-name)))
 (setq user-emacs-directory (file-name-directory user-init-file))
 (setq custom-file (concat user-emacs-directory "custom.el"))
