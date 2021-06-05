@@ -417,13 +417,10 @@
 	   (org-log-done (quote time))
 	   (org-refile-targets
 	    (quote
-	     (("~/pers/projects/life/todo/life.org" :level . 1)
-	      ("~/pers/projects/instruments/instruments.org" :level . 1)
-	      ("~/pers/projects/typeableio/typeableio.org" :level . 1)
-	      ("~/pers/projects/life/todo/read.org" :level . 1)
-	      ("~/pers/pool.org" :level . 1)
-	      ("~/pers/projects/haskell/haskell.org" :level . 1)
-	      ("~/pers/projects/credit/credit.org" :level . 1))))
+             (("~/pers/projects/typeableio/typeableio.org" :level . 1)
+               ("~/pers/projects/life/todo/read.org" :level . 1)
+               ("~/pers/todo.org" :maxlevel . 2))
+	      ))
 	   (org-reverse-note-order t))
   :custom-face
   (org-todo ((t (:weight bold :foreground "#CF4646"))))
