@@ -27,6 +27,7 @@
 (require 'org)
 
 (defun s9g-org-hook ()
+  (require 'org-agenda)
   (auto-fill-mode 1)
   (local-set-key (kbd "<M-S-return>") 'org-insert-todo-heading-respect-content)
   (local-set-key (kbd "<C-left>") 'org-metaleft)

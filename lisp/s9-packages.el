@@ -420,7 +420,11 @@
              (("~/pers/projects/typeableio/typeableio.org" :level . 1)
                ("~/pers/projects/life/todo/read.org" :level . 1)
                ("~/pers/todo.org" :maxlevel . 2))
-	      ))
+	     ))
+           (org-agenda-files
+            '("~/pers/todo.org" "~/pers/projects/typeableio/typeableio.org"))
+           (org-priority-default 67)
+           (org-priority-lowest 68)
 	   (org-reverse-note-order t))
   :custom-face
   (org-todo ((t (:weight bold :foreground "#CF4646"))))
