@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: arbschema
+# key: arbschema
+# expand-env: ((yas-indent-line 'fixed))
+# --
+instance Arbitrary ${1:Type} where
+  arbitrary = genericArbitrary
+  shrink = genericShrink
+instance ToSchema $1

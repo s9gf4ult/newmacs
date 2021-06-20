@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: toschema
+# key: toschema
+# --
+instance ToSchema $0
