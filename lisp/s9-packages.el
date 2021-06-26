@@ -428,8 +428,8 @@
 	     ))
            (org-agenda-files
             '("~/pers/todo.org" "~/pers/projects/typeableio/typeableio.org"))
-           (org-priority-default 67)
-           (org-priority-lowest 68)
+           (org-priority-default (string-to-char "F"))
+           (org-priority-lowest (string-to-char "F"))
 	   (org-reverse-note-order t))
   :custom-face
   (org-todo ((t (:weight bold :foreground "#CF4646"))))
