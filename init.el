@@ -22,6 +22,8 @@
 
 (load custom-file)
 
-(dolist (f (directory-files-recursively "~/pers/projects" "\.org$"))
+(dolist (f
+         (cons "~/pers/todo.org"
+               (directory-files-recursively "~/pers/projects" "\.org$")))
 	(find-file-noselect f))
 (put 'narrow-to-region 'disabled nil)

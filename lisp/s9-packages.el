@@ -359,6 +359,8 @@
    ("<return>" . markdown-enter-key)
    ))
 
+(require 'org-agenda)
+
 (use-package s9-org
   :bind (("C-c b" . org-switchb)
 	 ("C-c c" . org-capture)
@@ -376,7 +378,11 @@
 	 ("<S-up>" . nil)
 	 ("<S-down>" . nil)
          )
-  :custom ((org-capture-templates
+  :custom ((org-todo-keywords
+            '((sequence "TODO(t!)" "HOLD(h@)" "INPROGRESS(i!)" "|" "DONE(d!)" "CANCELLED(c@)")
+              (sequence "PROBLEM(p!)" "SOLVED(s@)")
+              (sequence "QUESTION(q!)" "|" "YES(y@)" "NO(Y@) " "UNKNOWN(u@)")))
+           (org-capture-templates
 	    (quote
 	     (("t" "Todo prefix")
 	      ("tt" "Todo sometime" entry
