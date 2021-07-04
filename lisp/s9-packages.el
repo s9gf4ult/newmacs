@@ -381,7 +381,7 @@
   :custom ((org-todo-keywords
             '((sequence "TODO(t!)" "HOLD(h@)" "INPROGRESS(i!)" "|" "DONE(d!)" "CANCELLED(c@)")
               (sequence "PROBLEM(p!)" "SOLVED(s@)")
-              (sequence "QUESTION(q!)" "|" "YES(y@)" "NO(Y@) " "UNKNOWN(u@)")))
+              (sequence "QUESTION(Q!)" "|" "YES(y@)" "NO(Y@) " "UNKNOWN(u@)")))
            (org-capture-templates
 	    (quote
 	     (("t" "Todo prefix")
