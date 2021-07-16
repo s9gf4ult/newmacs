@@ -4,4 +4,4 @@
 # expand-env: ((yas-indent-line 'fixed))
 # --
 ${1:functionName} :: ${2:type}
-$1 = $0error "FIXME: $1 not implemented"
+$1 = $0Prelude.error "FIXME: $1 not implemented"
