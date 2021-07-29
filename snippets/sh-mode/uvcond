@@ -1,0 +1,5 @@
+# key: uvcond
+# name: uvcond
+# expand-env: ((yas-indent-line 'fixed))
+# --
+\${${1:$(upcase (s-snake-case yas-text))}:+ --${1:var} "\$${1:$(upcase (s-snake-case yas-text))}"} \\$0

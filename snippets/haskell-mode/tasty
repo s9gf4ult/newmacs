@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: tasty
+# key: tasty
+# expand-env: ((yas-indent-line 'fixed))
+# --
+{-# OPTIONS_GHC -F -pgmF tasty-discover #-}$0
