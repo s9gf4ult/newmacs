@@ -198,7 +198,7 @@
     "nice -n5 stack build --bench --test --no-run-tests --no-run-benchmarks --fast --ghc-options='-ferror-spans -instances -j12 +RTS -A128m -n2m -qb0 -RTS'")
   (haskell-process-args-stack-ghci (quote ("--ghci-options" "-ferror-spans")))
   (haskell-compile-ignore-cabal t)
-  (haskell-stylish-on-save t)
+  (haskell-stylish-on-save nil)
   (haskell-compiler-type 'stack)
   (haskell-process-type 'stack-ghci)
   )
