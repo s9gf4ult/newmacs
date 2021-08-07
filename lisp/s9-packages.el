@@ -379,10 +379,10 @@
 	 ("<S-down>" . nil)
          )
   :custom ((org-todo-keywords
-            '((sequence "TODO(t)" "HOLD(h@)" "INPROGRESS(i!)" "|" "DONE(d!)" "CANCELLED(c@)")
+            '((sequence "TODO(t)" "HOLD(h@)" "INMEMORY(m!)" "INPROGRESS(i!)" "|" "DONE(d!)" "CANCELLED(c@)")
               (sequence "PROBLEM(p)" "SOLVED(s@)")
               (sequence "QUESTION(Q)" "|" "YES(y@)" "NO(Y@) " "UNKNOWN(u@)")
-              (s equence "BUY(b)" "|" "REFUSED(r@)" "GOT(g)")
+              (sequence "BUY(b)" "|" "REFUSED(r@)" "GOT(g)")
               ))
            (org-clock-persist t)
            (org-capture-templates
