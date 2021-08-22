@@ -380,9 +380,9 @@
          )
   :custom ((org-todo-keywords
             '((sequence "TODO(t)" "HOLD(h@)" "INMEMORY(m!)" "INPROGRESS(i!)" "|" "DONE(d!)" "CANCELLED(c@)")
+              (sequence "BUY(b)" "SHIPPING(S!)" "|" "REFUSED(r@)" "GOT(g!)")
               (sequence "PROBLEM(p)" "SOLVED(s@)")
               (sequence "QUESTION(Q)" "|" "YES(y@)" "NO(Y@) " "UNKNOWN(u@)")
-              (sequence "BUY(b)" "|" "REFUSED(r@)" "GOT(g)")
               ))
            (org-clock-persist t)
            (org-capture-templates
