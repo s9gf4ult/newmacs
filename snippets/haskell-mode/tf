@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: tf
+# key: tf
+# expand-env: ((yas-indent-line 'fixed))
+# --
+, ("${1:Name}", Csv.toField ${2:id})$0
