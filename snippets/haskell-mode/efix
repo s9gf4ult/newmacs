@@ -2,4 +2,4 @@
 # name: efix
 # key: efix
 # --
-(Prelude.error "FIXME: not implemented")
+(${1:Prelude}.error "FIXME: not implemented")$0

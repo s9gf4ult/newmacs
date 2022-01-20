@@ -385,6 +385,7 @@
               (sequence "QUESTION(Q)" "|" "YES(y@)" "NO(Y@) " "UNKNOWN(u@)")
               ))
            (org-clock-persist t)
+           (org-startup-indented t)
            (org-capture-templates
 	    (quote
 	     (("t" "Todo prefix")

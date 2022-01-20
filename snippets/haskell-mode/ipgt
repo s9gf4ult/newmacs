@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ipgt
+# key: ipgt
+# --
+import Database.PostgreSQL.Transaction$0

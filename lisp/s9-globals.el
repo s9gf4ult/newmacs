@@ -45,6 +45,9 @@
 (global-set-key (kbd "C-x x") 'first-error)
 (global-set-key (kbd "C-x 7") 'fit-window-to-buffer-width)
 
+(global-set-key (kbd "<M-S-left>") 'my-drop-window-left)
+(global-set-key (kbd "<M-S-right>") 'my-drop-window-right)
+
 (global-set-key
  (kbd "C-c T")
  '(lambda ()

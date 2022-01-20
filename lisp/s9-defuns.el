@@ -262,6 +262,22 @@ as in `fit-window-to-buffer'."
   (let ((fit-window-to-buffer-horizontally t))
     (fit-window-to-buffer window max-height min-height max-width min-width)))
 
+(defun my-drop-window-right ()
+  (interactive)
+  (let ((this-buffer (current-buffer)))
+    (delete-window)
+    (aw-switch-next-window)
+    (switch-to-buffer this-buffer)
+    ))
+
+(defun my-drop-window-left ()
+  (interactive)
+  (let ((this-buffer (current-buffer)))
+    (delete-window)
+    (aw-switch-prev-window)
+    (switch-to-buffer this-buffer)
+    ))
+
 (defun insert-commented-keyword (field)
   (interactive)
   (comment-dwim nil)
