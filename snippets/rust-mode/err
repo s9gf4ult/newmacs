@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: err
+# key: err
+# expand-env: ((yas-indent-line 'fixed))
+# --
+panic!("Not implemented $0");

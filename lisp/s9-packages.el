@@ -253,6 +253,8 @@
                     (rust-compile))))
   :hook
   (rust-mode . smartparens-mode)
+  :custom
+  (rust-format-on-save t)
   )
 
 (use-package systemd
