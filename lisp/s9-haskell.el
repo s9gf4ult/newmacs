@@ -152,10 +152,10 @@
   (sp-pair "'" nil :actions :rem)
   (add-to-list 'write-file-functions 'delete-trailing-whitespace)
   (flyspell-prog-mode)
-  (require 'whitespace)
-  (setq whitespace-line-column 80) ;; limit line length
-  (setq whitespace-style '(face lines-tail))
-  (whitespace-mode)
+  ;; (require 'whitespace)
+  ;; (setq whitespace-line-column 80) ;; limit line length
+  ;; (setq whitespace-style '(face lines-tail))
+  ;; (whitespace-mode)
   )
 
 (provide 's9-haskell)

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: ref
+# key: ref
+# expand-env: ((yas-indent-line 'fixed))
+# --
+$ref: "#/components/schemas/$0"
