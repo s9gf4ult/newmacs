@@ -3,4 +3,4 @@
 # key: bash
 # expand-env: ((yas-indent-line 'fixed))
 # --
-\#!/usr/bin/env bash
+#!/usr/bin/env bash
