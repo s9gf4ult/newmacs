@@ -1,0 +1,5 @@
+# key: dodo
+# name: dodo
+# expand-env: ((yas-indent-line 'fixed))
+# --
+{ ${1:From} } -> { "${2:By}" [shape=box, color=blue]} ; "$2" -> ${3:To} [style=dotted, color=blue] ;

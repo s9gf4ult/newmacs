@@ -32,7 +32,9 @@
 
 (use-package undo-tree
  :config
- (global-undo-tree-mode))
+ (global-undo-tree-mode)
+ :custom
+ (undo-tree-history-directory-alist '(("." . "/home/razor/.emacs.d/undoo-hist"))))
 
 (use-package neotree
   :bind (("<f12>" . neotree-toggle))
