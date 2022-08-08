@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: ipgqe
+# key: ipgqe
+# expand-env: ((yas-indent-line 'fixed))
+# --
+import Database.PostgreSQL.Query.Extra$0

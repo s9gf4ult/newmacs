@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: imvar
+# key: imvar
+# expand-env: ((yas-indent-line 'fixed))
+# --
+import Control.Concurrent.MVar$0
