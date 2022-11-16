@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: minver
+# key: minver
+# expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region t))
+# --
+#if MIN_VERSION_${1:package}(${2:a}, ${3:b}, ${4:c})
+$0
+#endif

@@ -1,0 +1,11 @@
+# key: garb
+# name: garb
+# expand-env: ((yas-indent-line 'fixed))
+# --
+#if MIN_VERSION_QuickCheck(2, 14, 0)
+  deriving Arbitrary via (GenericArbitrary ${1:Type})
+#else
+instance Arbitrary $1 where
+  arbitrary = genericArbitrary
+  shrink = genericShrink
+#endif

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: arbvia
+# key: arbvia
+# expand-env: ((yas-indent-line 'fixed))
+# --
+deriving Arbitrary via (GenericArbitrary ${1:Type})$0

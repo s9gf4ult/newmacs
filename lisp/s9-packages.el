@@ -41,6 +41,8 @@
   :custom
   (neo-create-file-auto-open t)
   (neo-smart-open t)
+  (neo-show-hidden-files t)
+  (neo-hidden-regexp-list nil)
  )
 
 ;; For snippets and stuff
@@ -376,6 +378,7 @@
          ("C-c C-x i" . org-set-custom-id)
          ("C-c C-x l" . org-word-to-custom-link)
          ("C-c o" . org-open-at-point)
+         ("C-j" . join-line)
          :map org-agenda-mode-map
 	 ("<S-left>" . nil)
 	 ("<S-right>" . nil)
