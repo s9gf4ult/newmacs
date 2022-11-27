@@ -60,6 +60,11 @@ BEG and END (region to sort)."
   (let ((fill-column (point-max)))
     (fill-region beg end)))
 
+(defun copy-word-at-point ()
+  (interactive)
+  (let ((w (thing-at-point 'word)))
+    (when w (kill-new w))))
+
 (defun key-binding-at-point (key)
   (mapcar (lambda (keymap) (when (keymapp keymap)
                              (lookup-key keymap key)))

@@ -44,6 +44,7 @@
  '(standard-indent 2)
  '(tags-revert-without-query t)
  '(tool-bar-mode nil)
+ '(warning-suppress-types '((comp)))
  '(woman-fill-frame t)
  '(yas-global-mode t))
 (custom-set-faces
