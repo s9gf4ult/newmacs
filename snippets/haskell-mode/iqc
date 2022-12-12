@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: iqc
+# key: iqc
+# expand-env: ((yas-indent-line 'fixed))
+# --
+import Test.QuickCheck

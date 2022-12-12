@@ -43,6 +43,7 @@
   (neo-smart-open t)
   (neo-show-hidden-files t)
   (neo-hidden-regexp-list nil)
+  (neo-window-width 35)
  )
 
 ;; For snippets and stuff

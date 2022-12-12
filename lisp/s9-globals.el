@@ -38,6 +38,7 @@
 (global-set-key (kbd "C-c l") 'locate-key-binding)
 (global-set-key (kbd "M-*") 'pop-tag-mark)
 (global-set-key (kbd "C-x \\") 'align-regexp)
+(global-set-key (kbd "C-@") 'copy-word-at-point)
 
 (global-set-key (kbd "<M-S-up>") 'move-text-up)
 (global-set-key (kbd "<M-S-down>") 'move-text-down)

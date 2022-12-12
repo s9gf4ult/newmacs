@@ -41,6 +41,8 @@
  '(region ((t (:background "gray90"))))
  )
 
+(delete-selection-mode 1)
+
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 (provide 's9-tune)
