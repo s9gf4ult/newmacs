@@ -43,7 +43,6 @@
 (global-set-key (kbd "<M-S-up>") 'move-text-up)
 (global-set-key (kbd "<M-S-down>") 'move-text-down)
 
-(global-set-key (kbd "C-x x") 'first-error)
 (global-set-key (kbd "C-x 7") 'fit-window-to-buffer-width)
 
 (global-set-key (kbd "<M-S-left>") 'my-drop-window-left)
@@ -60,6 +59,20 @@
  '(lambda ()
     (interactive)
     (insert-commented-keyword "FIXME")))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; org-roam keybindings ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+; global-org-roam-map defined in s9g-org
+(define-key global-org-roam-map (kbd "r") 'org-roam-node-find)
+(define-key global-org-roam-map (kbd "c c") 'org-roam-capture)
+(define-key global-org-roam-map (kbd "c d") 'org-roam-dailies-capture-date)
+(define-key global-org-roam-map (kbd "c t") 'org-roam-dailies-capture-today)
+(define-key global-org-roam-map (kbd "g") 'org-roam-graph)
+
+(global-set-key (kbd "C-c r") global-org-roam-map)
+
 
 (provide 's9-globals)
 ;;; s9-globals.el ends here

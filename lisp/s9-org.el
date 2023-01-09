@@ -26,6 +26,13 @@
 
 (require 'org)
 
+(define-prefix-command 'global-org-roam-map)
+(define-prefix-command 'local-org-roam-map)
+(set-keymap-parent local-org-roam-map global-org-roam-map)
+(define-key local-org-roam-map (kbd "l") 'org-roam-node-insert)
+(define-key local-org-roam-map (kbd "i") 'org-id-get-create)
+(define-key local-org-roam-map (kbd "C-l") 'org-toggle-link-display)
+
 (defun s9g-org-hook ()
   (require 'org-agenda)
   (auto-fill-mode 1)
@@ -40,7 +47,8 @@
   (local-set-key (kbd "<M-down>") 'org-forward-paragraph)
   (local-set-key (kbd "<C-up>") 'org-metaup)
   (local-set-key (kbd "<C-down>") 'org-metadown)
-  )
+  (local-set-key (kbd "C-c r") local-org-roam-map))
+
 
 (provide 's9-org)
 ;;; s9-org.el ends here

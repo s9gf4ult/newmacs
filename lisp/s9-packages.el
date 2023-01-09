@@ -455,6 +455,20 @@
   :demand t
   )
 
+(use-package org-protocol)
+
+(use-package org-download)
+
+(use-package org-roam
+  :custom
+  (org-roam-directory (file-truename "~/pers/org-roam"))
+  :config
+  (org-roam-db-autosync-mode))
+
+(use-package org-roam-ui
+  :after org-roam
+  )
+
 (use-package tramp
   :custom ((tramp-default-method "ssh" nil (tramp))
 	   (tramp-encoding-shell "/run/current-system/sw/bin/zsh" nil (tramp)))
