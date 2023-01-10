@@ -32,6 +32,11 @@
 (define-key local-org-roam-map (kbd "l") 'org-roam-node-insert)
 (define-key local-org-roam-map (kbd "i") 'org-id-get-create)
 (define-key local-org-roam-map (kbd "C-l") 'org-toggle-link-display)
+(define-key local-org-roam-map (kbd "t t") 'org-roam-tag-add)
+(define-key local-org-roam-map (kbd "t d") 'org-roam-tag-remove)
+(define-key local-org-roam-map (kbd "a a") 'org-roam-alias-add)
+(define-key local-org-roam-map (kbd "a d") 'org-roam-alias-remove)
+
 
 (defun s9g-org-hook ()
   (require 'org-agenda)

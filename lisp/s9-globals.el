@@ -66,6 +66,7 @@
 
 ; global-org-roam-map defined in s9g-org
 (define-key global-org-roam-map (kbd "r") 'org-roam-node-find)
+(define-key global-org-roam-map (kbd "o") 'org-roam-ui-open)
 (define-key global-org-roam-map (kbd "c c") 'org-roam-capture)
 (define-key global-org-roam-map (kbd "c d") 'org-roam-dailies-capture-date)
 (define-key global-org-roam-map (kbd "c t") 'org-roam-dailies-capture-today)
