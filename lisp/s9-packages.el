@@ -198,9 +198,9 @@
 	 )
   :custom
   (haskell-compile-stack-build-alt-command
-   "nice -n5 stack --nix build --bench --test --no-run-tests --no-run-benchmarks --fast --pedantic --ghc-options='-ferror-spans -j12 +RTS -A128m -n2m -qb0 -RTS'")
+   "nice -n5 stack --nix --no-nix-add-gc-roots build --bench --test --no-run-tests --no-run-benchmarks --fast --pedantic --ghc-options='-ferror-spans -j12 +RTS -A128m -n2m -qb0 -RTS'")
   (haskell-compile-stack-build-command
-   "nice -n5 stack --nix build --bench --test --no-run-tests --no-run-benchmarks --fast --ghc-options='-ferror-spans -instances -j12 +RTS -A128m -n2m -qb0 -RTS'")
+   "nice -n5 stack --nix --no-nix-add-gc-roots build --bench --test --no-run-tests --no-run-benchmarks --fast --ghc-options='-ferror-spans -instances -j12 +RTS -A128m -n2m -qb0 -RTS'")
   (haskell-process-args-stack-ghci (quote ("--ghci-options" "-ferror-spans")))
   (haskell-compile-ignore-cabal t)
   (haskell-stylish-on-save nil)
@@ -445,7 +445,7 @@
                ("~/pers/todo.org" :maxlevel . 2))
 	     ))
            (org-agenda-files
-            '("~/pers/todo.org" "~/pers/projects/typeableio/typeableio.org"))
+            '("~/pers/todo.org" "~/pers/projects/typeableio/typeableio.org" "~/pers/org-roam/"))
            (org-priority-default (string-to-char "F"))
            (org-priority-lowest (string-to-char "F"))
 	   (org-reverse-note-order t))
