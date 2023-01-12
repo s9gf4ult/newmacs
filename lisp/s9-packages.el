@@ -393,6 +393,7 @@
               (sequence "QUESTION(Q)" "|" "YES(y@)" "NO(Y@) " "UNKNOWN(u@)")
               ))
            (org-clock-persist t)
+           (org-image-actual-width '(1000))
            (org-startup-indented t)
            (org-capture-templates
 	    (quote
@@ -457,17 +458,24 @@
 
 (use-package org-protocol)
 
-(use-package org-download)
+(use-package org-download
+  :custom
+  (org-download-screenshot-method "scrot -s %s")
+  (org-download-image-attr-list '("#+ATTR_ORG: :width 700"))
+  )
 
 (use-package org-roam
   :custom
   (org-roam-directory (file-truename "~/pers/org-roam"))
+  (org-roam-node-display-template "${title} ${tags}")
   :config
   (org-roam-db-autosync-mode))
 
 (use-package org-roam-ui
   :after org-roam
   )
+
+(use-package vulpea)
 
 (use-package tramp
   :custom ((tramp-default-method "ssh" nil (tramp))
