@@ -394,6 +394,7 @@
               ))
            (org-clock-persist t)
            (org-image-actual-width '(1000))
+           (org-startup-folded t)
            (org-startup-indented t)
            (org-capture-templates
 	    (quote
