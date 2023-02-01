@@ -52,6 +52,7 @@
   (local-set-key (kbd "<M-down>") 'org-forward-paragraph)
   (local-set-key (kbd "<C-up>") 'org-metaup)
   (local-set-key (kbd "<C-down>") 'org-metadown)
+  (local-set-key (kbd "C-M-u") 'org-up-element)
   (local-set-key (kbd "C-c r") local-org-roam-map))
 
 

@@ -1,0 +1,5 @@
+# key: dir
+# name: dir
+# expand-env: ((yas-indent-line 'fixed))
+# --
+DIR=$( cd -- "$( dirname -- "\${BASH_SOURCE[0]}" )" &> /dev/null && pwd )

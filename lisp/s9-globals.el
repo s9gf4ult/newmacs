@@ -71,6 +71,9 @@
 (define-key global-org-roam-map (kbd "c d") 'org-roam-dailies-capture-date)
 (define-key global-org-roam-map (kbd "c t") 'org-roam-dailies-capture-today)
 (define-key global-org-roam-map (kbd "g") 'org-roam-graph)
+(define-key global-org-roam-map (kbd "s s") 'citar-open)
+(define-key global-org-roam-map (kbd "s n") 'citar-open-note)
+
 
 (global-set-key (kbd "C-c r") global-org-roam-map)
 

@@ -368,6 +368,15 @@
 
 (require 'org-agenda)
 
+(use-package all-the-icons)
+
+(use-package citar
+  :after all-the-icons
+  :custom
+  (citar-bibliography '("~/.emacs.d/zotero.bib"))
+  (citar-notes-paths '("~/.emacs.d/zotero.bib"))
+  )
+
 (use-package s9-org
   :bind (("C-c b" . org-switchb)
 	 ("C-c c" . org-capture)
@@ -394,6 +403,10 @@
               ))
            (org-clock-persist t)
            (org-image-actual-width '(1000))
+           (org-cite-global-bibliography '("~/.emacs.d/zotero.bib"))
+           (org-cite-insert-processor 'citar)
+           (org-cite-follow-processor 'citar)
+           (org-cite-activate-processor 'citar)
            (org-startup-folded t)
            (org-startup-indented t)
            (org-capture-templates
@@ -456,6 +469,11 @@
   :hook ((org-mode . s9g-org-hook))
   :demand t
   )
+
+(use-package citar-org-roam
+  :after citar org-roam
+  :no-require
+  :config (citar-org-roam-mode))
 
 (use-package org-protocol)
 
