@@ -73,6 +73,7 @@
 (define-key global-org-roam-map (kbd "g") 'org-roam-graph)
 (define-key global-org-roam-map (kbd "s s") 'citar-open)
 (define-key global-org-roam-map (kbd "s n") 'citar-open-note)
+(define-key global-org-roam-map (kbd "s c") 'citar-create-note)
 
 
 (global-set-key (kbd "C-c r") global-org-roam-map)

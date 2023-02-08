@@ -30,11 +30,11 @@
 ;; convenience  ;;
 ;;;;;;;;;;;;;;;;;;
 
-(use-package undo-tree
- :config
- (global-undo-tree-mode)
- :custom
- (undo-tree-history-directory-alist '(("." . "/home/razor/.emacs.d/undoo-hist"))))
+(use-package outshine)
+
+(use-package vimish-fold)
+
+(use-package fold-dwim)
 
 (use-package neotree
   :bind (("<f12>" . neotree-toggle))
@@ -134,6 +134,13 @@
 
 (use-package yasnippet
   :custom ((yas-global-mode t)))
+
+(use-package separedit
+  :after (yaml-mode)
+  :config
+  (define-key prog-mode-map (kbd "C-c '") #'separedit)
+  (define-key yaml-mode-map (kbd "C-c '") #'separedit)
+  )
 
 ;;;;;;;;;;;
 ;; helm  ;;

@@ -36,6 +36,7 @@
 (define-key local-org-roam-map (kbd "t d") 'org-roam-tag-remove)
 (define-key local-org-roam-map (kbd "a a") 'org-roam-alias-add)
 (define-key local-org-roam-map (kbd "a d") 'org-roam-alias-remove)
+(define-key local-org-roam-map (kbd "s l") 'citar-insert-citation)
 
 
 (defun s9g-org-hook ()
@@ -53,7 +54,9 @@
   (local-set-key (kbd "<C-up>") 'org-metaup)
   (local-set-key (kbd "<C-down>") 'org-metadown)
   (local-set-key (kbd "C-M-u") 'org-up-element)
-  (local-set-key (kbd "C-c r") local-org-roam-map))
+  (local-set-key (kbd "C-c r") local-org-roam-map)
+  (local-set-key (kbd "C-c M-o") 'org-attach-open)
+  )
 
 
 (provide 's9-org)
