@@ -74,6 +74,9 @@
 (define-key global-org-roam-map (kbd "s s") 'citar-open)
 (define-key global-org-roam-map (kbd "s n") 'citar-open-note)
 (define-key global-org-roam-map (kbd "s c") 'citar-create-note)
+(define-key global-org-roam-map (kbd "d d") 'org-roam-dailies-find-date)
+(define-key global-org-roam-map (kbd "d n") 'org-roam-dailies-find-next-note)
+(define-key global-org-roam-map (kbd "d p") 'org-roam-dailies-find-previous-note)
 
 
 (global-set-key (kbd "C-c r") global-org-roam-map)
