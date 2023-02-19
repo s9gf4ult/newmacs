@@ -37,6 +37,8 @@
 (define-key local-org-roam-map (kbd "a a") 'org-roam-alias-add)
 (define-key local-org-roam-map (kbd "a d") 'org-roam-alias-remove)
 (define-key local-org-roam-map (kbd "s l") 'citar-insert-citation)
+(define-key local-org-roam-map (kbd "d n") 'org-roam-dailies-find-next-note)
+(define-key local-org-roam-map (kbd "d p") 'org-roam-dailies-find-previous-note)
 
 
 (defun s9g-org-hook ()
