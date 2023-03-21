@@ -205,9 +205,9 @@
 	 )
   :custom
   (haskell-compile-stack-build-alt-command
-   "nice -n5 stack --nix --no-nix-add-gc-roots build --bench --test --no-run-tests --no-run-benchmarks --fast --pedantic --ghc-options='-ferror-spans -j12 +RTS -A128m -n2m -qb0 -RTS'")
+   "NIXPKGS_ALLOW_INSECURE=1 nice -n5 stack --nix --no-nix-add-gc-roots build --bench --test --no-run-tests --no-run-benchmarks --fast --pedantic --ghc-options='-ferror-spans -j12 +RTS -A128m -n2m -qb0 -RTS'")
   (haskell-compile-stack-build-command
-   "nice -n5 stack --nix --no-nix-add-gc-roots build --bench --test --no-run-tests --no-run-benchmarks --fast --ghc-options='-ferror-spans -instances -j12 +RTS -A128m -n2m -qb0 -RTS'")
+   "NIXPKGS_ALLOW_INSECURE=1 nice -n5 stack --nix --no-nix-add-gc-roots build --bench --test --no-run-tests --no-run-benchmarks --fast --ghc-options='-ferror-spans -instances -j12 +RTS -A128m -n2m -qb0 -RTS'")
   (haskell-process-args-stack-ghci (quote ("--ghci-options" "-ferror-spans")))
   (haskell-compile-ignore-cabal t)
   (haskell-stylish-on-save nil)
@@ -409,6 +409,13 @@
               (sequence "QUESTION(Q)" "|" "YES(y@)" "NO(Y@) " "UNKNOWN(u@)")
               ))
            (org-clock-persist t)
+           (org-file-apps
+            '((auto-mode . system)
+              (directory . emacs)
+              ("\\.mm\\'" . default)
+              ("\\.x?html?\\'" . default)
+              ("\\.pdf\\'" . default)
+              ("\\.ods\\'" . "libreoffice %s")))
            (org-image-actual-width '(1000))
            (org-cite-global-bibliography '("~/.emacs.d/zotero.bib"))
            (org-cite-insert-processor 'citar)
