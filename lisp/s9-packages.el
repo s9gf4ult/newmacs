@@ -523,6 +523,21 @@
   :config
   (smooth-scroll-mode 1))
 
+(use-package origami
+  ;; :demand
+  :config
+  (define-prefix-command 'origami-mode-map)
+  (define-key ctl-x-map (kbd ",") 'origami-mode-map)
+  (global-origami-mode)
+  :bind
+  (:map origami-mode-map
+   ("," . origami-toggle-node)
+   ("a" . origami-open-all-nodes)
+   ("m" . origami-close-all-nodes)
+   ("r" . origami-open-node-recursively)
+   ("c" . origami-close-node-recursively)
+   )
+  )
 
 (provide 's9-packages)
 ;;; s9-packages.el ends here
