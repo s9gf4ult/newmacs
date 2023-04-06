@@ -528,7 +528,7 @@
   :config
   (define-prefix-command 'origami-mode-map)
   (define-key ctl-x-map (kbd ",") 'origami-mode-map)
-  (global-origami-mode)
+  ;; (global-origami-mode)
   :bind
   (:map origami-mode-map
    ("," . origami-toggle-node)
