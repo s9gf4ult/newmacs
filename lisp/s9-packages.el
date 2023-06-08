@@ -160,7 +160,7 @@
    ))
 
 
-(use-package helm-config
+(use-package helm
   :config
   (helm-mode 1))
 

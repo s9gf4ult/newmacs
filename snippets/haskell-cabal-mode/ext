@@ -15,12 +15,14 @@ default-extensions: ConstraintKinds
                   , FunctionalDependencies
                   , GADTs
                   , GeneralizedNewtypeDeriving
+                  , ImportQualifiedPost
                   , LambdaCase
                   , MultiParamTypeClasses
                   , MultiWayIf
                   , NamedFieldPuns
                   , NumDecimals
                   , OverloadedLabels
+                  , OverloadedRecordDot
                   , OverloadedStrings
                   , PolyKinds
                   , QuasiQuotes

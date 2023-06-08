@@ -2,4 +2,4 @@
 # name: ilog
 # key: ilog
 # --
-import Control.Monad.Logger
+import Control.Monad.Logger.CallStack
