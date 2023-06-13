@@ -415,6 +415,8 @@
               ("\\.mm\\'" . default)
               ("\\.x?html?\\'" . default)
               ("\\.pdf\\'" . default)
+              ("\\.ps\\'" . "okular %s")
+              ("\\.svg\\'" . "firefox %s")
               ("\\.ods\\'" . "libreoffice %s")))
            (org-image-actual-width '(1000))
            (org-cite-global-bibliography '("~/.emacs.d/zotero.bib"))
