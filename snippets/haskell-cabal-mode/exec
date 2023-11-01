@@ -10,6 +10,5 @@ executable ${1:binary-name}
   ghc-options:         -Wall
                        -threaded
                        -rtsopts
-                       "-with-rtsopts=-N -A64m -qb0 -n4m -T -I1"
   build-depends:        base >= 4.7 && < 5
   $0

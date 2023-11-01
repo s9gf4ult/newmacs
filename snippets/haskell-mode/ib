@@ -2,4 +2,4 @@
 # name: ib
 # key: ib
 # --
-import ${1:qualified }Data.ByteString $0as B
+import Data.ByteString ${1:qualified }$0as B

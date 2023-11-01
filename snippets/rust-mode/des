@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: print
-# key: print
+# name: des
+# key: des
 # expand-env: ((yas-indent-line 'fixed))
 # --
-println!("{}", $0)
+#[derive(Deserialize)]

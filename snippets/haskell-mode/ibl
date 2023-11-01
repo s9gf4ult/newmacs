@@ -2,4 +2,4 @@
 # name: ibl
 # key: ibl
 # --
-import ${1:qualified }Data.ByteString.Lazy $0as BL
+import Data.ByteString.Lazy ${1:qualified }$0as BL

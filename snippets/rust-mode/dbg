@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: print
-# key: print
+# name: dbg
+# key: dbg
 # expand-env: ((yas-indent-line 'fixed))
 # --
-println!("{}", $0)
+dbg!($0)

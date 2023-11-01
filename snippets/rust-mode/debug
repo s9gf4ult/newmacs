@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: print
-# key: print
+# name: debug
+# key: debug
 # expand-env: ((yas-indent-line 'fixed))
 # --
-println!("{}", $0)
+#[derive(Debug)]

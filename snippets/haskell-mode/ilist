@@ -2,4 +2,4 @@
 # name: ilist
 # key: ilist
 # --
-import ${1:qualified }Data.List as L$0
+import Data.List ${1:qualified }as L$0

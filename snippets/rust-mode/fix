@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: print
-# key: print
+# name: fix
+# key: fix
 # expand-env: ((yas-indent-line 'fixed))
 # --
-println!("{}", $0)
+panic!("FIXME: not implemented")

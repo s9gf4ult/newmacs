@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: derarb
+# key: derarb
+# expand-env: ((yas-indent-line 'fixed))
+# --
+  deriving Arbitrary via (GenericArbitrary $0)

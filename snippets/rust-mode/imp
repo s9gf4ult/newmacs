@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: print
-# key: print
+# name: imp
+# key: imp
 # expand-env: ((yas-indent-line 'fixed))
 # --
-println!("{}", $0)
+unimplemented!();
