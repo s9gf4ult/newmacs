@@ -388,8 +388,8 @@
   :bind (("C-c b" . org-switchb)
 	 ("C-c c" . org-capture)
 	 :map org-mode-map
-	 ("<S-left>" . nil)
-	 ("<S-right>" . nil)
+	 ("<S-left>" . aw-switch-prev-window)
+	 ("<S-right>" . aw-switch-next-window)
 	 ("<S-up>" . nil)
 	 ("<S-down>" . nil)
          ("C-c C-x i" . org-set-custom-id)
