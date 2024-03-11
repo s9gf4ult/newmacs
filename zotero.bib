@@ -20,6 +20,23 @@
   abstract = {Для желающих поддержать выход новых роликов: https://boosty.to/alexandrshtefanov  https://www.patreon.com/alexandrshtef... 5536 9138 9184 0197 - Тинькофф 2200 2404 4103 3244 - Втб 410011724159658 - Юмани Биткоин: bc1qehzg5jwe2hswn06pd25csjlvxq6ql97wxfwk5c Эфир: 0xDC89d54f752D2f150d2ef393868E025F81856019 USDT (trс 20): TFo5VdcGrEcDCaM2TkkSdUyEfKH6hkNn78 Больше интересных исторических фактов в Telegram канале - https://t.me/alexandrshtefanov 00:00 - У вас есть причины не любить Украину 06:19 - С чего началась СВО? 11:22 - Где вы были 8 лет? 13:46 - Почему Путин не забрал Донбасс? 18:09 - Мобилизация в ЛДНР 25:25 - Аллея ангелов называет Путина украинским националистом 30:15 - Что СВО дала Донбассу? 31:42 - НАТО хотела напасть на Россию? 34:34 - Украина хотела напасть на Россию? 36:40 - Причины и цели войны с Украиной 50:07 - Как Кремль разрушил территориальную целостность РФ? 52:41 - Крепкой руки в стране нет. Вертикали власти тоже. А что есть? 57:10 - Спецоперация полностью провалена?  1:06:10 - За что мы сейчас воюем? 1:06:44 - Что если Россия проиграет? 1:11:59 - Неизбежный финал}
 }
 
+@online{alizadehLLMFlashEfficient2023,
+  title = {{{LLM}} in a Flash: {{Efficient Large Language Model Inference}} with {{Limited Memory}}},
+  shorttitle = {{{LLM}} in a Flash},
+  author = {Alizadeh, Keivan and Mirzadeh, Iman and Belenko, Dmitry and Khatamifard, Karen and Cho, Minsik and Del Mundo, Carlo C. and Rastegari, Mohammad and Farajtabar, Mehrdad},
+  date = {2023-12-12},
+  eprint = {2312.11514},
+  eprinttype = {arxiv},
+  eprintclass = {cs},
+  url = {http://arxiv.org/abs/2312.11514},
+  urldate = {2024-01-06},
+  abstract = {Large language models (LLMs) are central to modern natural language processing, delivering exceptional performance in various tasks. However, their intensive computational and memory requirements present challenges, especially for devices with limited DRAM capacity. This paper tackles the challenge of efficiently running LLMs that exceed the available DRAM capacity by storing the model parameters on flash memory but bringing them on demand to DRAM. Our method involves constructing an inference cost model that harmonizes with the flash memory behavior, guiding us to optimize in two critical areas: reducing the volume of data transferred from flash and reading data in larger, more contiguous chunks. Within this flash memory-informed framework, we introduce two principal techniques. First, “windowing” strategically reduces data transfer by reusing previously activated neurons, and second, “row-column bundling”, tailored to the sequential data access strengths of flash memory, increases the size of data chunks read from flash memory. These methods collectively enable running models up to twice the size of the available DRAM, with a 4-5x and 20-25x increase in inference speed compared to naive loading approaches in CPU and GPU, respectively. Our integration of sparsity awareness, context-adaptive loading, and a hardware-oriented design paves the way for effective inference of LLMs on devices with limited memory.},
+  langid = {english},
+  pubstate = {preprint},
+  keywords = {llm,neural_network,optimization},
+  file = {/home/razor/Zotero/storage/A3PWGTSR/Alizadeh et al. - 2023 - LLM in a flash Efficient Large Language Model Inf.pdf}
+}
+
 @online{AnnotatedBibliographyTemplate,
   title = {Annotated {{Bibliography Template}}},
   url = {https://orgmode.org/worg/exporters/anno-bib-template-worg.html},
@@ -41,7 +58,7 @@
   abstract = {As AI systems become more capable, we would like to enlist their help to supervise other AIs. We experiment with methods for training a harmless AI assistant through selfimprovement, without any human labels identifying harmful outputs. The only human oversight is provided through a list of rules or principles, and so we refer to the method as ‘Constitutional AI’. The process involves both a supervised learning and a reinforcement learning phase. In the supervised phase we sample from an initial model, then generate self-critiques and revisions, and then finetune the original model on revised responses. In the RL phase, we sample from the finetuned model, use a model to evaluate which of the two samples is better, and then train a preference model from this dataset of AI preferences. We then train with RL using the preference model as the reward signal, i.e. we use ‘RL from AI Feedback’ (RLAIF). As a result we are able to train a harmless but nonevasive AI assistant that engages with harmful queries by explaining its objections to them. Both the SL and RL methods can leverage chain-of-thought style reasoning to improve the human-judged performance and transparency of AI decision making. These methods make it possible to control AI behavior more precisely and with far fewer human labels.},
   langid = {english},
   pubstate = {preprint},
-  keywords = {computer\_science,neural\_network},
+  keywords = {computer_science,neural_network},
   file = {/home/razor/Zotero/storage/BKLIXUNQ/Bai et al. - 2022 - Constitutional AI Harmlessness from AI Feedback.pdf}
 }
 
@@ -49,7 +66,7 @@
   title = {Foundations of {{Data Science}}},
   author = {Blum, Avrim and Hopcroft, John and Kannan, Ravindran},
   langid = {english},
-  keywords = {computer\_science,data\_science},
+  keywords = {computer_science,data_science},
   file = {/home/razor/Zotero/storage/YEUD637K/Blum et al. - Foundations of Data Science.pdf}
 }
 
@@ -89,6 +106,22 @@
   keywords = {politics,ukraine}
 }
 
+@online{chaoJailbreakingBlackBox2023,
+  title = {Jailbreaking {{Black Box Large Language Models}} in {{Twenty Queries}}},
+  author = {Chao, Patrick and Robey, Alexander and Dobriban, Edgar and Hassani, Hamed and Pappas, George J. and Wong, Eric},
+  date = {2023-10-13},
+  eprint = {2310.08419},
+  eprinttype = {arxiv},
+  eprintclass = {cs},
+  url = {http://arxiv.org/abs/2310.08419},
+  urldate = {2024-02-09},
+  abstract = {There is growing interest in ensuring that large language models (LLMs) align with human values. However, the alignment of such models is vulnerable to adversarial jailbreaks, which coax LLMs into overriding their safety guardrails. The identification of these vulnerabilities is therefore instrumental in understanding inherent weaknesses and preventing future misuse. To this end, we propose Prompt Automatic Iterative Refinement (PAIR), an algorithm that generates semantic jailbreaks with only black-box access to an LLM. PAIR—which is inspired by social engineering attacks—uses an attacker LLM to automatically generate jailbreaks for a separate targeted LLM without human intervention. In this way, the attacker LLM iteratively queries the target LLM to update and refine a candidate jailbreak. Empirically, PAIR often requires fewer than twenty queries to produce a jailbreak, which is orders of magnitude more efficient than existing algorithms. PAIR also achieves competitive jailbreaking success rates and transferability on open and closed-source LLMs, including GPT-3.5/4, Vicuna, and PaLM-2.},
+  langid = {english},
+  pubstate = {preprint},
+  keywords = {llm,neural_network,security},
+  file = {/home/razor/Zotero/storage/KAXM48IX/Chao et al. - 2023 - Jailbreaking Black Box Large Language Models in Tw.pdf}
+}
+
 @online{chichkovKakPoluchitRVP2022,
   title = {Как Получить {{РВП}} в {{Казахстане}}? {{Подробно}} о Самом Популярном Способе Оставаться Дольше 90 Дней — {{Миграция}} На vc.Ru},
   shorttitle = {Как Получить {{РВП}} в {{Казахстане}}?},
@@ -114,11 +147,28 @@
   file = {/home/razor/Zotero/storage/SMCA43AV/202206141852.html}
 }
 
+@online{dingLongRoPEExtendingLLM2024,
+  title = {{{LongRoPE}}: {{Extending LLM Context Window Beyond}} 2 {{Million Tokens}}},
+  shorttitle = {{{LongRoPE}}},
+  author = {Ding, Yiran and Zhang, Li Lyna and Zhang, Chengruidong and Xu, Yuanyuan and Shang, Ning and Xu, Jiahang and Yang, Fan and Yang, Mao},
+  date = {2024-02-21},
+  eprint = {2402.13753},
+  eprinttype = {arxiv},
+  eprintclass = {cs},
+  url = {http://arxiv.org/abs/2402.13753},
+  urldate = {2024-03-10},
+  abstract = {Large context window is a desirable feature in large language models (LLMs). However, due to high fine-tuning costs, scarcity of long texts, and catastrophic values introduced by new token positions, current extended context windows are limited to around 128k tokens.},
+  langid = {english},
+  pubstate = {preprint},
+  keywords = {llm},
+  file = {/home/razor/Zotero/storage/CUWDP2XV/Ding et al. - 2024 - LongRoPE Extending LLM Context Window Beyond 2 Mi.pdf}
+}
+
 @article{erkokValueRecursionMonadic,
   title = {Value {{Recursion}} in {{Monadic Computations}}},
   author = {Erkok, Levent},
   langid = {english},
-  keywords = {computer\_science,haskell},
+  keywords = {computer_science,haskell},
   file = {/home/razor/Zotero/storage/DK5TIKUH/Erkok - Value Recursion in Monadic Computations.pdf}
 }
 
@@ -198,7 +248,7 @@
   url = {https://doi.org/10.1162/neco.1997.9.8.1735},
   urldate = {2023-01-30},
   abstract = {Learning to store information over extended time intervals by recurrent backpropagation takes a very long time, mostly because of insufficient, decaying error backflow. We briefly review Hochreiter's (1991) analysis of this problem, then address it by introducing a novel, efficient, gradient based method called long short-term memory (LSTM). Truncating the gradient where this does not do harm, LSTM can learn to bridge minimal time lags in excess of 1000 discrete-time steps by enforcing constant error flow through constant error carousels within special units. Multiplicative gate units learn to open and close access to the constant error flow. LSTM is local in space and time; its computational complexity per time step and weight is O. 1. Our experiments with artificial data involve local, distributed, real-valued, and noisy pattern representations. In comparisons with real-time recurrent learning, back propagation through time, recurrent cascade correlation, Elman nets, and neural sequence chunking, LSTM leads to many more successful runs, and learns much faster. LSTM also solves complex, artificial long-time-lag tasks that have never been solved by previous recurrent network algorithms.},
-  keywords = {computer\_science,neural\_network},
+  keywords = {computer_science,neural_network},
   file = {/home/razor/Zotero/storage/YA5H2Q5M/hochreiter1997.pdf.pdf;/home/razor/Zotero/storage/JUKCZAES/Long-Short-Term-Memory.html}
 }
 
@@ -227,8 +277,18 @@
   urldate = {2023-04-11},
   abstract = {In this paper, we introduce a system called GamePad that can be used to explore the application of machine learning methods to theorem proving in the Coq proof assistant. Interactive theorem provers such as Coq enable users to construct machine-checkable proofs in a step-by-step manner. Hence, they provide an opportunity to explore theorem proving with human supervision. We use GamePad to synthesize proofs for a simple algebraic rewrite problem and train baseline models for a formalization of the Feit-Thompson theorem. We address position evaluation (i.e., predict the number of proof steps left) and tactic prediction (i.e., predict the next proof step) tasks, which arise naturally in tactic-based theorem proving.},
   pubstate = {preprint},
-  keywords = {neural\_network,openai,theorem\_prooving},
+  keywords = {neural_network,openai,theorem_prooving},
   file = {/home/razor/Zotero/storage/473R29P6/Huang et al. - 2018 - GamePad A Learning Environment for Theorem Provin.pdf;/home/razor/Zotero/storage/9WSPKLTX/1806.html}
+}
+
+@online{igrushkiwroteSkolkoLetSSSR,
+  title = {Сколько Лет в {{СССР}} Стояли в Очереди На Жильё?},
+  author = {детям не {игрушкиwrote}, Cпички and детям не игрушки {burckina\_faso}, Cпички},
+  url = {https://burckina-faso.livejournal.com/3765874.html},
+  urldate = {2024-01-23},
+  abstract = {Сейчас усиленно продвигается черный миф о том, что в СССР вообще бесплатного жилья не было. Мол, оно ведь не давалось в собственность гражданам, а значит не было бесплатным. Логика в стиле в огороде бузина, а в Киеве дядька. Или вам шашечки или ехать? То есть люди намерено…},
+  langid = {american},
+  file = {/home/razor/Zotero/storage/88D3BEE4/3765874.html}
 }
 
 @video{kakteper/proektovd-infoKAKTEPERLzhenauka2023,
@@ -259,7 +319,7 @@
   date = {2023},
   url = {https://www.youtube.com/watch?v=L1TmxTzYUaE},
   urldate = {2023-02-07},
-  keywords = {cognitive\_bias,video}
+  keywords = {cognitive_bias,video}
 }
 
 @video{KomuNuzhenTakoy,
@@ -279,7 +339,7 @@
   date = {2023},
   url = {https://www.youtube.com/watch?v=rJT7EtAaJbg},
   urldate = {2023-01-29},
-  keywords = {fascism,politics,russian\_federation}
+  keywords = {fascism,politics,russian_federation}
 }
 
 @article{lindleyPleasurePainDependently,
@@ -287,7 +347,7 @@
   author = {Lindley, Sam and McBride, Conor},
   abstract = {Haskell’s type system has outgrown its Hindley-Milner roots to the extent that it now stretches to the basics of dependently typed programming. In this paper, we collate and classify techniques for programming with dependent types in Haskell, and contribute some new ones. In particular, through extended examples—merge-sort and rectangular tilings—we show how to exploit Haskell’s constraint solver as a theorem prover, delivering code which, as Agda programmers, we envy. We explore the compromises involved in simulating variations on the theme of the dependent function space in an attempt to help programmers put dependent types to work, and to inform the evolving language design both of Haskell and of dependently typed languages more broadly.},
   langid = {english},
-  keywords = {computer\_science,haskell},
+  keywords = {computer_science,haskell},
   file = {/home/razor/Zotero/storage/X5MB5EHB/Lindley and McBride - The Pleasure and Pain of Dependently Typed Haskell.pdf}
 }
 
@@ -299,7 +359,7 @@
   abstract = {Россия готова приступить к переговорам с Украиной, если Киев выразит реальную готовность к ним, заявила спикер Совета Федерации Валентина Матвиенко. Наша позиция четкая, внятная и прозрачная. Мы ...},
   langid = {russian},
   organization = {{РБК}},
-  keywords = {russian\_federation,war},
+  keywords = {russian_federation,war},
   file = {/home/razor/Zotero/storage/TNLVE3NI/63da5b569a7947f26b8cff86.html}
 }
 
@@ -343,7 +403,7 @@
   urldate = {2023-02-28},
   abstract = {We argue that all building blocks of transformer models can be expressed with a single concept: combinatorial Hopf algebra. Transformer learning emerges as a result of the subtle interplay between the algebraic and coalgebraic operations of the combinatorial Hopf algebra. Viewed through this lens, the transformer model becomes a linear time-invariant system where the attention mechanism computes a generalized convolution transform and the residual stream serves as a unit impulse. Attention-only transformers then learn by enforcing an invariant between these two paths. We call this invariant Hopf coherence. Due to this, with a degree of poetic license, one could call combinatorial Hopf algebras "tensors with a built-in loss function gradient". This loss function gradient occurs within the single layers and no backward pass is needed. This is in contrast to automatic differentiation which happens across the whole graph and needs a explicit backward pass. This property is the result of the fact that combinatorial Hopf algebras have the surprising property of calculating eigenvalues by repeated squaring.},
   pubstate = {preprint},
-  keywords = {math,neural\_network},
+  keywords = {llm,math,neural_network},
   file = {/home/razor/Zotero/storage/Y5U52ZLA/Nemecek - 2023 - Coinductive guide to inductive transformer heads.pdf;/home/razor/Zotero/storage/439P7S4E/2302.html}
 }
 
@@ -359,7 +419,7 @@
   title = {Neural {{Networks}}: {{Zero To Hero}}},
   url = {https://karpathy.ai/zero-to-hero.html},
   urldate = {2023-01-21},
-  keywords = {neural\_network},
+  keywords = {neural_network},
   file = {/home/razor/Zotero/storage/UIUC9DBR/zero-to-hero.html}
 }
 
@@ -389,7 +449,7 @@
   url = {https://cdn.openai.com/papers/gpt-4.pdf},
   urldate = {2023-03-15},
   langid = {american},
-  keywords = {gpt4,neural\_network,openai},
+  keywords = {gpt4,llm,neural_network,openai},
   file = {/home/razor/Zotero/storage/6VVUZR2E/gpt-4.pdf}
 }
 
@@ -445,7 +505,7 @@
   editortype = {director},
   url = {https://www.youtube.com/watch?v=a8e8y7gRJW4},
   urldate = {2023-01-29},
-  keywords = {memorials,russian\_federation}
+  keywords = {memorials,russian_federation}
 }
 
 @online{PrigranichnyyKonfliktKirgizii2022,
@@ -483,7 +543,7 @@
   urldate = {2023-02-11},
   abstract = {Contrastive models like CLIP have been shown to learn robust representations of images that capture both semantics and style. To leverage these representations for image generation, we propose a two-stage model: a prior that generates a CLIP image embedding given a text caption, and a decoder that generates an image conditioned on the image embedding. We show that explicitly generating image representations improves image diversity with minimal loss in photorealism and caption similarity. Our decoders conditioned on image representations can also produce variations of an image that preserve both its semantics and style, while varying the non-essential details absent from the image representation. Moreover, the joint embedding space of CLIP enables language-guided image manipulations in a zero-shot fashion. We use diffusion models for the decoder and experiment with both autoregressive and diffusion models for the prior, finding that the latter are computationally more efficient and produce higher-quality samples.},
   pubstate = {preprint},
-  keywords = {neural\_network},
+  keywords = {neural_network},
   file = {/home/razor/Zotero/storage/VDEG2D9T/Ramesh et al. - 2022 - Hierarchical Text-Conditional Image Generation wit.pdf;/home/razor/Zotero/storage/NUANVRLC/2204.html}
 }
 
@@ -497,6 +557,16 @@
   langid = {russian},
   keywords = {politics},
   file = {/home/razor/Zotero/storage/REQNJB34/BVuSbSO5XH0.html}
+}
+
+@online{RossiiRezkoVyrastet2023,
+  title = {В России резко вырастет объем устаревающего жилья. Что это значит},
+  date = {2023-09-25},
+  url = {https://realty.rbc.ru/news/650d30fb9a7947a57708783d},
+  urldate = {2024-01-23},
+  abstract = {К 2030 году прирост объема устаревающего жилья составит 54 млн кв. м, а к 2040 году~— 216 млн кв. м, подсчитали в ИНП РАН. В результате общий объем такого жилья достигнет 270 млн кв. м, из них 162,8 млн кв. м предполагается выводить из эксплуатации},
+  langid = {russian},
+  organization = {{РБК Недвижимость}}
 }
 
 @online{RVPKazahstaneDlya,
@@ -552,6 +622,18 @@
   file = {/home/razor/Zotero/storage/H2U8ZBAP/Trans_fat.html}
 }
 
+@inproceedings{TuringCompleteTransformers2023,
+  title = {Turing {{Complete Transformers}}: {{Two Transformers Are More Powerful Than One}}},
+  shorttitle = {Turing {{Complete Transformers}}},
+  date = {2023-10-13},
+  url = {https://openreview.net/forum?id=MGWsPGogLH},
+  urldate = {2024-01-10},
+  abstract = {This paper presents Find+Replace transformers, a family of multi-transformer architectures that can provably do things no single transformer can, and which outperforms GPT-4 on several challenging tasks. We first establish that traditional transformers and similar architectures are not Turing Complete, while Find+Replace transformers are. Using this fact, we show how arbitrary programs can be compiled into Find+Replace transformers, potentially aiding interpretability research. We also demonstrate the superior performance of Find+Replace transformers over GPT-4 on a set of composition challenge problems. This work aims to provide a theoretical basis for multi-transformer architectures, and to encourage their further exploration.},
+  eventtitle = {The {{Twelfth International Conference}} on {{Learning Representations}}},
+  langid = {english},
+  file = {/home/razor/Zotero/storage/U4T2WUZJ/2023 - Turing Complete Transformers Two Transformers Are.pdf}
+}
+
 @online{TyingKnotHaskellWiki,
   title = {Tying the {{Knot}} - {{HaskellWiki}}},
   url = {https://wiki.haskell.org/Tying_the_Knot},
@@ -585,7 +667,7 @@
   urldate = {2023-01-30},
   abstract = {The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data.},
   pubstate = {preprint},
-  keywords = {computer\_science,neural\_network},
+  keywords = {computer_science,llm,neural_network},
   file = {/home/razor/Zotero/storage/ZNHTHYX3/Vaswani et al. - 2017 - Attention Is All You Need.pdf;/home/razor/Zotero/storage/8ZS4DMUE/1706.html}
 }
 

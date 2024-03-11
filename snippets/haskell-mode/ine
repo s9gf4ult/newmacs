@@ -2,4 +2,4 @@
 # name: ine
 # key: ine
 # --
-import ${1:qualified }Data.List.NonEmpty as NE$0
+import Data.List.NonEmpty ${1:qualified }as NE$0

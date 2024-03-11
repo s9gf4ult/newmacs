@@ -2,4 +2,4 @@
 # name: imap
 # key: imap
 # --
-import ${1:qualified }Data.Map.Strict as M$0
+import Data.Map.Strict ${1:qualified }as M$0

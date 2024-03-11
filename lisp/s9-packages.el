@@ -157,6 +157,7 @@
   :custom
   ((helm-etags-execute-action-at-once-if-one nil)
    (helm-buffer-details-flag nil)
+   (helm-move-to-line-cycle-in-source nil)
    ))
 
 
