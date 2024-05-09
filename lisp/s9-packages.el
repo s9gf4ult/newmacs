@@ -393,7 +393,7 @@
 	 ("<S-right>" . aw-switch-next-window)
 	 ("<S-up>" . nil)
 	 ("<S-down>" . nil)
-         ("C-c C-x i" . org-set-custom-id)
+         ("C-c C-x i" . org-word-to-custom-id)
          ("C-c C-x l" . org-word-to-custom-link)
          ("C-c o" . org-open-at-point)
          ("C-j" . join-line)
@@ -478,8 +478,8 @@
 	     ))
            (org-agenda-files
             '("~/pers/todo.org" "~/pers/projects/typeableio/typeableio.org" "~/pers/org-roam/"))
-           (org-priority-default (string-to-char "F"))
-           (org-priority-lowest (string-to-char "F"))
+           (org-priority-default (string-to-char "G"))
+           (org-priority-lowest (string-to-char "G"))
 	   (org-reverse-note-order t))
   :custom-face
   (org-todo ((t (:weight bold :foreground "#CF4646"))))

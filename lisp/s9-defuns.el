@@ -19,7 +19,7 @@ current buffer's, reload dir-locals."
         (when (equal default-directory dir))
         (my-reload-dir-locals-for-current-buffer)))))
 
-(defun org-set-custom-id (value)
+(defun org-word-to-custom-id (value)
   (interactive (list (thing-at-point 'word 'no-properties)))
   (org-set-property "CUSTOM_ID" value))
 
