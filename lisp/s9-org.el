@@ -43,7 +43,9 @@
 
 (defun s9g-org-hook ()
   (require 'org-agenda)
-  (auto-fill-mode 1)
+  ;; (auto-fill-mode 1)
+  (visual-line-mode 1)
+  (visual-fill-column-mode 1)
   (local-set-key (kbd "<M-S-return>") 'org-insert-todo-heading-respect-content)
   (local-set-key (kbd "<C-left>") 'org-metaleft)
   (local-set-key (kbd "<C-right>") 'org-metaright)

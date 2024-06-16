@@ -6,6 +6,7 @@
  '(backup-directory-alist '((".*" concat user-emacs-directory "backups")))
  '(before-save-hook '(delete-trailing-whitespace))
  '(blink-cursor-mode nil)
+ '(calendar-week-start-day 1)
  '(case-fold-search nil)
  '(column-number-mode t)
  '(confirm-kill-emacs 'yes-or-no-p)

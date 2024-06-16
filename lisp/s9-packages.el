@@ -49,6 +49,10 @@
 ;; For snippets and stuff
 (use-package s)
 
+(use-package calendar
+  :custom
+  (calendar-week-start-day 1))
+
 (use-package windmove
   :bind (("<S-up>" . windmove-up)
 	 ("<S-down>" . windmove-down)
@@ -404,7 +408,7 @@
 	 ("<S-down>" . nil)
          )
   :custom ((org-todo-keywords
-            '((sequence "TODO(t)" "HOLD(h@)" "INMEMORY(m!)" "INPROGRESS(i!)" "|" "DONE(d!)" "CANCELLED(c@)")
+            '((sequence "TODO(t)" "HOLD(h@)" "INPROGRESS(i!)" "|" "DONE(d!)" "CANCELLED(c@)")
               (sequence "BUY(b)" "SHIPPING(S!)" "|" "REFUSED(r@)" "GOT(g!)")
               (sequence "PROBLEM(p)" "SOLVED(s@)")
               (sequence "QUESTION(Q)" "|" "YES(y@)" "NOPE(n) " "UNKNOWN(u@)")
