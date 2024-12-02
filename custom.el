@@ -37,6 +37,7 @@
  '(nix-indent-function 'nix-indent-line)
  '(recentf-max-menu-items 100)
  '(recentf-max-saved-items 10000)
+ '(ring-bell-function 'ignore)
  '(scroll-bar-mode nil)
  '(scroll-conservatively 1000)
  '(scroll-margin 0)
