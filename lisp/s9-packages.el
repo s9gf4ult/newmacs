@@ -397,8 +397,6 @@
 	 ("<S-right>" . aw-switch-next-window)
 	 ("<S-up>" . nil)
 	 ("<S-down>" . nil)
-         ("M-S-<down>" . org-drag-element-forward)
-         ("M-S-<up>" . org-drag-element-backward)
          ("C-c C-x i" . org-word-to-custom-id)
          ("C-c C-x l" . org-word-to-custom-link)
          ("C-c o" . org-open-at-point)
