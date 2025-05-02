@@ -141,6 +141,22 @@
   file = {/home/razor/Zotero/storage/VI2CZI8Q/effective-spaced-repetition.html}
 }
 
+@online{brownLanguageModelsAre2020,
+  title = {Language {{Models}} Are {{Few-Shot Learners}}},
+  author = {Brown, Tom B. and Mann, Benjamin and Ryder, Nick and Subbiah, Melanie and Kaplan, Jared and Dhariwal, Prafulla and Neelakantan, Arvind and Shyam, Pranav and Sastry, Girish and Askell, Amanda and Agarwal, Sandhini and Herbert-Voss, Ariel and Krueger, Gretchen and Henighan, Tom and Child, Rewon and Ramesh, Aditya and Ziegler, Daniel M. and Wu, Jeffrey and Winter, Clemens and Hesse, Christopher and Chen, Mark and Sigler, Eric and Litwin, Mateusz and Gray, Scott and Chess, Benjamin and Clark, Jack and Berner, Christopher and McCandlish, Sam and Radford, Alec and Sutskever, Ilya and Amodei, Dario},
+  date = {2020-07-22},
+  eprint = {2005.14165},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2005.14165},
+  url = {http://arxiv.org/abs/2005.14165},
+  urldate = {2025-02-03},
+  abstract = {Recent work has demonstrated substantial gains on many NLP tasks and benchmarks by pre-training on a large corpus of text followed by fine-tuning on a specific task. While typically task-agnostic in architecture, this method still requires task-specific fine-tuning datasets of thousands or tens of thousands of examples. By contrast, humans can generally perform a new language task from only a few examples or from simple instructions – something which current NLP systems still largely struggle to do. Here we show that scaling up language models greatly improves task-agnostic, few-shot performance, sometimes even reaching competitiveness with prior state-of-the-art finetuning approaches. Specifically, we train GPT-3, an autoregressive language model with 175 billion parameters, 10x more than any previous non-sparse language model, and test its performance in the few-shot setting. For all tasks, GPT-3 is applied without any gradient updates or fine-tuning, with tasks and few-shot demonstrations specified purely via text interaction with the model. GPT-3 achieves strong performance on many NLP datasets, including translation, question-answering, and cloze tasks, as well as several tasks that require on-the-fly reasoning or domain adaptation, such as unscrambling words, using a novel word in a sentence, or performing 3-digit arithmetic. At the same time, we also identify some datasets where GPT-3’s few-shot learning still struggles, as well as some datasets where GPT-3 faces methodological issues related to training on large web corpora. Finally, we find that GPT-3 can generate samples of news articles which human evaluators have difficulty distinguishing from articles written by humans. We discuss broader societal impacts of this finding and of GPT-3 in general.},
+  langid = {english},
+  pubstate = {prepublished},
+  file = {/home/razor/Zotero/storage/TDTTVPCE/Brown et al. - 2020 - Language Models are Few-Shot Learners.pdf}
+}
+
 @online{CanCatalinEye2014,
   title = {Can {{Catalin Eye Drops Protect Eyes From Cataracts}}?},
   year = {2/21/2014 6:45:00 PM},
@@ -309,6 +325,22 @@
   file = {/home/razor/Zotero/storage/R37X49SK/Henry et al. - Modularizing GHC.pdf}
 }
 
+@online{hintonDistillingKnowledgeNeural2015,
+  title = {Distilling the {{Knowledge}} in a {{Neural Network}}},
+  author = {Hinton, Geoffrey and Vinyals, Oriol and Dean, Jeff},
+  date = {2015-03-09},
+  eprint = {1503.02531},
+  eprinttype = {arXiv},
+  eprintclass = {stat},
+  doi = {10.48550/arXiv.1503.02531},
+  url = {http://arxiv.org/abs/1503.02531},
+  urldate = {2025-02-03},
+  abstract = {A very simple way to improve the performance of almost any machine learning algorithm is to train many different models on the same data and then to average their predictions [3]. Unfortunately, making predictions using a whole ensemble of models is cumbersome and may be too computationally expensive to allow deployment to a large number of users, especially if the individual models are large neural nets. Caruana and his collaborators [1] have shown that it is possible to compress the knowledge in an ensemble into a single model which is much easier to deploy and we develop this approach further using a different compression technique. We achieve some surprising results on MNIST and we show that we can significantly improve the acoustic model of a heavily used commercial system by distilling the knowledge in an ensemble of models into a single model. We also introduce a new type of ensemble composed of one or more full models and many specialist models which learn to distinguish fine-grained classes that the full models confuse. Unlike a mixture of experts, these specialist models can be trained rapidly and in parallel.},
+  langid = {english},
+  pubstate = {prepublished},
+  file = {/home/razor/Zotero/storage/8GYYLGUR/Hinton et al. - 2015 - Distilling the Knowledge in a Neural Network.pdf}
+}
+
 @article{hochreiterLongShortTermMemory1997,
   title = {Long {{Short-Term Memory}}},
   author = {Hochreiter, Sepp and Schmidhuber, Jürgen},
@@ -408,6 +440,21 @@
   abstract = {Иссык-Куль в трёх часах езды, нерезиновые овощи и фрукты, а каждые выходные — хайкинг по природным красотам.},
   keywords = {emigration},
   file = {/home/razor/Zotero/storage/TI9YXCRH/kyrgyzstan-run.html}
+}
+
+@online{kingmaAutoEncodingVariationalBayes2022,
+  title = {Auto-{{Encoding Variational Bayes}}},
+  author = {Kingma, Diederik P. and Welling, Max},
+  date = {2022-12-10},
+  eprint = {1312.6114},
+  eprinttype = {arXiv},
+  eprintclass = {stat},
+  doi = {10.48550/arXiv.1312.6114},
+  url = {http://arxiv.org/abs/1312.6114},
+  urldate = {2025-02-08},
+  abstract = {How can we perform efficient inference and learning in directed probabilistic models, in the presence of continuous latent variables with intractable posterior distributions, and large datasets? We introduce a stochastic variational inference and learning algorithm that scales to large datasets and, under some mild differentiability conditions, even works in the intractable case. Our contributions are two-fold. First, we show that a reparameterization of the variational lower bound yields a lower bound estimator that can be straightforwardly optimized using standard stochastic gradient methods. Second, we show that for i.i.d. datasets with continuous latent variables per datapoint, posterior inference can be made especially efficient by fitting an approximate inference model (also called a recognition model) to the intractable posterior using the proposed lower bound estimator. Theoretical advantages are reflected in experimental results.},
+  pubstate = {prepublished},
+  file = {/home/razor/Zotero/storage/HVV8VX3H/Kingma and Welling - 2022 - Auto-Encoding Variational Bayes.pdf;/home/razor/Zotero/storage/HQ2K8A8M/1312.html}
 }
 
 @video{kognitivnyynadzorChemTYLuchshe2023,
@@ -721,6 +768,21 @@
   file = {/home/razor/Zotero/storage/HFFYJLPQ/rvp-v-kazahstane.html}
 }
 
+@online{rybkinValueBasedDeepRL2025,
+  title = {Value-{{Based Deep RL Scales Predictably}}},
+  author = {Rybkin, Oleh and Nauman, Michal and Fu, Preston and Snell, Charlie and Abbeel, Pieter and Levine, Sergey and Kumar, Aviral},
+  date = {2025-02-06},
+  eprint = {2502.04327},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2502.04327},
+  url = {http://arxiv.org/abs/2502.04327},
+  urldate = {2025-02-08},
+  abstract = {Scaling data and compute is critical to the success of machine learning. However, scaling demands predictability: we want methods to not only perform well with more compute or data, but also have their performance be predictable from small-scale runs, without running the large-scale experiment. In this paper, we show that value-based off-policy RL methods are predictable despite community lore regarding their pathological behavior. First, we show that data and compute requirements to attain a given performance level lie on a Pareto frontier, controlled by the updates-to-data (UTD) ratio. By estimating this frontier, we can predict this data requirement when given more compute, and this compute requirement when given more data. Second, we determine the optimal allocation of a total resource budget across data and compute for a given performance and use it to determine hyperparameters that maximize performance for a given budget. Third, this scaling behavior is enabled by first estimating predictable relationships between hyperparameters, which is used to manage effects of overfitting and plasticity loss unique to RL. We validate our approach using three algorithms: SAC, BRO, and PQL on DeepMind Control, OpenAI gym, and IsaacGym, when extrapolating to higher levels of data, compute, budget, or performance.},
+  pubstate = {prepublished},
+  file = {/home/razor/Zotero/storage/RBG3B8S5/Rybkin et al. - 2025 - Value-Based Deep RL Scales Predictably.pdf;/home/razor/Zotero/storage/L9WFE78W/2502.html}
+}
+
 @inreference{ScientificMethod2023,
   title = {Scientific Method},
   booktitle = {Wikipedia},
@@ -731,6 +793,64 @@
   langid = {english},
   annotation = {Page Version ID: 1159469923},
   file = {/home/razor/Zotero/storage/H28N33R5/Scientific_method.html}
+}
+
+@online{ShahurinaAnzhelikaIgorevna,
+  title = {Шахурина, {{Анжелика Игоревна}} — {{FA100}}},
+  url = {http://wiki.fa100.ru/index.php?title=%D0%A8%D0%B0%D1%85%D1%83%D1%80%D0%B8%D0%BD%D0%B0,_%D0%90%D0%BD%D0%B6%D0%B5%D0%BB%D0%B8%D0%BA%D0%B0_%D0%98%D0%B3%D0%BE%D1%80%D0%B5%D0%B2%D0%BD%D0%B0},
+  urldate = {2025-01-17},
+  file = {/home/razor/Zotero/storage/9C2TRHVJ/index.html}
+}
+
+@online{shumailovCurseRecursionTraining2024,
+  title = {The {{Curse}} of {{Recursion}}: {{Training}} on {{Generated Data Makes Models Forget}}},
+  shorttitle = {The {{Curse}} of {{Recursion}}},
+  author = {Shumailov, Ilia and Shumaylov, Zakhar and Zhao, Yiren and Gal, Yarin and Papernot, Nicolas and Anderson, Ross},
+  date = {2024-04-14},
+  eprint = {2305.17493},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2305.17493},
+  url = {http://arxiv.org/abs/2305.17493},
+  urldate = {2025-02-03},
+  abstract = {Stable Diffusion revolutionised image creation from descriptive text. GPT-2, GPT-3(.5) and GPT-4 demonstrated astonishing performance across a variety of language tasks. ChatGPT introduced such language models to the general public. It is now clear that large language models (LLMs) are here to stay, and will bring about drastic change in the whole ecosystem of online text and images. In this paper we consider what the future might hold. What will happen to GPT-\{n\} once LLMs contribute much of the language found online? We find that use of model-generated content in training causes irreversible defects in the resulting models, where tails of the original content distribution disappear. We refer to this effect as model collapse1 and show that it can occur in Variational Autoencoders, Gaussian Mixture Models and LLMs. We build theoretical intuition behind the phenomenon and portray its ubiquity amongst all learned generative models. We demonstrate that it has to be taken seriously if we are to sustain the benefits of training from large-scale data scraped from the web. Indeed, the value of data collected about genuine human interactions with systems will be increasingly valuable in the presence of content generated by LLMs in data crawled from the Internet.},
+  langid = {english},
+  pubstate = {prepublished},
+  file = {/home/razor/Zotero/storage/B8XCSNNG/Shumailov et al. - 2024 - The Curse of Recursion Training on Generated Data Makes Models Forget.pdf}
+}
+
+@online{shumailovCurseRecursionTraining2024a,
+  title = {The {{Curse}} of {{Recursion}}: {{Training}} on {{Generated Data Makes Models Forget}}},
+  shorttitle = {The {{Curse}} of {{Recursion}}},
+  author = {Shumailov, Ilia and Shumaylov, Zakhar and Zhao, Yiren and Gal, Yarin and Papernot, Nicolas and Anderson, Ross},
+  date = {2024-04-14},
+  eprint = {2305.17493},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2305.17493},
+  url = {http://arxiv.org/abs/2305.17493},
+  urldate = {2025-03-09},
+  abstract = {Stable Diffusion revolutionised image creation from descriptive text. GPT-2, GPT-3(.5) and GPT-4 demonstrated astonishing performance across a variety of language tasks. ChatGPT introduced such language models to the general public. It is now clear that large language models (LLMs) are here to stay, and will bring about drastic change in the whole ecosystem of online text and images. In this paper we consider what the future might hold. What will happen to GPT-\{n\} once LLMs contribute much of the language found online? We find that use of model-generated content in training causes irreversible defects in the resulting models, where tails of the original content distribution disappear. We refer to this effect as model collapse1 and show that it can occur in Variational Autoencoders, Gaussian Mixture Models and LLMs. We build theoretical intuition behind the phenomenon and portray its ubiquity amongst all learned generative models. We demonstrate that it has to be taken seriously if we are to sustain the benefits of training from large-scale data scraped from the web. Indeed, the value of data collected about genuine human interactions with systems will be increasingly valuable in the presence of content generated by LLMs in data crawled from the Internet.},
+  langid = {english},
+  pubstate = {prepublished},
+  file = {/home/razor/Zotero/storage/2SQKBKAQ/Shumailov et al. - 2024 - The Curse of Recursion Training on Generated Data Makes Models Forget.pdf}
+}
+
+@online{snellScalingLLMTestTime2024,
+  title = {Scaling {{LLM Test-Time Compute Optimally}} Can Be {{More Effective}} than {{Scaling Model Parameters}}},
+  author = {Snell, Charlie and Lee, Jaehoon and Xu, Kelvin and Kumar, Aviral},
+  date = {2024-08-06},
+  eprint = {2408.03314},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2408.03314},
+  url = {http://arxiv.org/abs/2408.03314},
+  urldate = {2025-01-08},
+  abstract = {Enabling LLMs to improve their outputs by using more test-time computation is a critical step towards building generally self-improving agents that can operate on open-ended natural language. In this paper, we study the scaling of inference-time computation in LLMs, with a focus on answering the question: if an LLM is allowed to use a fixed but non-trivial amount of inference-time compute, how much can it improve its performance on a challenging prompt? Answering this question has implications not only on the achievable performance of LLMs, but also on the future of LLM pretraining and how one should tradeoff inference-time and pre-training compute. Despite its importance, little research attempted to understand the scaling behaviors of various test-time inference methods. Moreover, current work largely provides negative results for a number of these strategies. In this work, we analyze two primary mechanisms to scale test-time computation: (1) searching against dense, process-based verifier reward models; and (2) updating the model's distribution over a response adaptively, given the prompt at test time. We find that in both cases, the effectiveness of different approaches to scaling test-time compute critically varies depending on the difficulty of the prompt. This observation motivates applying a "compute-optimal" scaling strategy, which acts to most effectively allocate test-time compute adaptively per prompt. Using this compute-optimal strategy, we can improve the efficiency of test-time compute scaling by more than 4x compared to a best-of-N baseline. Additionally, in a FLOPs-matched evaluation, we find that on problems where a smaller base model attains somewhat non-trivial success rates, test-time compute can be used to outperform a 14x larger model.},
+  langid = {english},
+  pubstate = {prepublished},
+  keywords = {llm,machine_learning,prompt_engineering},
+  file = {/home/razor/Zotero/storage/VUQXPV95/Snell et al. - 2024 - Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters.pdf}
 }
 
 @online{SpacedRepetitionReading,
@@ -751,6 +871,25 @@
   langid = {english},
   keywords = {srs},
   file = {/home/razor/Zotero/storage/SPE9NIZZ/20200907034608.html}
+}
+
+@article{supekarBrainHyperconnectivityChildren2013,
+  title = {Brain {{Hyperconnectivity}} in {{Children}} with {{Autism}} and Its {{Links}} to {{Social Deficits}}},
+  author = {Supekar, Kaustubh and Uddin, Lucina~Q. and Khouzam, Amirah and Phillips, Jennifer and Gaillard, William~D. and Kenworthy, Lauren~E. and Yerys, Benjamin~E. and Vaidya, Chandan~J. and Menon, Vinod},
+  date = {2013-11},
+  journaltitle = {Cell Reports},
+  shortjournal = {Cell Reports},
+  volume = {5},
+  number = {3},
+  pages = {738--747},
+  issn = {22111247},
+  doi = {10.1016/j.celrep.2013.10.001},
+  url = {https://linkinghub.elsevier.com/retrieve/pii/S2211124713005706},
+  urldate = {2025-02-10},
+  abstract = {Autism spectrum disorder (ASD), a neurodevelopmental disorder affecting nearly 1 in 88 children, is thought to result from aberrant brain connectivity. Remarkably, there have been no systematic attempts to characterize whole-brain connectivity in children with ASD. Here, we use neuroimaging to show that there are more instances of greater functional connectivity in the brains of children with ASD in comparison to those of typically developing children. Hyperconnectivity in ASD was observed at the whole-brain and subsystems levels, across long- and short-range connections, and was associated with higher levels of fluctuations in regional brain signals. Brain hyperconnectivity predicted symptom severity in ASD, such that children with greater functional connectivity exhibited more severe social deficits. We replicated these findings in two additional independent cohorts, demonstrating again that at earlier ages, the brain of children with ASD is largely functionally hyperconnected in ways that contribute to social dysfunction. Our findings provide unique insights into brain mechanisms underlying childhood autism.},
+  langid = {english},
+  keywords = {autism,brain,medicine},
+  file = {/home/razor/Zotero/storage/V88XIT5W/Supekar et al. - 2013 - Brain Hyperconnectivity in Children with Autism and its Links to Social Deficits.pdf}
 }
 
 @inreference{TransFat2023,
@@ -909,6 +1048,24 @@
   file = {/home/razor/Zotero/storage/HVQRDCKW/inside-amd-bios-what-is-really-hidden-behind-agesa-the-psp-platform-security-processor-and-the-.html}
 }
 
+@online{wangMathPileBillionTokenScalePretraining2024,
+  title = {{{MathPile}}: {{A Billion-Token-Scale Pretraining Corpus}} for {{Math}}},
+  shorttitle = {{{MathPile}}},
+  author = {Wang, Zengzhi and Li, Xuefeng and Xia, Rui and Liu, Pengfei},
+  date = {2024-10-29},
+  eprint = {2312.17120},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2312.17120},
+  url = {http://arxiv.org/abs/2312.17120},
+  urldate = {2025-02-10},
+  abstract = {High-quality, large-scale corpora are the cornerstone of building foundation models. In this work, we introduce MATHPILE , a diverse and high-quality math-centric corpus comprising about 9.5 billion tokens. Throughout its creation, we adhered to the principle of “less is more”, firmly believing in the supremacy of data quality over quantity, even in the pre-training phase. Our meticulous data collection and processing efforts included a complex suite of preprocessing, prefiltering, language identification, cleaning, filtering, and deduplication, ensuring the high quality of our corpus. Furthermore, we performed data contamination detection on downstream benchmark test sets to eliminate duplicates and conducted continual pre-training experiments, booting the performance on common mathematical reasoning benchmarks. We aim for our MATHPILE to boost language models’ mathematical reasoning abilities and open-source its different versions and processing scripts to advance the field (available at https://github.com/GAIR-NLP/MathPile/).},
+  langid = {english},
+  pubstate = {prepublished},
+  keywords = {AI,llm,pretraining},
+  file = {/home/razor/Zotero/storage/MNG2UK2Q/Wang et al. - 2024 - MathPile A Billion-Token-Scale Pretraining Corpus for Math.pdf}
+}
+
 @online{wangMixtureofAgentsEnhancesLarge2024,
   title = {Mixture-of-{{Agents Enhances Large Language Model Capabilities}}},
   author = {Wang, Junlin and Wang, Jue and Athiwaratkun, Ben and Zhang, Ce and Zou, James},
@@ -999,6 +1156,24 @@
   file = {/home/razor/Zotero/storage/CIJHTCVL/Yao et al. - 2023 - Tree of Thoughts Deliberate Problem Solving with .pdf}
 }
 
+@online{yeLIMOLessMore2025,
+  title = {{{LIMO}}: {{Less}} Is {{More}} for {{Reasoning}}},
+  shorttitle = {{{LIMO}}},
+  author = {Ye, Yixin and Huang, Zhen and Xiao, Yang and Chern, Ethan and Xia, Shijie and Liu, Pengfei},
+  date = {2025-02-05},
+  eprint = {2502.03387},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2502.03387},
+  url = {http://arxiv.org/abs/2502.03387},
+  urldate = {2025-02-10},
+  abstract = {We present a fundamental discovery that challenges our understanding of how complex reasoning emerges in large language models. While conventional wisdom suggests that sophisticated reasoning tasks demand extensive training data ({$>$}100,000 examples), we demonstrate that complex mathematical reasoning abilities can be effectively elicited with surprisingly few examples. Through comprehensive experiments, our proposed model LIMO demonstrates unprecedented performance in mathematical reasoning. With merely 817 curated training samples, LIMO achieves 57.1\% accuracy on AIME and 94.8\% on MATH, improving from previous SFT-based models' 6.5\% and 59.2\% respectively, while only using 1\% of the training data required by previous approaches. LIMO demonstrates exceptional out-of-distribution generalization, achieving 40.5\% absolute improvement across 10 diverse benchmarks, outperforming models trained on 100x more data, challenging the notion that SFT leads to memorization rather than generalization. Based on these results, we propose the Less-Is-More Reasoning Hypothesis (LIMO Hypothesis): In foundation models where domain knowledge has been comprehensively encoded during pre-training, sophisticated reasoning capabilities can emerge through minimal but precisely orchestrated demonstrations of cognitive processes. This hypothesis posits that the elicitation threshold for complex reasoning is determined by two key factors: (1) the completeness of the model's encoded knowledge foundation during pre-training, and (2) the effectiveness of post-training examples as "cognitive templates" that show the model how to utilize its knowledge base to solve complex reasoning tasks. To facilitate reproducibility and future research in data-efficient reasoning, we release LIMO as a comprehensive open-source suite at https://github.com/GAIR-NLP/LIMO.},
+  langid = {english},
+  pubstate = {prepublished},
+  keywords = {AI,llm,math,prompt_engineering,reasoning},
+  file = {/home/razor/Zotero/storage/BH5UC6CU/Ye et al. - 2025 - LIMO Less is More for Reasoning.pdf}
+}
+
 @online{ZemletryasenieMagnitudoyProizoshlo2023,
   title = {Землетрясение магнитудой 5,9 произошло в Киргизии, толчки ощущались в Алма-Ате},
   date = {2023-02-27},
@@ -1008,4 +1183,22 @@
   langid = {russian},
   keywords = {emigration,geology},
   file = {/home/razor/Zotero/storage/ZHS8J3WV/zemletryasenie-magnitudoy-59-proizoshlo-v-kirgizii-tolchki-oshhushhalis-v-almaate.html}
+}
+
+@online{zhouLIMALessMore2023,
+  title = {{{LIMA}}: {{Less Is More}} for {{Alignment}}},
+  shorttitle = {{{LIMA}}},
+  author = {Zhou, Chunting and Liu, Pengfei and Xu, Puxin and Iyer, Srini and Sun, Jiao and Mao, Yuning and Ma, Xuezhe and Efrat, Avia and Yu, Ping and Yu, Lili and Zhang, Susan and Ghosh, Gargi and Lewis, Mike and Zettlemoyer, Luke and Levy, Omer},
+  date = {2023-05-18},
+  eprint = {2305.11206},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  doi = {10.48550/arXiv.2305.11206},
+  url = {http://arxiv.org/abs/2305.11206},
+  urldate = {2025-02-10},
+  abstract = {Large language models are trained in two stages: (1) unsupervised pretraining from raw text, to learn general-purpose representations, and (2) large scale instruction tuning and reinforcement learning, to better align to end tasks and user preferences. We measure the relative importance of these two stages by training LIMA, a 65B parameter LLaMa language model fine-tuned with the standard supervised loss on only 1,000 carefully curated prompts and responses, without any reinforcement learning or human preference modeling. LIMA demonstrates remarkably strong performance, learning to follow specific response formats from only a handful of examples in the training data, including complex queries that range from planning trip itineraries to speculating about alternate history. Moreover, the model tends to generalize well to unseen tasks that did not appear in the training data. In a controlled human study, responses from LIMA are either equivalent or strictly preferred to GPT-4 in 43\% of cases; this statistic is as high as 58\% when compared to Bard and 65\% versus DaVinci003, which was trained with human feedback. Taken together, these results strongly suggest that almost all knowledge in large language models is learned during pretraining, and only limited instruction tuning data is necessary to teach models to produce high quality output.},
+  langid = {english},
+  pubstate = {prepublished},
+  keywords = {AI,fine_tuning,llm,prompt_engineering},
+  file = {/home/razor/Zotero/storage/TT3VJM5S/Zhou et al. - 2023 - LIMA Less Is More for Alignment.pdf}
 }
