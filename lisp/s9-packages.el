@@ -115,10 +115,10 @@
   :config
   (require 'flycheck)
   (global-diff-hl-mode)
-  :custom-face
-  (diff-hl-change ((t (:background "deep sky blue" :foreground "blue3"))))
-  (diff-hl-delete ((t (:inherit diff-removed :background "firebrick" :foreground "red3"))))
-  (diff-hl-insert ((t (:inherit diff-added :background "sea green" :foreground "green4"))))
+  ;; :custom-face
+  ;; (diff-hl-change ((t (:background "deep sky blue" :foreground "blue3"))))
+  ;; (diff-hl-delete ((t (:inherit diff-removed :background "firebrick" :foreground "red3"))))
+  ;; (diff-hl-insert ((t (:inherit diff-added :background "sea green" :foreground "green4"))))
   :hook (magit-post-refresh . diff-hl-magit-post-refresh)
   :demand t
   )
@@ -175,8 +175,8 @@
 	      ("g" . helm-do-ag)))
 
 (use-package helm-rg
-  :custom-face
-  (helm-rg-file-match-face ((t (:foreground "dark blue" :underline t))))
+  ;; :custom-face
+  ;; (helm-rg-file-match-face ((t (:foreground "dark blue" :underline t))))
   )
 
 (use-package projectile
@@ -224,17 +224,17 @@
 ;; theme ;;
 ;;;;;;;;;;;
 
-(use-package solarized-theme
-  :custom
-  ((solarized-height-minus-1 1.0)
-   (solarized-height-plus-1 1.0)
-   (solarized-height-plus-2 1.0)
-   (solarized-height-plus-3 1.0)
-   (solarized-height-plus-4 1.0)
-   (solarized-scale-org-headlines nil)
-   (solarized-use-variable-pitch nil)
-   )
-  )
+;; (use-package solarized-theme
+;;   :custom
+;;   ((solarized-height-minus-1 1.0)
+;;    (solarized-height-plus-1 1.0)
+;;    (solarized-height-plus-2 1.0)
+;;    (solarized-height-plus-3 1.0)
+;;    (solarized-height-plus-4 1.0)
+;;    (solarized-scale-org-headlines nil)
+;;    (solarized-use-variable-pitch nil)
+;;    )
+;;   )
 
 ;;;;;;;;;;;;;;;;;
 ;; other modes ;;
@@ -255,8 +255,8 @@
 
 (use-package web-mode
   :mode ("\\.html\\'" "\\.php\\'")
-  :custom-face
-  (web-mode-html-tag-face ((t (:foreground "blue"))))
+  ;; :custom-face
+  ;; (web-mode-html-tag-face ((t (:foreground "blue"))))
   :custom
   (web-mode-markup-indent-offset 2)
   (web-mode-code-indent-offset 2)
@@ -294,10 +294,10 @@
 
 (use-package proof-site ; proof-general
   :mode (("\\.v\\'" . coq-mode))
-  :custom-face
-  (proof-locked-face
-   ((t
-     (:background "gray85" :extend t))))
+  ;; :custom-face
+  ;; (proof-locked-face
+  ;;  ((t
+  ;;    (:background "gray85" :extend t))))
   :demand t
   :hook
   (coq-mode
@@ -485,8 +485,8 @@
            (org-priority-default (string-to-char "G"))
            (org-priority-lowest (string-to-char "G"))
 	   (org-reverse-note-order t))
-  :custom-face
-  (org-todo ((t (:weight bold :foreground "#CF4646"))))
+  ;; :custom-face
+  ;; (org-todo ((t (:weight bold :foreground "#CF4646"))))
   :hook ((org-mode . s9g-org-hook))
   :demand t
   )

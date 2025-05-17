@@ -15,7 +15,7 @@
 
 (add-to-list 'load-path (concat user-emacs-directory "lisp"))
 
-(load "narrow-indirect")
+;; (load "narrow-indirect")
 (load "s9-packages")
 (load "s9-globals")
 (load "s9-tune")

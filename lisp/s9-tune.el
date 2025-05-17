@@ -36,10 +36,10 @@
 
 ;; (load-theme 'solarized-dark t)
 
-(custom-set-faces
- '(default ((t (:background "gray78" :inherit t  :height 131 :width normal :family "Hack"))))
- '(region ((t (:background "gray90"))))
- )
+;; (custom-set-faces
+;;  '(default ((t (:background "gray78" :inherit t  :height 131 :width normal :family "Hack"))))
+;;  '(region ((t (:background "gray90"))))
+;;  )
 
 (delete-selection-mode 1)
 
