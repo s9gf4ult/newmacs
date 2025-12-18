@@ -169,10 +169,10 @@
   :config
   (helm-mode 1))
 
-(use-package helm-ag
-  :demand t
-  :bind (:map helm-command-map
-	      ("g" . helm-do-ag)))
+;; (use-package helm-ag
+;;   :demand t
+;;   :bind (:map helm-command-map
+;; 	      ("g" . helm-do-ag)))
 
 (use-package helm-rg
   ;; :custom-face
@@ -235,6 +235,8 @@
 ;;    (solarized-use-variable-pitch nil)
 ;;    )
 ;;   )
+
+;; (load-theme 'solarized-light t)
 
 ;;;;;;;;;;;;;;;;;
 ;; other modes ;;
