@@ -10,6 +10,7 @@
  '(column-number-mode t)
  '(confirm-kill-emacs 'yes-or-no-p)
  '(create-lockfiles nil)
+ '(custom-enabled-themes '(solarized-dark))
  '(custom-safe-themes
    '("00445e6f15d31e9afaa23ed0d765850e9cd5e929be5e8e63b114a3346236c44c"
      "7f1d414afda803f3244c6fb4c2c64bea44dac040ed3731ec9d75275b9e831fe5"
@@ -53,4 +54,8 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:height 120 :family "Liberation Mono")))))
+ '(default ((t (:height 120 :family "Liberation Mono"))))
+ '(org-level-1 ((t (:height 1.0))))
+ '(org-level-2 ((t (:height 1.0))))
+ '(org-level-3 ((t (:height 1.0))))
+ '(org-level-4 ((t (:height 1.0)))))
