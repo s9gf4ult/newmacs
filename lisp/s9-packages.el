@@ -206,19 +206,41 @@
   :mode (("\\.cabal\\'" . haskell-cabal-mode)
 	 ("\\.hs\\'" . haskell-mode))
   :hook ((haskell-mode . s9g-haskell-mode-hook)
+         ;; (haskell-mode . #'lsp)
 	 (haskell-cabal-mode . s9g-cabal-mode-hook)
 	 )
   :custom
-  (haskell-compile-stack-build-alt-command
-   "NIXPKGS_ALLOW_INSECURE=1 nice -n5 stack --nix --no-nix-add-gc-roots build --bench --test --no-run-tests --no-run-benchmarks --fast --pedantic --ghc-options='-ferror-spans -j12 +RTS -N -RTS'")
-  (haskell-compile-stack-build-command
-   "NIXPKGS_ALLOW_INSECURE=1 nice -n5 stack --nix --no-nix-add-gc-roots build --bench --test --no-run-tests --no-run-benchmarks --fast --ghc-options='-ferror-spans -instances -j12 +RTS -N -RTS'")
+  ;; (haskell-compile-stack-build-alt-command
+  ;;  "NIXPKGS_ALLOW_INSECURE=1 nice -n5 stack --nix --no-nix-add-gc-roots build --bench --test --no-run-tests --no-run-benchmarks --fast --pedantic --ghc-options='-ferror-spans -j12 +RTS -N -RTS'")
+  ;; (haskell-compile-stack-build-command
+  ;;  "NIXPKGS_ALLOW_INSECURE=1 nice -n5 stack --nix --no-nix-add-gc-roots build --bench --test --no-run-tests --no-run-benchmarks --fast --ghc-options='-ferror-spans -instances -j12 +RTS -N -RTS'")
+  (haskell-compile-cabal-build-command "cabal build --ghc-option=-ferror-spans -j")
   (haskell-process-args-stack-ghci (quote ("--ghci-options" "-ferror-spans")))
   (haskell-compile-ignore-cabal t)
   (haskell-stylish-on-save nil)
-  (haskell-compiler-type 'stack)
+  (haskell-compiler-type 'auto)
   (haskell-process-type 'stack-ghci)
   )
+
+(use-package lsp-mode
+  :init
+  ;; set prefix for lsp-command-keymap (few alternatives - "C-l", "C-c l")
+  (setq lsp-keymap-prefix "C-c l")
+  :hook (;; replace XXX-mode with concrete major-mode(e. g. python-mode)
+         (haskell-mode . lsp)
+         ;; if you want which-key integration
+         ;; (lsp-mode . lsp-enable-which-key-integration)
+         )
+  :commands lsp)
+
+(add-hook 'haskell-mode-hook #'lsp)
+(add-hook 'haskell-literate-mode-hook #'lsp)
+
+(use-package envrc
+  :ensure t
+  :hook (after-init . envrc-global-mode)
+  )
+
 
 ;;;;;;;;;;;
 ;; theme ;;

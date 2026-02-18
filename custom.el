@@ -11,7 +11,10 @@
  '(confirm-kill-emacs 'yes-or-no-p)
  '(create-lockfiles nil)
  '(custom-safe-themes
-   '("8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default))
+   '("00445e6f15d31e9afaa23ed0d765850e9cd5e929be5e8e63b114a3346236c44c"
+     "7f1d414afda803f3244c6fb4c2c64bea44dac040ed3731ec9d75275b9e831fe5"
+     "7fea145741b3ca719ae45e6533ad1f49b2a43bf199d9afaee5b6135fd9e6f9b8"
+     "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default))
  '(display-buffer-alist
    '(("\\*haskell-compilation\\*" display-buffer-reuse-window (reusable-frames . t))
      ("magit.*" display-buffer-pop-up-window (reusable-frames . t))
@@ -45,3 +48,9 @@
  '(warning-suppress-types '((comp)))
  '(woman-fill-frame t)
  '(yas-global-mode t))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:inherit nil :extend nil :stipple nil :background "white" :foreground "black" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight regular :height 120 :width normal :foundry "1ASC" :family "Liberation Mono")))))
