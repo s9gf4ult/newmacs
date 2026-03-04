@@ -10,7 +10,7 @@
  '(column-number-mode t)
  '(confirm-kill-emacs 'yes-or-no-p)
  '(create-lockfiles nil)
- '(custom-enabled-themes '(ef-dream))
+ '(custom-enabled-themes '(solarized-selenized-dark))
  '(custom-safe-themes
    '("57a29645c35ae5ce1660d5987d3da5869b048477a7801ce7ab57bfb25ce12d3e"
      "4245a257190bcf8977c5a5818f400ba694eae664bcf48899ec6135bb28feedb4"
