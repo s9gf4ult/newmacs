@@ -506,7 +506,7 @@
 	     ))
            (org-agenda-files
             '("~/pers/todo.org" "~/pers/projects/typeableio/typeableio.org" "~/pers/org-roam/"))
-           (org-priority-default (string-to-char "G"))
+           (org-priority-default (string-to-char "F"))
            (org-priority-lowest (string-to-char "G"))
 	   (org-reverse-note-order t)
            (org-babel-load-languages
