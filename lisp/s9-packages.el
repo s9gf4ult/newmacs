@@ -506,9 +506,10 @@
 	     ))
            (org-agenda-files
             '("~/pers/todo.org" "~/pers/projects/typeableio/typeableio.org" "~/pers/org-roam/"))
-           (org-priority-default (string-to-char "F"))
+           (org-priority-default (string-to-char "G"))
            (org-priority-lowest (string-to-char "G"))
 	   (org-reverse-note-order t)
+           (org-deadline-warning-days 45)
            (org-babel-load-languages
             '((emacs-lisp . t) (shell . t)))
            )
