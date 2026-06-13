@@ -1,6 +1,5 @@
-* %? 
-  %^{Link}
-  :PROPERTIES:
-  :TIMESTAMP: %t
-  :END:
-  
+* %?
+%^{Link}
+:PROPERTIES:
+:TIMESTAMP: %t
+:END:

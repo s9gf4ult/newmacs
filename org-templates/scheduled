@@ -1,6 +1,5 @@
 * TODO %?
-  :PROPERTIES:
-  :SCHEDULED: %^{Scheduled when}t
-  :TIMESTAMP: %t
-  :END:
-
+:PROPERTIES:
+:SCHEDULED: %^{Scheduled when}t
+:TIMESTAMP: %t
+:END:
