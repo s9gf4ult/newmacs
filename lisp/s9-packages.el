@@ -510,6 +510,7 @@
            (org-priority-lowest (string-to-char "G"))
 	   (org-reverse-note-order t)
            (org-deadline-warning-days 45)
+           (org-agenda-span 14)
            (org-babel-load-languages
             '((emacs-lisp . t) (shell . t)))
            )
