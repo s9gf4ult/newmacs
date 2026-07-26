@@ -181,7 +181,7 @@
 
 (use-package projectile
   :config
-  (projectile-global-mode))
+  )
 
 (use-package helm-projectile
   :bind (("<f8>" . helm-projectile)
@@ -462,7 +462,7 @@
 	       (file "~/.emacs.d/org-templates/todo")
 	       :prepend t)
 	      ("tr" "Travel check list" entry
-	       (file+headline "~/pers/capture.org " "Tasks ")
+	       (file+headline "~/pers/capture.org" "Tasks ")
 	       (file "~/.emacs.d/org-templates/travel")
 	       :prepend t)
 	      ("ts" "Scheduled todo item" entry
@@ -478,7 +478,7 @@
 	       (file "~/.emacs.d/org-templates/urltodo")
 	       :prepend t)
 	      ("n" "Note" entry
-	       (file+headline "~/pers/projects/life/info/notes.org" "Notes")
+	       (file+headline "~/pers/capture.org" "Notes")
 	       (file "~/.emacs.d/org-templates/note")
 	       :prepend t)
 	      ("l" "Log entry")
@@ -511,6 +511,7 @@
 	   (org-reverse-note-order t)
            (org-deadline-warning-days 45)
            (org-agenda-span 14)
+           (org-agenda-start-on-weekday nil)
            (org-babel-load-languages
             '((emacs-lisp . t) (shell . t)))
            )
