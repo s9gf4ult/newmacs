@@ -214,12 +214,12 @@
   ;;  "NIXPKGS_ALLOW_INSECURE=1 nice -n5 stack --nix --no-nix-add-gc-roots build --bench --test --no-run-tests --no-run-benchmarks --fast --pedantic --ghc-options='-ferror-spans -j12 +RTS -N -RTS'")
   ;; (haskell-compile-stack-build-command
   ;;  "NIXPKGS_ALLOW_INSECURE=1 nice -n5 stack --nix --no-nix-add-gc-roots build --bench --test --no-run-tests --no-run-benchmarks --fast --ghc-options='-ferror-spans -instances -j12 +RTS -N -RTS'")
-  (haskell-compile-cabal-build-command "cabal build --ghc-option=-ferror-spans -j")
-  (haskell-process-args-stack-ghci (quote ("--ghci-options" "-ferror-spans")))
-  (haskell-compile-ignore-cabal t)
+  (haskell-compile-cabal-build-command "nice -n5 cabal build -j --enable-tests --enable-benchmarks --disable-optimization --ghc-options='-ferror-spans -j +RTS -A128m -n2m -qb0 -RTS'")
+  ;; (haskell-process-args-stack-ghci (quote ("--ghci-options" "-ferror-spans")))
+  ;; (haskell-compile-ignore-cabal t)
   (haskell-stylish-on-save nil)
   (haskell-compiler-type 'auto)
-  (haskell-process-type 'stack-ghci)
+  ;; (haskell-process-type 'stack-ghci)
   )
 
 (use-package lsp-mode
