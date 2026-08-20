@@ -95,7 +95,9 @@
    (quote
     ("--stat" "--no-ext-diff" "--diff-algorithm=histogram")))
  (magit-log-margin (quote (t "%Y-%m-%d %H:%M " magit-log-margin-width t 18)))
- :hook (magit-mode . turn-on-magit-gitflow)
+ :hook
+ (magit-mode . turn-on-magit-gitflow)
+ (git-commit-setup . git-commit-turn-on-flyspell)
  :config
  (magit-auto-revert-mode 1)
  (require 'magit-gitflow)
