@@ -1,3 +1,5 @@
+;; -*- lexical-binding: t; -*-
+
 ;;; zoom-frm.el --- Commands to zoom frame font size.
 ;;
 ;; Filename: zoom-frm.el
@@ -124,7 +126,7 @@
 ;;                      [C-M-mouse-wheel])  ; Emacs 20, 21
 ;;                    'zoom-all-frames-in)
 ;;    (when (boundp 'mouse-wheel-up-event) ; Emacs 22+
-;;      (global-set-key (vector (list 'control 
+;;      (global-set-key (vector (list 'control
 ;;                                    mouse-wheel-up-event))
 ;;                      'zoom-out)
 ;;      (global-set-key (vector (list 'control 'meta
@@ -369,7 +371,7 @@ Buffer zooming uses command `text-scale-decrease'."
 
   (when (or (fboundp 'set-transient-map) ; Emacs 24.4+
             (fboundp 'set-temporary-overlay-map)) ; Emacs 24.3
-            
+
     (defun zoom-in/out (arg)
       "Zoom current frame or buffer in or out.
 A prefix arg determines the behavior, as follows:
@@ -401,7 +403,7 @@ Remember that you can also use `C-u' when you are done zooming."
         (setq zoom-frame/buffer  (if (eq zoom-frame/buffer 'frame) 'buffer 'frame)
               arg                1)
         (message "%s zooming from now on" (upcase (symbol-name zoom-frame/buffer)))
-        (sit-for 1))    
+        (sit-for 1))
       (let* ((ev               last-command-event)
              (echo-keystrokes  nil)
              (base             (event-basic-type ev))

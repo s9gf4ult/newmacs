@@ -1,23 +1,24 @@
+;;; -*- lexical-binding: t -*-
 
 ;;;;;;;;;;;;;;;;
 ;; dir locals ;;
 ;;;;;;;;;;;;;;;;
 
-(defun my-reload-dir-locals-for-current-buffer ()
-  "reload dir locals for the current buffer"
-  (interactive)
-  (let ((enable-local-variables :all))
-    (hack-dir-local-variables-non-file-buffer)))
+;; (defun my-reload-dir-locals-for-current-buffer ()
+;;   "reload dir locals for the current buffer"
+;;   (interactive)
+;;   (let ((enable-local-variables :all))
+;;     (hack-dir-local-variables-non-file-buffer)))
 
-(defun my-reload-dir-locals-for-all-buffer-in-this-directory ()
-  "For every buffer with the same `default-directory` as the
-current buffer's, reload dir-locals."
-  (interactive)
-  (let ((dir default-directory))
-    (dolist (buffer (buffer-list))
-      (with-current-buffer buffer
-        (when (equal default-directory dir))
-        (my-reload-dir-locals-for-current-buffer)))))
+;; (defun my-reload-dir-locals-for-all-buffer-in-this-directory ()
+;;   "For every buffer with the same `default-directory` as the
+;; current buffer's, reload dir-locals."
+;;   (interactive)
+;;   (let ((dir default-directory))
+;;     (dolist (buffer (buffer-list))
+;;       (with-current-buffer buffer
+;;         (when (equal default-directory dir))
+;;         (my-reload-dir-locals-for-current-buffer)))))
 
 (defun org-word-to-custom-id (value)
   (interactive (list (thing-at-point 'word 'no-properties)))
@@ -52,13 +53,13 @@ BEG and END (region to sort)."
             (replace-match "" nil nil))
           (goto-char next-line))))))
 
-(defun unfill-region (beg end)
-  "Unfill the region, joining text paragraphs into a single
-    logical line.  This is useful, e.g., for use with
-    `visual-line-mode'."
-  (interactive "*r")
-  (let ((fill-column (point-max)))
-    (fill-region beg end)))
+;; (defun unfill-region (beg end)
+;;   "Unfill the region, joining text paragraphs into a single
+;;     logical line.  This is useful, e.g., for use with
+;;     `visual-line-mode'."
+;;   (interactive "*r")
+;;   (let ((fill-column (point-max)))
+;;     (fill-region beg end)))
 
 (defun copy-word-at-point ()
   (interactive)

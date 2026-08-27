@@ -1,3 +1,5 @@
+;;; -*- lexical-binding: t -*-
+
 ;;; frame-cmds.el --- Frame and window commands (interactive functions).
 ;;
 ;; Filename: frame-cmds.el
@@ -160,7 +162,7 @@
 ;;
 ;;    `font-too-small', `font-size'.
 ;;
-;;  
+;;
 ;;  ***** NOTE: The following EMACS PRIMITIVE has been ADVISED HERE:
 ;;
 ;;  `delete-window' - If only one window in frame, `delete-frame'.
@@ -372,7 +374,7 @@
 ;;              tile-frames                    to frcmds-tile-frames.
 ;;     rename-non-minibuffer-frame: Pass OLD-NAME and NEW-NAME to rename-frame.
 ;;     Group Frame-Commands: Added :prefix frcmds-.
-;;     
+;;
 ;; 2014/02/24 dadams
 ;;     rename-frame, rename-non-minibuffer-frame: Fixed default buffer name for non-interactive.
 ;; 2013/09/21 dadams
@@ -1474,7 +1476,7 @@ With a prefix arg, create that many new frames.
 The same character size is used for the new frames."
   (interactive "p")
   (frcmds-split-frame-1 'horizontal num))
-  
+
 ;;;###autoload
 (defun split-frame-vertically (num)
   "Vertically split the selected frame.
